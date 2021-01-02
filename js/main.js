@@ -2199,6 +2199,6 @@ console.log(sentence.split(' ').map(item => item.substr(0,1) + item.charAt(1).to
 
 15. trim()
 
-Description: I will add this tomorrow
+Description: This method is used to remove blank spaces from a string
 
 */
