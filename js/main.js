@@ -2203,6 +2203,11 @@ Description: This method is used to remove blank spaces from a string.
 
 Ex. 1
 
-let greeting = "  Hello everyone, welcome to the our lovely home    "
-console.log(greeting.trim())  /// returns "
+let greeting = "  Hello everyone, welcome to our lovely home.     "
+console.log(greeting.trim())  /// returns "Hello everyone, welcome to our lovely home."
+
+Ex. 2
+
+console.log(greeting.trimStart()) ///
 */
+
