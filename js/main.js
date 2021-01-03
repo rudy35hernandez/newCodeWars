@@ -2199,6 +2199,11 @@ console.log(sentence.split(' ').map(item => item.substr(0,1) + item.charAt(1).to
 
 15. trim()
 
-Description: This method is used to remove blank spaces from a string
+Description: This method is used to remove blank spaces from a string.
+
+Ex. 1
+
+let greeting = "  Hello everyone, welcome to the our lovely home    "
+console.log(greeting.trim())  /// returns ""
 
 */
