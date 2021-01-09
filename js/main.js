@@ -1837,6 +1837,15 @@ Examples
 
 "Buckethead" is an anagram of "DeathCubeK"
 
+*/
+
+var isAnagram = function(test, original) {
+  let string1 = test.toLowerCase().split('').sort().join('')
+  let string2 = original.toLowerCase().split('').sort().join('')
+  return string1 == string2 ? true : false
+};
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //                             String methods, descriptions and examples of them                            //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
