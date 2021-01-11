@@ -1856,6 +1856,11 @@ Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
 
 */
 
+var capitals = function (word) {
+	let arr = word.split('')
+  return arr.map((letter, index) => letter === letter.toUpperCase() ? index : letter).filter(item => Number.isInteger(item))
+};
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
