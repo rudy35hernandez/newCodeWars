@@ -2207,7 +2207,11 @@ let greeting = "  Hello everyone, welcome to our lovely home.     "
 console.log(greeting.trim())  /// returns "Hello everyone, welcome to our lovely home."
 
 Ex. 2
+What if I just want to erase the beginning?
+console.log(greeting.trimStart()) ///  "Hello everyone, welcome to our lovely home.     "
 
-console.log(greeting.trimStart()) ///
+Ex. 3
+What if I only want to delete the blank space at the END?
+console.log(greeting.trimEnd()) /// returns "  Hello everyone, welcome to our lovely home."
 */
 
