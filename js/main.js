@@ -275,3 +275,11 @@ function sum (numbers) {
     var a = "code"
     var b = "wa.rs"
     var name = a + b;
+
+
+    /*
+    
+    18. How do you freeze an object/class to prevent changes? Lets name this class MrFreeze
+    */
+
+    Object.freeze(MrFreeze)
