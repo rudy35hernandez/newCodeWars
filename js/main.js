@@ -309,3 +309,14 @@ function sum (numbers) {
     function arrayPlusArray(arr1, arr2) {
         return arr1.reduce((sum, num) => sum + num, 0) + arr2.reduce((sum, num) => sum + num, 0); //something went wrong
       }
+
+
+      /*
+
+    21. Implement a function which convert the given boolean value into its string representation.
+
+    Note: Only valid inputs will be given.
+
+      */
+
+    
