@@ -319,4 +319,6 @@ function sum (numbers) {
 
       */
 
-    
+    function booleanToString(b){
+        return b.toString()
+    }
