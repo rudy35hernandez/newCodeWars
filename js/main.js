@@ -371,3 +371,11 @@ function sum (numbers) {
       let above5 = x.split('');
       return above5.map(num => num >= 5 ? 1 : 0).join('');
     }
+
+  
+
+    /* 
+
+    25.
+
+    */ 
