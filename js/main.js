@@ -408,3 +408,8 @@ const reverseSeq = n => {
   }
   return empArr;
 };
+
+
+/* 
+
+27.
