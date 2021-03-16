@@ -400,3 +400,11 @@ function sum (numbers) {
   Example : n=5 >> [5,4,3,2,1]
 
 */
+
+const reverseSeq = n => {
+  let empArr = []
+  for(let i = 1; n >= i; n-- ){
+    empArr.push(n);
+  }
+  return empArr;
+};
