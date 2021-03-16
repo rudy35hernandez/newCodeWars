@@ -360,6 +360,6 @@ function sum (numbers) {
     
     /*
 
-    24.
-
+    24. what is this???
+ 
     */
