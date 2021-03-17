@@ -84,7 +84,7 @@ Sure, this is about as easy as it gets. But how clever can you be to create the 
 creative hello world you can think of? What is a "hello world" solution you would want to show your friends?
 */
 
-let greet = () => 'hello world';
+let greet1 = () => 'hello world';
 
 
 
@@ -230,7 +230,7 @@ SQL: return results in a column named greeting
 
 */
 
-function greet(name){
+function greet2(name){
     return `Hello, ${name} how are you doing today?`;
   }
 
@@ -281,6 +281,8 @@ function sum (numbers) {
     
     18. How do you freeze an object/class to prevent changes? Lets name this class MrFreeze
     */
+
+    var MrFreeze = {name: 'Mr Freeze'}
 
     Object.freeze(MrFreeze);
 
@@ -360,6 +362,12 @@ function sum (numbers) {
     
     /*
 
-    24. what is this???
+    24. Given a string of digits, you should replace any digit below 5 with '0' and any 
+    digit 5 and above with '1'. Return the resulting string.
  
     */
+
+    function fakeBin(x){
+      let above5 = x.split('');
+      return above5.map(num => num >= 5 ? 1 : 0).join('');
+    }
