@@ -427,3 +427,19 @@ Note: for this kata y isn't considered a vowel.
 function disemvowel(str) {
   return str.replace( /[aeiouAEIOU]/g, '' );
 }
+
+
+//// another soluition i saw that was pretty cool using array methods
+
+
+/*
+const vowels = 'aeiou';
+
+function disemvowel(str) {
+  return str
+    .split('')
+    .filter(letter => !vowels.includes(letter.toLowerCase()))
+    .join('');
+}
+
+*/
