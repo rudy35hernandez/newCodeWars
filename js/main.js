@@ -476,3 +476,9 @@ The input string can be of arbitrary length - in particular, it may be empty. Al
 valid, i.e. each input string will only ever consist of 'G', 'C', 'A' and/or 'T'.
 
 */
+
+function DNAtoRNA(dna) {
+  return dna.replace( /[T]/gi, "U")
+}
+
+//
