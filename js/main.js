@@ -481,4 +481,8 @@ function DNAtoRNA(dna) {
   return dna.replace( /[T]/gi, "U")
 }
 
-//
+//other solution
+
+// function DNAtoRNA(dna){
+//   return dna.split('T').join('U')
+// }
