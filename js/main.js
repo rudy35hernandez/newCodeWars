@@ -597,3 +597,14 @@ there are 10 matches in the championship
 */
 
 
+function points(games) {
+  let points = 0;
+   games.map(g => {
+    if(g[0] == g[2]){
+     points += 1;
+    } else if(g[0] > g[2]){
+      points += 3;
+      }
+  }) 
+  return points;
+}
