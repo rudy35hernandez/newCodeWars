@@ -612,6 +612,6 @@ function points(games) {
 
 /*
 
-34.
+34. what the hook gon be??
 
 */
