@@ -1875,7 +1875,12 @@ Good luck!
 */  
 
 function capitalize(s){
-  return [];
+  let array = [];
+  let odds = s.split('').map((item, index) => index % 2 ? item : item.toUpperCase()).join('')
+  let even = s.split('').map((item, index) => index % 2 !== 0 ? item.toUpperCase() : item).join('')
+  array.unshift(even)
+  array.unshift(odds)
+  return array
 };
 
 
