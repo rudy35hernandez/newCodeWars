@@ -1883,6 +1883,10 @@ function capitalize(s){
   return array
 };
 
+/*
+
+6.
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //                             String methods, descriptions and examples of them                            //
