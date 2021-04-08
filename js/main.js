@@ -612,6 +612,10 @@ function points(games) {
 
 /*
 
-34. what the hook gon be?? uh ohh
+34. Write a function which converts the input string to uppercase.
 
 */
+
+function makeUpperCase(str) {
+  return str.toUpperCase()
+}
