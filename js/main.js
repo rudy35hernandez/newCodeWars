@@ -680,3 +680,7 @@ it is possible and false (0 in Prolog) if not. The input values are always posit
 what is your answer rudeboidev?
 
 */
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return mpg * fuelLeft >= distanceToPump ? 1 : 0
+};
