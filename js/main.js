@@ -743,3 +743,8 @@ add your point to the given array!
 
 */
 
+function betterThanAverage(classPoints, yourPoints) {
+  let classAvg = classPoints.reduce((sum, points) => sum + points) / classPoints.length;
+   return yourPoints > classAvg ? true : false
+ 
+}
