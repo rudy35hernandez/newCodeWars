@@ -764,3 +764,11 @@ function squareDigits(num){
   let changeIt = num.toString().split('').map(number => number ** 2).join('')
   return Number(changeIt)
 }
+
+
+
+/*
+
+41. 
+
+*/
