@@ -760,3 +760,7 @@ Note: The function accepts an integer and returns an integer
 
 */
 
+function squareDigits(num){
+  let changeIt = num.toString().split('').map(number => number ** 2).join('')
+  return Number(changeIt)
+}
