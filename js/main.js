@@ -797,5 +797,5 @@ Given the above parameters, your task is to return a string representing the pla
 
 function plant(seed, water, fert, temp){
   //your code here
-  return 20 <= temp && temp <= 30 ? ("-".repeat(water) + seed.repeat(fert)).repeat(water) : "-".repeat(water * water) + seed
+  return 20 <= temp && temp <= 30 ? ("-".repeat(water) + seed.repeat(fert)).repeat(water) : "-".repeat(water * water) + seed;
  }
