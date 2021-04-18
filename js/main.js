@@ -793,7 +793,7 @@ Given the above parameters, your task is to return a string representing the pla
 
 */
 
-// not the best solution but its what i got!!!//
+// had to unlock solutions :(((( //
 
 function plant(seed, water, fert, temp){
   //your code here
