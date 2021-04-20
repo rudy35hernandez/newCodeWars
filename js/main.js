@@ -829,3 +829,10 @@ let lowest = makeNumbers[makeNumbers.length -1]
 let answer = `${highest} ${lowest}`
 return answer
 }
+
+
+//// better answer!!! I should have gotten this! ///
+function highAndLow(numbers){
+  numbers = numbers.split(' ');
+  return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+}
