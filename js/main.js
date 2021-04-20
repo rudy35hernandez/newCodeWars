@@ -818,3 +818,14 @@ There will always be at least one number in the input string.
 Output string must be two numbers separated by a single space, and highest number is first.
 
  */
+
+function highAndLow(numbers){
+  let makeNumbers = numbers.split(' ').sort((a,b) => b-a)
+console.log(makeNumbers)
+
+let highest = makeNumbers[0]
+let lowest = makeNumbers[makeNumbers.length -1]
+
+let answer = `${highest} ${lowest}`
+return answer
+}
