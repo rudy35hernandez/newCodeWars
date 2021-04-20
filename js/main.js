@@ -799,3 +799,10 @@ function plant(seed, water, fert, temp){
   //your code here
   return 20 <= temp && temp <= 30 ? ("-".repeat(water) + seed.repeat(fert)).repeat(water) : "-".repeat(water * water) + seed;
  }
+
+
+ /* 
+
+ 42.
+
+ */
