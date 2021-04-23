@@ -884,3 +884,19 @@ function isIsogram(str){
   let duplicate = arr.filter((letter, index) => arr.indexOf(letter)!== index);
    return duplicate.length > 0 ? false : true;
   }
+
+
+
+  /* I made this 2 again because it's an 8 kyu and it was very easy 
+  2. Write a function that takes an array of words and smashes them together into a sentence and returns the
+  sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each 
+  word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+
+  Example
+  ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
+
+  */
+
+
+
+
