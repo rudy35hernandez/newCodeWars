@@ -898,5 +898,8 @@ function isIsogram(str){
   */
 
 
-
-
+    // Smash Words
+function smash (words) {
+  return words.join(' ')
+  
+};
