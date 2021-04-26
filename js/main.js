@@ -932,6 +932,34 @@ function DNAStrand(dna){
 
 /*
 
-4.
+4. Usually when you buy something, you're asked whether your credit card number, phone number or answer 
+to your most secret question is still correct. However, since someone could look over your shoulder, you 
+don't want that shown on your screen. Instead, we mask it.
+
+Your task is to write a function maskify, which changes all but the last four characters into '#'.
+
+Examples
+maskify("4556364607935616") == "############5616"
+maskify(     "64607935616") ==      "#######5616"
+maskify(               "1") ==                "1"
+maskify(                "") ==                 ""
 
 */
+
+function maskify(cc) {
+  if(cc.length > 4){
+    let last4 = cc.slice(cc.length -4)
+    let str = cc.slice(0, -4)
+    let arr = str.split('').map(item => item = "#").join('')
+    return arr + last4
+    
+  } else {
+    return cc
+  }
+} 
+
+//// WAYYYYYYYYYYYYYYYY EASIER WAY
+
+function maskify(cc){
+  return cc.slice(0, -4).replace(/./g, "#") + cc.slice(-4)
+}
