@@ -2199,6 +2199,6 @@ console.log(sentence.split(' ').map(item => item.substr(0,1) + item.charAt(1).to
 
 15. trim()
 
-Description:
+Description: I will add this tomorrow
 
 */
