@@ -1670,7 +1670,7 @@ foods.includes("burgers", -2) //// since starting begins at sandwhiches, this wi
 
 indexOf() searches for whatever variable you pass in the parameter, and it return for you the index in the array
 
-let foods = ["tacos", "burgers", "sandwiches", "pitas"]
+let foods = ["tacos", "burgers", "sandwiches", "pitas", "tacos"]
 
 Ex. 1
 
@@ -1680,4 +1680,11 @@ Ex. 2
 What if the item in the parameter does not exist???
 
 foods.indexOf("chips") //// this will return -1
+
+Ex. 3
+
+On this next example, we're looking for tacos with the parameter of index on 2
+
+foods.index("tacos", 2) //// This will return 4. Because the index starts at 2, the first tacos 
+does not fit the requirement. So it selects the index for the next "tacos" AT or AFTER index 2
 
