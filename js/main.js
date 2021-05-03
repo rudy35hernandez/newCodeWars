@@ -1688,3 +1688,4 @@ On this next example, we're looking for tacos with the parameter of index on 2
 foods.index("tacos", 2) //// This will return 4. Because the index starts at 2, the first tacos 
 does not fit the requirement. So it selects the index for the next "tacos" AT or AFTER index 2
 
+*/
