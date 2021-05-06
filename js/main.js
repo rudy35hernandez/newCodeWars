@@ -835,11 +835,30 @@ return answer
 function highAndLow(numbers){
   numbers = numbers.split(' ');
   return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  /****************************************************************************************************
 
-5 String Methods for class!!!!
+///////////////////////////////ARRAY METHODS/////////////////////////////
+//         Homework for 5 array methods         ////////////////
 
 ******************************************************************************************************/
 
@@ -1042,6 +1061,9 @@ function reverseWords(str) {
 
 
 /////////////////////////////////ARRAY METHODS/////////////////////////////
+//         Homework for 5 array methods         ////////////////
+
+
 /* 
 
 1. Create a function with two arguments that will return an array of the first (n) multiples of (x).
