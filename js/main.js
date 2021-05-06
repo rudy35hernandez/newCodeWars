@@ -1151,3 +1151,8 @@ removeSmallest([2,2,1,2,1]) = [2,2,2,1]
 
 */
 
+function removeSmallest(numbers) {
+  numbers = numbers.slice(); //copy the array
+  numbers.splice( numbers.indexOf(Math.min.apply(null, numbers)),1)
+  return numbers;
+}
