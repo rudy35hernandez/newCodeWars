@@ -1338,10 +1338,10 @@ Ex. Lets say I want to return an array of numbers with all numbers being multipl
 Ex. 1
 array.map(num => num * 2)           <<<<<<< Will multiply all numbers by return and return updated array
 
-Ex 2.
+Ex. 2
 return numbers.map(names => names.toLowerCase()))  <<<< This will return all elements back with all lowercase letters
 
-Ex 3.
+Ex. 3
 Lets say you have array of objects 
 
 const items = [
@@ -1354,6 +1354,7 @@ return items.map(item => item.name) <<<< Returns all the item names for you
 
 */
 
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
 2. Reduce
@@ -1361,24 +1362,48 @@ return items.map(item => item.name) <<<< Returns all the item names for you
 Reduce evaluates all of the elements in an array and returns a value based on what you ask it to do.
 Syntax  arr.reduce(accumulator, current value, current index, source array)
 
-Ex 1.
+Ex. 1
 
 lets say we want the sum of all numbers in an array
 
     arr.reduce((sum, current) => sum + current,0)   <<< Adding the 0 starts the count at 0, important to add
     in some cases.
 
-Ex 2.
+Ex. 2
 
 lets say we want to multiply all of the items together and get the sum
 
     arr.reduce((sum, current) => sum * current,1)
 
-Ex 3.
+Ex. 3
 
 This time, we're going to add all the numbers in the array and round it to the nearest whole number
   let numbers = [5.4, 2.1, 5, 0.6]
   arr.reduce((sum, current) => sum + Math.round(current), 1)
 
 */
+////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+3. Filter
+
+Filter iterates through an array, and it will return the items that pass the qualifications you ask of it
+
+Syntax    arr.filter(item, index, array)
+
+Ex. 1
+
+Lets say i want to return all the numbers that are greater than 4 in an array
+
+   return arr.filter(item => item > 4)
+
+Ex. 2
+
+Now, lets say I want to filter an array of numbers to return numbers greater than 4, but only the elements with
+an INDEX greater than 4 as well
+
+    return arr.filter((item, index) => item > 4 && index > 4)
+
+Ex. 3
 
