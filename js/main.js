@@ -1311,3 +1311,14 @@ number(["a", "b", "c"]) // => ["1: a", "2: b", "3: c"]
 
 */
 
+var number=function(array){
+  /// returns empty array if there are no elements
+ if(array.length === 0){
+   return []
+   
+   ///// If it is not empty, it runs map function with letter and index
+   ///// Since index starts at 0 for arrays, we must add the 1
+ } else {
+  return array.map((letter, index) => (index + 1) + `: ${letter}`)
+  }
+}
