@@ -1407,3 +1407,18 @@ an INDEX greater than 4 as well
 
 Ex. 3
 
+Lets say we have an array of objects
+
+  const item = [
+  {name: "bike", price: 100},
+  {name: "couch", price: 200},
+  {name: "television", price: 101},
+  {name: "microwave", price: 150}
+
+What if I want to grab all the items with a price lower or equal to 100
+
+    item.filter(items => items.price <= 100)
+]
+
+*/
+
