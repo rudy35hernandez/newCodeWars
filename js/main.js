@@ -1261,3 +1261,13 @@ I have also created other katas. Take a look if you enjoyed this kata!
 
 */
 
+function dontGiveMeFive(start, end)
+{
+  let count = 0;
+  for(let i = start; i <= end; i++){
+    if(i.toString().includes('5') === false){
+      count++
+    }
+  }
+  return count
+}
