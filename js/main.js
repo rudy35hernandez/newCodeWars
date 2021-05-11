@@ -1322,3 +1322,63 @@ var number=function(array){
   return array.map((letter, index) => (index + 1) + `: ${letter}`)
   }
 }
+
+
+///////////////////////////////////////////////////////////////////////
+/////////    Homework Questions  //////////////////////////////////////
+
+/* 
+1. What does map ?
+
+Map returns the same amount of properties in an array with any changes or elements you ask of it.
+Syntax    arr.map(item, index, array)
+
+Ex. Lets say I want to return an array of numbers with all numbers being multiplied by 2
+ 
+Ex. 1
+array.map(num => num * 2)           <<<<<<< Will multiply all numbers by return and return updated array
+
+Ex 2.
+return numbers.map(names => names.toLowerCase()))  <<<< This will return all elements back with all lowercase letters
+
+Ex 3.
+Lets say you have array of objects 
+
+const items = [
+  {name: "bike", price: 100},
+  {name: "couch", price: 200},
+  {name: "television", price: 100}
+]
+
+return items.map(item => item.name) <<<< Returns all the item names for you
+
+*/
+
+
+/*
+2. Reduce
+
+Reduce evaluates all of the elements in an array and returns a value based on what you ask it to do.
+Syntax  arr.reduce(accumulator, current value, current index, source array)
+
+Ex 1.
+
+lets say we want the sum of all numbers in an array
+
+    arr.reduce((sum, current) => sum + current,0)   <<< Adding the 0 starts the count at 0, important to add
+    in some cases.
+
+Ex 2.
+
+lets say we want to multiply all of the items together and get the sum
+
+    arr.reduce((sum, current) => sum * current,1)
+
+Ex 3.
+
+This time, we're going to add all the numbers in the array and round it to the nearest whole number
+  let numbers = [5.4, 2.1, 5, 0.6]
+  arr.reduce((sum, current) => sum + Math.round(current), 1)
+
+*/
+
