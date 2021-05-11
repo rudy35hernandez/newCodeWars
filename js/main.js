@@ -1328,7 +1328,7 @@ var number=function(array){
 /////////    Homework Questions  //////////////////////////////////////
 
 /* 
-1. What does map ?
+1. map()
 
 Map returns the same amount of properties in an array with any changes or elements you ask of it.
 Syntax    arr.map(item, index, array)
@@ -1357,7 +1357,7 @@ return items.map(item => item.name) <<<< Returns all the item names for you
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
-2. Reduce
+2. Reduce()
 
 Reduce evaluates all of the elements in an array and returns a value based on what you ask it to do.
 Syntax  arr.reduce(accumulator, current value, current index, source array)
@@ -1386,7 +1386,7 @@ This time, we're going to add all the numbers in the array and round it to the n
 
 /*
 
-3. Filter
+3. Filter()
 
 Filter iterates through an array, and it will return the items that pass the qualifications you ask of it
 
@@ -1422,3 +1422,30 @@ What if I want to grab all the items with a price lower or equal to 100
 
 */
 
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+4. forEach()
+
+forEach is a little different than the above because it does not return anything on its own. But, like the forLoop
+it iterates through a whole array
+
+Syntax 
+arr.forEach(item, index, array)
+
+Ex. 1
+
+let names = ["nas", "jay-z", "gibbs", "benny"]
+
+Grab all the names for the rappers
+
+names.forEach(name => {
+  console.log(name)
+})
+
+Ex. 2
+
+names.forEach((name, index) => {
+  console.log(`${name} is at index ${index}`)
+})
