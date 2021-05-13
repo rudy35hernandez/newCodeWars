@@ -1449,3 +1449,38 @@ Ex. 2
 names.forEach((name, index) => {
   console.log(`${name} is at index ${index}`)
 })
+
+*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+5. Sort()
+
+Sort can be used to create order in an array. For example, using array.sort() will place all arrays in alphabetical
+order if they are all strings. If there is a mixture between numbers and strings, the numbers will be placed first,
+followed by the strings in alphabetical order. This can be tricky though if it is just an array of numbers. You 
+need to add some extra code to sort numbers, because it always goes off the index 0 in an array name. 15 will
+be placed before 2 by just using sort. Lets look at it
+
+
+Ex. 1
+
+let names = ["joe budden", "Ghostface", "Styles"]
+
+names.sort()  //// will return Ghostface, joe budden, styles
+
+
+Ex. 2
+
+let numbers = [4, 6, 12, 111, 45]
+
+numbers.sort() //// returns [111, 12, 4, 45, 6]
+
+Ex. 3  
+Here, we will add extra code to handle numbers properly with sort
+
+numbers.sort((a, b) => a-b) //// returns [4, 6, 12, 45, 111]
+
+
