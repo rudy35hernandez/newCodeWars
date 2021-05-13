@@ -1484,3 +1484,31 @@ Here, we will add extra code to handle numbers properly with sort
 numbers.sort((a, b) => a-b) //// returns [4, 6, 12, 45, 111]
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+6. slice()
+
+Slice allows you to extract certain elements in an array. You can add one parameter to slice from that index till
+the end, or you can add two parameters with the first being the start index and the second being the cutoff point.
+(HEADS UP, the cutoff point (second parameter) is not included in the new array.) Also, the original array is not
+changed.
+
+Ex. 1
+
+let numbers = [1, 5, 33, 22, 15, 53]
+
+numbers.slice(2) //// return [33, 22, 15, 53]
+
+Ex. 2 
+
+numbers.slice(1, 5)  //// returns [5, 33, 22, 15]
+
+Ex. 3
+We can also work from the end by using -numbers for the index
+
+numbers.slice(-3, -1) /// returns [22, 15]
+
+
+
