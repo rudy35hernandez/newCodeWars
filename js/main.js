@@ -1510,5 +1510,73 @@ We can also work from the end by using -numbers for the index
 
 numbers.slice(-3, -1) /// returns [22, 15]
 
+*/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+7. pop()
+
+Pop will remove the last element from an array! 
+
+let fruits = ["apple", "orange", "watermelon", "kiwi", "peach", "strawberry"]
+
+Ex. 1
+
+fruits.pop() /// if you console log fruits ["apple", "orange", "watermelon", "kiwi", "peach"]
+
+Ex. 2
+
+If we do it again, it will again remove the last item on the current list
+
+Ex. 3
+
+We can assign a variable to the item that is being popped and call on it later
+
+(Lets say we're working with the original array)
+
+let lastFruit = fruits.pop()
+console.log(lastFruit) ///// logs "strawberry"
+console.log(fruits.pop()) does the same thing
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+8. shift()
+
+Shift is just like pop, but it instead removes the first element in an array, not the last
+
+let fruits = ["apple", "orange", "watermelon", "kiwi", "peach", "strawberry"]
+
+Ex. 1
+
+Lets remove the first item
+
+fruits.shift() /// if log fruits, we will get ["orange", "watermelon", "kiwi", "peach", "strawberry"]
+
+Ex. 2
+
+If we run it again, it will remove orange since it is now the first item
+
+Ex. 3
+
+Like pop, we can assign a variable to the shift item. (Going off the original array)
+
+let firstFruit = fruits.shift() //// if we log firstFruit we get "apple"
+console.log(fruits.shift()) does the same thing
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+9. push
+
+Push is the opposite of pop. It will add a new element to the END of an array
+
+let fruits = ['apple', 'orange', 'banana']
+
+fruits.push('cherries') /// if we log fruits, it will now return ['apple', 'orange', 'banana', 'cherries']
