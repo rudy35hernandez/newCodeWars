@@ -1659,4 +1659,25 @@ Ex. 3
 
 foods.includes("burgers", -2) //// since starting begins at sandwhiches, this will return false!
 
+*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/*
+
+12. indexOf()
+
+indexOf() searches for whatever variable you pass in the parameter, and it return for you the index in the array
+
+let foods = ["tacos", "burgers", "sandwiches", "pitas"]
+
+Ex. 1
+
+foods.indexOf("burgers") //// will return 1
+
+Ex. 2 
+What if the item in the parameter does not exist???
+
+foods.indexOf("chips") //// this will return -1
 
