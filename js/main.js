@@ -1579,4 +1579,84 @@ Push is the opposite of pop. It will add a new element to the END of an array
 
 let fruits = ['apple', 'orange', 'banana']
 
+Ex. 1
+
 fruits.push('cherries') /// if we log fruits, it will now return ['apple', 'orange', 'banana', 'cherries']
+
+Ex. 2 
+
+We can also name variables prior to using push, then push that variable in
+
+let newFruit = 'coconut'
+
+fruits.push(newFruit) ////  If we log fruits, we get  ['apple', 'orange', 'banana', 'cherries', 'coconut']
+
+Ex. 3
+
+Another way we can use push, is by add a variable like count, then calling it to get the number of elements in
+the array
+(origina array)
+
+let count = fruits.push('kiwi')
+
+if we log count we get back 4. IDK why this does that, but it counts all elements and returns the total
+
+*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+10. unshift()
+
+Unshift is just like push, only now it adds elements at the BEGINNING of an array
+
+let fruits = ['apple', 'orange', 'banana']
+
+
+Ex. 1
+
+fruits.unshift('pear') //// if we log fruits, we get  ['pear', 'apple', 'orange', 'banana']
+
+Ex. 2
+
+We can also name variables prior to using push, then push that variable in
+
+let newFruit = 'coconut'
+
+fruits.unshift(newFruit) ////  If we log fruits, we get ['coconut', 'pear', 'apple', 'orange', 'banana']
+
+Ex. 3
+
+if we unshift 2 items, it adds it in the order of the unshift
+
+fruits.shift('pineapple', 'cherry') /// if we log fruits >>> ['pineapple', 'cherry', 'coconut', 'pear', 'apple', 'orange', 'banana']
+
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/*
+
+11. includes()
+
+Includes, like the string method, iterates through in an array to see if what you type in the parameter is 
+included somewhere in the array. You can also add a second parameter to set a starting index point. It returns
+either true or false
+
+let foods = ["tacos", "burgers", "sandwiches", "pitas"]
+
+Ex. 1
+
+foods.inludes("tacos") //// this will return true
+
+Ex. 2
+ 
+foods.includes("acos") //// tnis will return false
+
+Ex. 3
+
+foods.includes("burgers", -2) //// since starting begins at sandwhiches, this will return false!
+
+
