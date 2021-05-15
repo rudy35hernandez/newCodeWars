@@ -1712,11 +1712,26 @@ function multiplyTogether(arr){
   return arr.reduce((sum, currentNum) => sum * currentNum, 1)
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////
 
 2. Two:
 You will be given an array of all the family members' ages, in any order. The ages will be given in whole numbers, so a baby of 5 months, will have an ascribed 'age' of 0. Return a new array with [youngest age, oldest age, difference between the youngest and oldest age].
 
+//////////////////////answer
 
+function oldYoung(arr){
+  let newArr = []
+  let youngest = Math.min(...arr)
+  let oldest = Math.max(...arr)
+  let difference = oldest - youngest;
+  newArr.unshift(difference)
+  newArr.unshift(oldest)
+  newArr.unshift(youngest)
+  return newArr;
+  
+}
+
+///////////////////////////////////////////////////////////////////////////////
 
 Three:
 Sum all the numbers of the array except the highest and the lowest element (the value, not the index!).
