@@ -1775,3 +1775,8 @@ function sortArray(array) {
   let odd = array.filter((item) => item % 2 !== 0).sort((a,b) => a - b)
   return array.map((item) => item % 2 ? odd.shift() : item )
   }
+
+  
+  /*
+
+  
