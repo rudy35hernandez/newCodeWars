@@ -2038,3 +2038,10 @@ returns "I really hate it when jerks talk at the movies; people should know to b
 Description: the search() method takes in regex as a parameter. When the first item is found that matches that 
 regex, it will return the index number for you.
 
+Ex. 1
+
+let name = 'ruDy HernanDez'
+let firstIndex = /[A-Z]/g
+console.log(name.search()) ///// This returns 2, because index 2 is 'D', the first capital letter found in the name
+
+Ex. 2
