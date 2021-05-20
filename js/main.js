@@ -1836,3 +1836,4 @@ name.charAt(2) //// returns 'd' because d is at index 2.
 
 Ex. 2
 
+name.charAt(6)  //// returns '' because there is no character at the index
