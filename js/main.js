@@ -1898,7 +1898,7 @@ let greeting = string1.concat(' ', string2) /// if greeting is logged, we will g
 
 /*
 
-3. includes()
+4. includes()
 
 Description: This method is very similar to the array method. Like the array method, it iterates through the entire
 string to see if what's passed in the parameter, is in the string. It will return a boolean. You can add two
@@ -1926,4 +1926,58 @@ I replace the 10 with nothing, or a 0, it will return true.
 */
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+5. indexOf()
+
+Decription: indexOf() takes in two parameters, the first being the specific item you're searching for, and the
+index start. If you do not include an index start, it defaults to 0. This will return the index number
+
+Ex. 1
+
+let greeting = "Hello everyone, welcome to my home!"
+console.log(greeting.indexOf('e')) /// This will return 1, because 'e' appears for the first time at index 1.
+
+Ex. 2
+
+console.log(greeting.indexOf('e', 3)) /// This will return 6, because it's the index of the first 'e' after index
+3.
+
+Ex. 3
+let word = "home"
+console.log(greeting.indexOf(word)) /// This will return 30. It is the index at which 'home' starts.
+
+*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+6. match()
+
+Description: match is a string method that takes in a regex (regular expression object), it looks for the items in
+the string, it then returns those items in an array
+
+Ex. 1
+
+let name = 'Rudy Hernandez'
+let cap = /[A-Z]/g
+console.log(name.match(cap)); //// will return ["R", "H"] because those are the two capital letters in name.
+
+Ex. 2
+let cap1 = /Ru/g
+console.log(name.match(cap1)) returns ["Ru"]
+
+Ex. 3
+let cap2 = /ru/g
+console.log(name.match(cap2)) returns null because there is no part in the string where 'ru' exists.
+
+HOWEVER
+
+let cap3 = /[ru]/g
+console.log(name.match(cap3)) // returns ['u', 'r'] It finds 'u' first because it comes up first, then it finds r
+in hernandez.
+
+*/
 
