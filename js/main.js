@@ -2008,4 +2008,33 @@ console.log(`I love it when you say that! ${again.repeat(3)}`)
 8. replace()
 
 Description: replace takes in two parameters (string/regex, newSubString/replacerFunction). The first parameter
-is what you wish to replace. The second is what you wish to replace it with
+is what you wish to replace. The second is what you wish to replace it with. It only replaces the FIRST match 
+unless your regex has g, the global search
+
+Ex. 1
+
+let sentence = 'I really hate it when people talk at the movies; people should know to be respectful'
+console.log(sentence.replace('people', 'jerks')) 
+
+returns "I really hate it when jerks talk at the movies; people should know to be respectful"
+
+Ex. 2
+
+const regex = /People/i
+console.log(sentence.replace(regex, 'jerks'))
+
+returns "I really hate it when jerks talk at the movies; people should know to be respectful"
+
+//This one is pretty tough when you start getting in the replacerFunction//
+
+*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+9. search()
+
+Description: the search() method takes in regex as a parameter. When the first item is found that matches that 
+regex, it will return the index number for you.
+
