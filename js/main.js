@@ -1837,3 +1837,93 @@ name.charAt(2) //// returns 'd' because d is at index 2.
 Ex. 2
 
 name.charAt(6)  //// returns '' because there is no character at the index
+
+Ex. 3
+
+You can use it in a template literal as well
+
+let sentence = `The name ${name} has the letter ${name.charAt(1) at index 2.`}
+
+*/
+
+//////////////////////////////////////////////////////////////////////
+
+/*
+
+2. charCodeAt()
+
+Description: This string method returns an integer between 0 - 65535 representing the UTF-16 code unit at the
+given index.
+
+Ex. 
+
+
+
+
+*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+3. concat()
+
+Description: concat is used to combine strings; can be multiple
+
+Ex.1
+
+let string1 = 'Rudy'
+
+let combine = string1.concat(' Hernandez') /// This will return 'Rudy Hernandez' if you call on combine
+
+Ex. 2
+
+We can also combine two variables as well
+
+let string2 = ' Hernandez'
+
+let combine2 = string1.concat(string2) /// if combine2 logged, we'll get 'Rudy Hernandez'
+
+Ex. 3
+Now, lets say we want to concat more than 2 strings together
+
+let string1 = 'Hello'
+let string2 = 'World'
+
+let greeting = string1.concat(' ', string2) /// if greeting is logged, we will get 'Hello World'
+
+*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+3. includes()
+
+Description: This method is very similar to the array method. Like the array method, it iterates through the entire
+string to see if what's passed in the parameter, is in the string. It will return a boolean. You can add two
+parameters, (searchFor, startFromIndex)
+
+Ex. 1
+
+let name = 'Rudy Hernandez'
+console.log(name.includes('u')) returns true because u is in the string
+
+Ex. 2
+
+console.log(name.includes('h')) /// This will return false! The includes method is lowerCase/upperCase specific
+
+Ex. 3
+
+You can also use a variable for the search parameter
+
+let sentence = "I really love eating at new places"
+let word = 'love'
+
+console.log(sentence.includes(word, 10)) /// returns false, because 'love' is not included after index 10. IF
+I replace the 10 with nothing, or a 0, it will return true.
+
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
