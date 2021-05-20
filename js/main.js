@@ -1981,3 +1981,31 @@ in hernandez.
 
 */
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+7. repeat()
+
+Description: The parameter takes in a value which is a number, that value is the amount of times you want that 
+string to be repeated
+
+Ex. 1
+
+let again = 'say it again! '
+console.log(again.repeat(3)) /// returns 'say it again! say it again! say it again! '
+
+Ex. 2
+
+console.log(`I love it when you say that! ${again.repeat(3)}`)
+
+*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+8. replace()
+
+Description: replace takes in two parameters (string/regex, newSubString/replacerFunction). The first parameter
+is what you wish to replace. The second is what you wish to replace it with
