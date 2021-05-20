@@ -2045,3 +2045,6 @@ let firstIndex = /[A-Z]/g
 console.log(name.search()) ///// This returns 2, because index 2 is 'D', the first capital letter found in the name
 
 Ex. 2
+
+const period = /[.]/g
+console.log(name.search(period)) /// returns -1 because it doesnt exist
