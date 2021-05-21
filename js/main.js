@@ -2104,3 +2104,31 @@ thats where the split begins.
 Ex. 3
 
 console.log(name.split(' ', 1)) /// returns ['Rudy'] because the limit is 1 element for the array
+
+*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* 
+
+12. substr()
+
+Description: This method seems to be very similar to slice. Like slice, substr can take in two parameters, the
+first being the start index, and the second being where you want to stop. It will create a substring with the 
+startIndex being the first character, and the character in the index before the stopIndex. If only one parameter
+is passed, it will take it as the startIndex and it will return everything at and after that index.
+
+Ex. 1
+
+let sentence = "I love to play basketball"
+console.log(sentence.substr(2)) /// returns 'love to play basketball'
+
+Ex. 2
+
+let name = 'Rudy'
+console.log(`${name} ${sentence.substr(2)}`) /// returns 'Rudy love to play basketball'
+
+Ex. 3
+Like slice, this can also take a negative integer to start backwards
+
+console.log(sentence.substr(-4)) /// returns 'ball'
