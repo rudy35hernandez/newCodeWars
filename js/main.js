@@ -2036,7 +2036,7 @@ returns "I really hate it when jerks talk at the movies; people should know to b
 9. search()
 
 Description: the search() method takes in regex as a parameter. When the first item is found that matches that 
-regex, it will return the index number for you.
+regex, it will return the index number for you. Similar to indexOf IMO
 
 Ex. 1
 
@@ -2048,3 +2048,59 @@ Ex. 2
 
 const period = /[.]/g
 console.log(name.search(period)) /// returns -1 because it doesnt exist
+
+
+*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+10. slice()
+
+Description: slice() allows two parameter, the first being the starting index, followed by where you want the slice
+to end. If you only use one parameter, it uses that number as the starting Index, all the way till the end of the
+string.
+
+Ex. 1
+
+let name = 'Rudy Hernandez'
+let firstName = name.slice(0, 4) <<<<<<<<<<<<<< using two parameters
+console.log(firstName)  //// this will return 'Rudy'
+
+Ex. 2
+
+let lastName = name.slice(5)   <<<<<< Using one parameter
+console.log(lastName) ///// returns 'Hernandez'   
+
+Ex. 3
+
+You can also iterate backwords by using a negative number
+console.log(name.slice(-9)) /// will also return 'Hernandez'
+
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+11. split()
+
+Description: This one has been one of the most used methods for codewars. Split will split a string into an array 
+filled with substrings in correct order.
+The type of split depends on the pattern in the parameter you set forth. You can add a second parameter to add
+a limit of substrings in the new array.
+
+Ex. 1
+
+let name = 'Rudy Hernandez'
+console.log(name.split('')) /// returns ['R', 'u', 'd', 'y', '', 'H','e','r','n','a','n','d','e','z']
+
+Ex. 2
+
+console.log(name.split(' ')) /// returns ['Rudy', 'Hernandez'] since the split appears at the empty space ' ',
+thats where the split begins.
+
+Ex. 3
+
+console.log(name.split(' ', 1)) /// returns ['Rudy'] because the limit is 1 element for the array
