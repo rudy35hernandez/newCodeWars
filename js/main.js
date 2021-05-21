@@ -2168,4 +2168,33 @@ showing that it could be used with other methods in the same line.
 
 14. toUpperCase()
 
-Description: 
+Description: This method is exactly like the one before, only this time we change strings to uppercase letters.
+
+Ex. 1
+
+let name = 'rudy hernandez'
+console.log(name.toUpperCase()) //// returns "RUDY HERNANDEZ"
+
+Ex. 2 
+
+let upperCaseName = name.toUpperCase() 
+console.log(upperCaseName) //// returns "RUDY HERNANDEZ"
+
+Ex. 3
+Lets say i ONLY want to change the second character of each word to upperCase. Any other current uppercase letters
+are left alone.
+
+let sentence = "the only time you should not push to github, is if you're out getting to not git got"
+
+console.log(sentence.split(' ').map(item => item.substr(0,1) + item.charAt(1).toUpperCase() + item.substr(2)).join(' ')) 
+
+/// returns
+'tHe oNly tIme yOu sHould nOt pUsh tO gIthub, iS iF yOu're oUt gEtting tO nOt gIt gOt'
+
+*/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+15. trim()
