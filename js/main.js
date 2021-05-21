@@ -2132,3 +2132,40 @@ Ex. 3
 Like slice, this can also take a negative integer to start backwards
 
 console.log(sentence.substr(-4)) /// returns 'ball'
+
+*/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+13. toLowerCase()
+
+Description: toLowerCase() is a string method that will change your string's characters lower-case. This method
+is very straight forward
+
+Ex. 1
+
+let name = "Rudy HernanDEz"
+console.log(name.toLowerCase()) /// returns "rudy hernandez"
+
+Ex. 2
+
+let changeCase = name.toLowerCase() 
+console.log(changeCase) /// again, this returns "rudy hernandez", just showing you can use it while assigning a new
+variable.
+
+Ex. 3
+
+let backwardsName = "zEDnanreH yduR"
+
+console.log(backwardsName.split('').reverse().join('').toLowerCase()) //// This returns "rudy hernandez", just
+showing that it could be used with other methods in the same line.
+
+*/
+
+/*
+
+14. toUpperCase()
+
+Description: 
