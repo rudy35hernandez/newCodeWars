@@ -2323,5 +2323,14 @@ removeUrlAnchor('www.codewars.com?page=1')
 
 */
 
-
+function removeUrlAnchor(url){
+  /// used search method to find the 
+  let theIndex = url.search("#")
+  if(url.includes("#")){
+    return url.slice(0, theIndex )
+     } else {
+       return url
+     }
+    
+}
 
