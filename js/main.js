@@ -2306,3 +2306,22 @@ What if I only want to delete the blank space at the END?
 console.log(greeting.trimEnd()) /// returns "  Hello everyone, welcome to our lovely home."
 */
 
+////////////////////////////////////////////////
+
+            /* Codewars still going */
+
+/*
+
+8. Complete the function/method so that it returns the url with anything after the anchor (#) removed.
+
+Examples
+// returns 'www.codewars.com'
+removeUrlAnchor('www.codewars.com#about')
+
+// returns 'www.codewars.com?page=1' 
+removeUrlAnchor('www.codewars.com?page=1') 
+
+*/
+
+
+
