@@ -2375,3 +2375,18 @@ with size 4 should return : '1010'.
 with size 12 should return : '101010101010'.
 
 The size will always be positive and will only use whole numbers.
+
+*/
+
+function stringy(size) {
+  let str = "";
+  for(let i = 0; i < size; i++){
+   if(i % 2 === 0){
+     str += "1"
+   } else {
+     str += "0"
+   }
+  }
+  return str
+  
+}
