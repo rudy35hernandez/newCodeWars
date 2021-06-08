@@ -2416,3 +2416,14 @@ Examples
 26  =>  false
 
 */
+
+var isSquare = function(n){
+  for(let i = 0; ; i++){
+    let square = i * i;
+    if(square === n){
+      return true
+    } else if(square > n){
+      return false
+    }
+  }
+     }
