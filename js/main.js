@@ -2427,3 +2427,9 @@ var isSquare = function(n){
     }
   }
      }
+
+  /*
+
+  12.
+
+  */
