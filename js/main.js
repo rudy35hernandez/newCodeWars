@@ -2428,6 +2428,12 @@ var isSquare = function(n){
   }
      }
 
+     ///// much easier solution
+     function isSquare(n) {
+      return Math.sqrt(n) % 1 === 0;
+    }
+
+  
   /*
 
   12.
