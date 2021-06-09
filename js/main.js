@@ -2468,3 +2468,10 @@ function findShort(s){
   return theLength[0]
   
 }
+
+
+/*
+
+14.
+
+*/
