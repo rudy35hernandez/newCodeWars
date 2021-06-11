@@ -2472,6 +2472,6 @@ function findShort(s){
 
 /*
 
-14.
+14. what is this
 
 */
