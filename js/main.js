@@ -2504,3 +2504,9 @@ function XO(str) {
   }
 
 }
+
+//// should of thought of this answer
+const XO = str => {
+  str = str.toLowerCase().split('');
+  return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
+}
