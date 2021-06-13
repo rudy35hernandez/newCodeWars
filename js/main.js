@@ -2485,3 +2485,22 @@ XO("zzoo") => false
 
 */
 
+function XO(str) {
+  let arrayStr = str.split('');
+  let xLength = arrayStr.filter((letter) => {
+    if(letter == "x" || letter == "X"){
+      return letter
+    }
+  })
+  let oLength = arrayStr.filter((letter) => {
+    if(letter == "o" || letter == "O"){
+       return letter
+       }
+  })
+  if(xLength.length == oLength.length){
+    return true
+  } else {
+    return false
+  }
+
+}
