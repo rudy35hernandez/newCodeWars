@@ -2554,7 +2554,7 @@ Example
 
   */
 
-function duplicateCount(text){
+function duplicateCount(text){ ////// could not figure this out, found answer online
   return text.toLowerCase().split('').filter((val, i, arr) => {
     return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
   }).length;
