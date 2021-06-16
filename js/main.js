@@ -2593,3 +2593,16 @@ Note:
 Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter 
 percent is 2 you have to convert it to 0.02.
 
+*/
+
+function nbYear(p0, percent, aug, p) {
+  // Initialise array.   
+  let finalCatch = []
+  let percentage = percent / 100;
+  
+  for(var p0; p0 < p; p0+=p0*percentage+aug){ //// had to use var p0, would not work if i put let p0 in loop
+      let currentValue = p0 + p0 * percentage + aug;
+       finalCatch.push(currentValue);
+  }
+  return finalCatch.length;
+}
