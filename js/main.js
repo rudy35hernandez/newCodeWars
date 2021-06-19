@@ -2564,7 +2564,7 @@ function duplicateCount(text){ ////// could not figure this out, found answer on
 
 /*
 
-In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 
+17. In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 
 2 percent per year and moreover 50 new inhabitants per year come to live in the town. How many years does the 
 town need to see its population greater or equal to p = 1200 inhabitants?
 
@@ -2617,3 +2617,21 @@ function nbYear(p0, percent, aug, p) {
   }
 return count
 }
+
+/*
+
+18. Given two integers a and b, which can be positive or negative, find the sum of all the integers between and 
+including them and return it. If the two numbers are equal return a or b.
+
+Note: a and b are not ordered!
+
+Examples
+GetSum(1, 0) == 1   // 1 + 0 = 1
+GetSum(1, 2) == 3   // 1 + 2 = 3
+GetSum(0, 1) == 1   // 0 + 1 = 1
+GetSum(1, 1) == 1   // 1 Since both are same
+GetSum(-1, 0) == -1 // -1 + 0 = -1
+GetSum(-1, 2) == 2  // -1 + 0 + 1 + 2 = 2
+
+*/
+
