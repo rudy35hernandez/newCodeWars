@@ -2635,3 +2635,21 @@ GetSum(-1, 2) == 2  // -1 + 0 + 1 + 2 = 2
 
 */
 
+function getSum( a,b )
+{
+  if(a === b){
+    return a
+  } else if(a > b){
+    let sum = 0
+    for(let i = b; i <= a; i++){
+      sum += i
+  }
+    return sum
+  } else if(b > a){
+    let sum = 0
+    for(let i = a; i <= b; i++){
+      sum += i
+    }
+    return sum
+  }
+  }
