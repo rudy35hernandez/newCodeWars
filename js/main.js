@@ -2705,7 +2705,9 @@ function bmi(weight, height) {
   }
 }
 
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*                                                   Objects                                           /*
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
 
 21. Your start-up's BA has told marketing that your website has a large audience in Scandinavia and surrounding 
@@ -2767,3 +2769,28 @@ welsh: 'Croeso'
   }
   return database[language] === undefined ? "Welcome" : database[language]
 }
+
+
+/*
+
+Create a class Ball. Ball objects should accept one argument for "ball type" when instantiated.
+
+If no arguments are given, ball objects should instantiate with a "ball type" of "regular."
+
+ball1 = new Ball();
+ball2 = new Ball("super");
+
+ball1.ballType     //=> "regular"
+ball2.ballType     //=> "super"
+
+*/ 
+
+var Ball = function(ballType) {
+  // your code goes here
+  if(ballType === undefined){
+    this.ballType = "regular"
+  } else{
+    this.ballType = ballType
+  }
+  
+};
