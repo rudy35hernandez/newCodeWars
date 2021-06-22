@@ -2708,6 +2708,6 @@ function bmi(weight, height) {
 
 /*
 
-21. 
+21. what is thos
 
 */
