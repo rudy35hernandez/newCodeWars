@@ -2857,3 +2857,10 @@ longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 */
 
 
+function longest(s1, s2) {
+  // your code
+  let combined = [...s1, ...s2].sort()
+  
+  let unique = [...new Set(combined)].join('')
+  return unique
+}
