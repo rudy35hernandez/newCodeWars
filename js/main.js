@@ -2884,3 +2884,11 @@ findNextSquare(114) --> returns -1 since 114 is not a perfect square
 
 */
 
+function findNextSquare(sq){
+  if(Math.sqrt(sq) % 1 !== 0 ? -1){
+    return -1
+  } else {
+    let nextSq = Math.sqrt(sq) + 1;
+    return nextSq ** 2
+  }
+}
