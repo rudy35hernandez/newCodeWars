@@ -2916,3 +2916,14 @@ ArithmeticFunction.arithmetic(5, 2, "divide")   => returns 2
 
 */
 
+function arithmetic(a, b, operator){
+  if(operator === "add"){
+    return a + b;
+  } else if(operator === "subtract"){
+    return a - b;
+  } else if(operator === "multiply"){
+    return a * b;
+  } else {
+    return a / b
+  }
+}
