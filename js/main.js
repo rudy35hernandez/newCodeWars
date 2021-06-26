@@ -2960,3 +2960,12 @@ Examples
 
 */
 
+function stray(numbers) {
+  let chips = numbers.sort((a,b) => a - b)
+  
+  if(chips[0] === chips[1]){
+    return chips[chips.length -1]
+  } else if(chips[0] !== chips[1]){
+    return chips[0]
+  }
+}
