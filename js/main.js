@@ -2948,6 +2948,6 @@ function arithmetic(a, b, operator)
 
 /*
 
-prepping next challenge'
+prepping next challengefk
 
 */
