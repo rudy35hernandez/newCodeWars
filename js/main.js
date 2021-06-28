@@ -2973,4 +2973,25 @@ function stray(numbers) {
 
 /*
 
-A challenge i was given 
+A challenge i was given in an interview. I did not get it right! The had to help me through it.
+
+Please create a function that takes in a string, with that string, break down the different characters that in the
+string, and return how many occurences there are of each character in an object.
+
+*/
+
+  function getEachCharacterCount(sentence){
+    let arrayIt = sentence.toLowerCase().split('')
+    let dictionary = {}
+
+    arrayIt.forEach(letter => {
+        if(dictionary[letter]){
+      let count = dictionary[letter]
+      dictionary[letter] = count + 1
+        } else {
+          dictionary[letter] = 1
+        }
+    })
+      console.log(dictionary)
+  }
+
