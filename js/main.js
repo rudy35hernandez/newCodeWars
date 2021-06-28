@@ -2969,3 +2969,8 @@ function stray(numbers) {
     return chips[0]
   }
 }
+
+
+/*
+
+A challenge i was given 
