@@ -3046,3 +3046,6 @@ function openOrSenior(data){ ///// How I tried to do it
   return data.map((d) => (d[0] > 54 && d[1] > 7) ? 'Senior' : 'Open')
 }
 
+function openOrSenior(data){  //// good solution I saw online
+  return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open')
+}
