@@ -3050,7 +3050,7 @@ function openOrSenior(data){  //// good solution I saw online
   return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open')
 }
 
-
+/*
 Count the number of divisors of a positive integer n.
 
 Random tests go up to n = 500000.
