@@ -3120,6 +3120,6 @@ Bizarre Sorting-katas
 For More Enjoyable Katas
 ALL translations are welcomed
 Enjoy Learning !!
-Zizou
 
 */
+
