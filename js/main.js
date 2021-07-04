@@ -3123,3 +3123,12 @@ Enjoy Learning !!
 
 */
 
+function maxMultiple(divisor, bound){
+  let numbers = []
+  for(let i = 1; i <= bound; i++){
+    if(i % divisor == 0){
+      numbers.push(i)
+    }
+  }
+  return numbers[numbers.length -1]
+}
