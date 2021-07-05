@@ -3161,3 +3161,8 @@ const sequenceSum = (begin, end, step) => {
   }
   return count
 };
+
+/*
+  prepping next challenge
+  
+*/
