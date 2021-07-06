@@ -3153,3 +3153,11 @@ Sum of a sequence (this kata)
 Sum of a Sequence [Hard-Core Version]
 
 */
+
+const sequenceSum = (begin, end, step) => {
+  let count = 0
+  for(var i = begin; i <= end; i+=step){
+     count += i 
+  }
+  return count
+};
