@@ -2762,3 +2762,6 @@ two solutions, with one using the filter method!
 
 */
 
+function removeSpaces(str){ ///// using filter!!!
+  return str.split('').filter(letter => letter.match(/[a-z]/gi)).join('')
+}
