@@ -2762,6 +2762,20 @@ two solutions, with one using the filter method!
 
 */
 
-function removeSpaces(str){ ///// using filter!!!
+function removeSpaces(str){ /// easiest way!!!
+  return str.split(' ').join('')
+}
+
+
+
+function removeSpaces2(str){ /// easiest filter way
+  return str.split('').filter(letter => letter !== " ").join('')
+}
+
+function removeSpaces3(str){ ///// using match in your filter
   return str.split('').filter(letter => letter.match(/[a-z]/gi)).join('')
+}
+
+function removeSpaces4(str){ /// using replace
+  return str.replace(/\s/g, '')
 }
