@@ -2845,3 +2845,18 @@ Given an array of integers, find the one that appears an odd number of times.
 There will always be only one integer that appears an odd number of times.
 
 */
+
+function findOdd(A) {
+  //happy coding!
+  let dictionary = {}
+  let numberIt = A.map(num => num.toString())
+  numberIt.forEach(num => {
+    if(dictionary[num]){
+      let count = dictionary[num]
+      dictionary[num] = count + 1
+    } else {
+      dictionary[num] = 1
+    }
+  })
+  return Number(Object.keys(dictionary).filter(num => dictionary[num] % 2))
+}
