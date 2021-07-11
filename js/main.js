@@ -2754,3 +2754,11 @@ function oddOrEven(arr){
 
 console.log(oddOrEven([4, 1, 2])) /// odd
 console.log(oddOrEven([2, 4, 6])) /// even
+
+/*
+
+Create a function that takes in a string and removes all of the empty spaces. Here's the catch, we have to create
+two solutions, with one using the filter method!
+
+*/
+
