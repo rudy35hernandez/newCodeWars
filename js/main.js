@@ -2779,3 +2779,18 @@ function removeSpaces3(str){ ///// using match in your filter
 function removeSpaces4(str){ /// using replace
   return str.replace(/\s/g, '')
 }
+
+
+/*
+
+Create a function that takes in a string that will contain a mix of upper case and lower case letter. If
+the string contains more upperCase letter than lowerCase, return the string in all upperCase. Same rule applies 
+if there are more lowerCase letters. If there are an equal ammount of lowerCase and upperCase letters, return
+the string in lowerCase letter.
+
+*/
+
+function lowerVsUpper(str){
+  let upper = str.split('').filter(letter => letter === letter.toUpperCase())
+  return str.length / 2 >= upper.length ? str.toLowerCase() : str.toUpperCase()
+}
