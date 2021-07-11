@@ -2823,3 +2823,21 @@ function sumOfNonRepeats(arr){
   return nonRepeats.reduce((acc, sum) => acc+sum,0 )
 }
 
+////
+
+/* 
+
+make every other letter capitalized
+
+*/
+
+function everyOther(str){
+  let newArr = str.split('')
+  return newArr.map((letter,i)=> i % 2 ? letter.toUpperCase() : letter.toLowerCase()).join('')
+}
+
+/*
+
+kata 5
+
+*/
