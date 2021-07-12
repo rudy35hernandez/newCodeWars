@@ -2812,3 +2812,8 @@ Test.assertEquals(repeats([5, 10, 19, 13, 10, 13]),24);
 
 */
 
+function sumOfNonRepeats(arr){
+  let nonRepeats = arr.filter(num => arr.indexOf(num) === arr.lastIndexOf(num))
+  return nonRepeats.reduce((acc, sum) => acc+sum,0 )
+}
+
