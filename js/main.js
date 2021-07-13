@@ -2712,8 +2712,6 @@ assert.strictEqual(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']), 41);
 /*
 
 
-
-
 // // Given two integer arrays a, b, both of length >= 1, create a program that returns true if the sum of the 
 squares of each element in a is strictly greater than the sum of the cubes of each element in b.
 

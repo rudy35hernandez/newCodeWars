@@ -1,4 +1,25 @@
 
+/*
+
+
+// // Given two integer arrays a, b, both of length >= 1, create a program that returns true if the sum of the 
+squares of each element in a is strictly greater than the sum of the cubes of each element in b.
+
+**/
+
+
+
+function solution(a, b){
+    firstSum = a.reduce((sum, el) => sum + el**2,0)
+    secondSum = b.reduce((sum, el) => sum + el**3,0)
+    return firstSum > secondSum
+  } //i think this is it
+  
+  console.log(solution([1,3,3,5], [2,3,4])) //44 vs 
+  console.log(solution([1,2,3], [2]))
+  
+
+
 // Given a list of integers, determine whether the sum of its elements is odd or even.
 
 // Give your answer as a string matching "odd" or "even".
