@@ -1,50 +1,40 @@
 
 /*
+July 7, 2021
+
+Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
+
+*/
 
 
-// // Given two integer arrays a, b, both of length >= 1, create a program that returns true if the sum of the 
-squares of each element in a is strictly greater than the sum of the cubes of each element in b.
-
-**/
-
-
-
-function solution(a, b){
-    firstSum = a.reduce((sum, el) => sum + el**2,0)
-    secondSum = b.reduce((sum, el) => sum + el**3,0)
-    return firstSum > secondSum
-  } //i think this is it
-  
-  console.log(solution([1,3,3,5], [2,3,4])) //44 vs 
-  console.log(solution([1,2,3], [2]))
-  
-
-
-// Given a list of integers, determine whether the sum of its elements is odd or even.
-
-// Give your answer as a string matching "odd" or "even".
-
-// If the input array is empty consider it as: [0] (array with a zero).
-
-// Examples:
-// Input: [0]
-// Output: "even"
-
-// Input: [0, 1, 4]
-// Output: "odd"
-
-// Input: [0, -1, -5]
-// Output: "even"
-
-function oddOrEven(arr){
-    let total = arr.reduce((acc, sum) => acc + sum,0)
-    return total % 2 === 0 ? 'even' : 'odd'
+function squareSum(numbers){
+    return numbers.map(num=> num ** 2).reduce((sum, num)=> sum + num)
   }
   
-  console.log(oddOrEven([4, 1, 2])) /// odd
-  console.log(oddOrEven([2, 4, 6])) /// even
+  /*
+
 
 /*
+
+July 9, 2021
+
+Return the number of unique arrays that can be formed by picking exactly one element from each subarray.
+
+For example: solve([[1,2],[4],[5,6]]) = 4, because it results in only 4 possibilites. They are [1,4,5],
+[1,4,6],[2,4,5],[2,4,6].
+
+Make sure that you don't count duplicates; for example solve([[1,2],[4,4],[5,6,6]]) = 4, since the extra 
+outcomes are just duplicates.
+
+Test.assertEquals(solve([[1,2],[4],[5,6]]),4);
+Test.assertEquals(solve([[1,2],[4,4],[5,6,6]]),4);
+Test.assertEquals(solve([[1,2],[3,4],[5,6]]),8);
+Test.assertEquals(solve([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]),72);
+
+
+
 
 Create a function that takes in a string that will contain a mix of upper case and lower case letter. If
 the string contains more upperCase letter than lowerCase, return the string in all upperCase. Same rule applies 
