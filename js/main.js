@@ -2672,7 +2672,7 @@ For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
 
 function squareSum(numbers){
-  return numbers.map(num=> num ** 2).reduce((sum, num)=> sum + num)
+  return numbers.map(num=> num ** 2).reduce((sum, num)=> sum + num,0)
 }
 
 /*
@@ -2709,15 +2709,19 @@ assert.strictEqual(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]), 42);
 assert.strictEqual(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']), 41); 
 
 
-/*
+*/
+
+function sumMix(x){
+ return x.reduce((sum, acc) => sum + Number(acc),0)
+}
 
 
 
 
-// // Given two integer arrays a, b, both of length >= 1, create a program that returns true if the sum of the 
+/*Given two integer arrays a, b, both of length >= 1, create a program that returns true if the sum of the 
 squares of each element in a is strictly greater than the sum of the cubes of each element in b.
 
-**/
+*/
 
 
 
