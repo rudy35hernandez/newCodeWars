@@ -79,3 +79,20 @@ function sumOfNonRepeats(arr){
     let nonRepeats = arr.filter(num => arr.indexOf(num) === arr.lastIndexOf(num))
     return nonRepeats.reduce((acc, sum) => acc+sum,0 )
   }
+
+
+  /*
+
+  July 12, 2021
+
+  Your task is to remove all consecutive duplicate words from a string, leaving only first words entries. For example:
+
+"alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
+
+--> "alpha beta gamma delta alpha beta gamma delta"
+
+*/
+
+function noConsecutiveDuplicates(str){
+    return str.split(' ').filter((word, index, arr) => word !== arr[index -1]).join(' ')
+}
