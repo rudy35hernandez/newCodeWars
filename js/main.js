@@ -2798,6 +2798,8 @@ function lowerVsUpper(str){
 
 /*
 
+July 12, 2021
+
 You will be given an array of numbers in which two numbers occur once and the rest occur only twice. Your task 
 will be to return the sum of the numbers that occur only once.
 

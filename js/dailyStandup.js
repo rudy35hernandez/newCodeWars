@@ -18,7 +18,7 @@ function squareSum(numbers){
 
 /*
 
-July 9, 2021
+July 7, 2021
 
 Return the number of unique arrays that can be formed by picking exactly one element from each subarray.
 
@@ -33,24 +33,33 @@ Test.assertEquals(solve([[1,2],[4,4],[5,6,6]]),4);
 Test.assertEquals(solve([[1,2],[3,4],[5,6]]),8);
 Test.assertEquals(solve([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]),72);
 
-
-
-
-Create a function that takes in a string that will contain a mix of upper case and lower case letter. If
-the string contains more upperCase letter than lowerCase, return the string in all upperCase. Same rule applies 
-if there are more lowerCase letters. If there are an equal ammount of lowerCase and upperCase letters, return
-the string in lowerCase letter.
-
 */
 
-function lowerVsUpper(str){
-    let upper = str.split('').filter(letter => letter === letter.toUpperCase())
-    return str.length / 2 >= upper.length ? str.toLowerCase() : str.toUpperCase()
-  }
+
+
+/*
+
+July 9, 2021
+
+Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+
+Return your answer as a number.
+
+assert.strictEqual(sumMix([9, 3, '7', '3']), 22);
+assert.strictEqual(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]), 42); 
+assert.strictEqual(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']), 41); 
+
+
+/*
+
+
+
 
   
 
 /*
+
+July
 
 You will be given an array of numbers in which two numbers occur once and the rest occur only twice. Your task 
 will be to return the sum of the numbers that occur only once.
