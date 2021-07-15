@@ -53,10 +53,12 @@ assert.strictEqual(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]), 42);
 assert.strictEqual(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']), 41); 
 
 
-/*
+*/
 
 
-
+function sumMix(x){
+  return x.map(num => Number(num)).reduce((acc, num)=> acc+num)
+}
 
   
 
@@ -133,3 +135,16 @@ For example:
 You may assume the input only contain English alphabet and spaces.
 
   */
+
+function stringTransformer(str) {
+    let wordsReversed = str.split(' ').reverse().join(' ')
+    let reversed = wordsReversed.split('').map((word)=>{
+      if(word == word.toLowerCase()){
+        return word.toUpperCase()
+      } else if(word == word.toUpperCase()){
+        return word.toLowerCase()
+      }
+    })
+    
+    return reversed.join('')
+  }

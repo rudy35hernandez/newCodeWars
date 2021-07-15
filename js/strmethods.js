@@ -526,3 +526,5 @@
     What if I only want to delete the blank space at the END?
     console.log(greeting.trimEnd()) /// returns "  Hello everyone, welcome to our lovely home."
     */
+
+    
