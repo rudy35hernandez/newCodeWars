@@ -27,3 +27,22 @@ function truncate(str, maxLength){
     return str.length > maxLength ? str.slice(0, maxLength - 1) + '...': str 
 }
 
+// Take 2 strings s1 and s2 including only letters from ato z. Return a new sorted string, the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.
+
+// Examples:
+// a = "xyaabbbccccdefww"
+// b = "xxxxyyyyabklmopq"
+// longest(a, b) -> "abcdefklmopqwxy"
+
+// a = "abcdefghijklmnopqrstuvwxyz"
+// longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
+
+
+function newString(s1, s2){
+    let noDuplicates = [...new Set(s1), ...new Set(s2)]
+    let lastUnique = [...new Set(noDuplicates)]
+    return lastUnique.sort().join('')
+  }
+  
+  console.log(newString('alkjdfkjjs', 'wieokljsdf'))
+  console.log(newString('adgk', 'fnmwad'), 'adfgkmnw')
