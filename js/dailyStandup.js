@@ -111,3 +111,6 @@ domainName("https://www.cnet.com") == "cnet
 function domainName(url){
     return url.replace('http://', '').replace('https://','').replace('www.','').split('.')[0]
   }
+
+  //// Have yet to learn hashmaps, but apparently we will be using that to solve above challenge in a more advanced
+  ///  way.
