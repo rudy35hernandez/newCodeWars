@@ -35,7 +35,10 @@ Test.assertEquals(solve([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]),72);
 
 */
 
-
+  function uniqueArrays(arr){
+      let unique = arr.map(num => [...new Set(num)].length)
+      return unique.reduce((acc, num)=> acc*num)
+  }
 
 /*
 
