@@ -148,3 +148,13 @@ function stringTransformer(str) {
     
     return reversed.join('')
   }
+
+  // better solution, I had it, but I kept getting syntax errors in the ternary statement this way
+
+  function stringTransformer(str) {
+    return str.split(' ')
+      .reverse().join(' ')
+      .split('')
+      .map(word => word == word.toLowerCase() ? word.toUpperCase() : word.toLowerCase())
+      .join('')
+}
