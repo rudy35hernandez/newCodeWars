@@ -66,4 +66,12 @@ function newString(s1, s2){
 
 // "(CORWILL, ALFRED)(CORWILL, FRED)(CORWILL, RAPHAEL)(CORWILL, WILFRED)(TORNBULL, BARNEY)(TORNBULL, BETTY)(TORNBULL, BJON)"
 
-function 
+function meet(str){
+    let newStr = str.toUpperCase().split(';')
+    .map( n => n.split(':').reverse().join(', '))
+    .sort()
+    .join(')(')
+    return `(${newStr})`
+}
+
+console.log(meet())
