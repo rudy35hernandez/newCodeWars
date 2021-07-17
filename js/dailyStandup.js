@@ -167,3 +167,18 @@ Count all the occurring characters in a string. If you have a string like aba, t
 What if the string is empty? Then the result should be empty object literal, {}.
 
 */
+
+function count (string) {  
+  let wholeCount = {}
+  let arrIt = string.toLowerCase().split('')
+   arrIt.forEach(letter => {
+     if(wholeCount[letter]){
+    let total = wholeCount[letter]
+    wholeCount[letter] = total + 1
+       } else {
+         wholeCount[letter] = 1
+       }
+     
+   })
+  return wholeCount
+}
