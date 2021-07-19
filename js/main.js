@@ -2860,3 +2860,8 @@ function findOdd(A) {
   })
   return Number(Object.keys(dictionary).filter(num => dictionary[num] % 2))
 }
+
+/*
+another kata
+
+*/
