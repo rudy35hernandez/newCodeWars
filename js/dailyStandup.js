@@ -190,3 +190,8 @@ function count (string) {
 make every other letter capitalized
 
 */
+
+function everyOther(str){
+  let newArr = str.split('')
+  return newArr.map((letter,i)=> i % 2 ? letter.toUpperCase() : letter.toLowerCase()).join('')
+}
