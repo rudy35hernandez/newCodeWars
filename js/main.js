@@ -2838,7 +2838,7 @@ function everyOther(str){
 
 /*
 
-kata 5
+6 kyu
 
 Given an array of integers, find the one that appears an odd number of times.
 
