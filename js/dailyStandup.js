@@ -182,3 +182,11 @@ function count (string) {
    })
   return wholeCount
 }
+
+////
+
+/* 
+
+make every other letter capitalized
+
+*/
