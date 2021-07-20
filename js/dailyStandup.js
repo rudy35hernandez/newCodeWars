@@ -201,3 +201,7 @@ Test.assertEquals(high('what time are we climbing up the volcano'), 'volcano');
 Test.assertEquals(high('take me to semynak'), 'semynak'); 
 
 */
+
+function getScore(str){
+  
+}
