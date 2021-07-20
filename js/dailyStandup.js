@@ -202,6 +202,19 @@ Test.assertEquals(high('take me to semynak'), 'semynak');
 
 */
 
-function getScore(str){
-  
-}
+function high(x){ ///////////////// GOT A TON OF HELP FROM INDIFFERENT
+  let alphabet = "0abcdefghijklmnopqrstuvwxyz"
+  const wordScore = word => word.split('').reduce((a, letter) => a + alphabet.indexOf(letter), 0)
+  let highestWord = ""
+  let highestCount = 0
+    x.split(' ').forEach(el => {
+      const scoreCheck = wordScore(el)
+     if(scoreCheck > highestCount){
+       highestWord = el
+       highestCount = scoreCheck
+     }
+    })
+    return highestWord
+    
+      
+  }
