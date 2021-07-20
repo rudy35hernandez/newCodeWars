@@ -186,6 +186,8 @@ function count (string) {
 
 /*
 
+July 19, 2021
+
 Given a string of words, you need to find the highest scoring word.
 
 Each letter of a word scores points according to its position in the alphabet: a = 1, b = 2, c = 3 etc.
@@ -221,6 +223,8 @@ function high(x){ ///////////////// GOT A TON OF HELP FROM INDIFFERENT
 
   /*
 
+  July 20, 2021
+
   The goal of this exercise is to convert a string to a new string where each character in the new string 
   is "(" if that character appears only once in the original string, or ")" if that character appears more than 
   once in the original string. Ignore capitalization when determining if a character is a duplicate.
@@ -236,3 +240,10 @@ Assertion messages may be unclear about what they display in some languages. If 
 encode XXX", the "XXX" is the expected result, not the input!
 
 */
+
+function duplicateEncode(word){ /// solved myself!!!!!!!!!!!!!!!!!
+  let arr = word.toLowerCase().split('')
+
+    return arr.map(letter => arr.indexOf(letter) === arr.lastIndexOf(letter) ? '(' : ')')
+    .join('')
+}
