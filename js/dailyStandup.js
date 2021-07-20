@@ -205,7 +205,7 @@ Test.assertEquals(high('take me to semynak'), 'semynak');
 */
 
 function high(x){ ///////////////// GOT A TON OF HELP FROM INDIFFERENT
-  let alphabet = "0abcdefghijklmnopqrstuvwxyz"
+  let alphabet = " abcdefghijklmnopqrstuvwxyz"
   const wordScore = word => word.split('').reduce((a, letter) => a + alphabet.indexOf(letter), 0)
   let highestWord = ""
   let highestCount = 0
@@ -247,3 +247,9 @@ function duplicateEncode(word){ /// solved myself!!!!!!!!!!!!!!!!!
     return arr.map(letter => arr.indexOf(letter) === arr.lastIndexOf(letter) ? '(' : ')')
     .join('')
 }
+
+/*
+
+
+
+*/
