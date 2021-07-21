@@ -2864,6 +2864,10 @@ function findOdd(A) {
 /*
 Create a function that takes in an array, and a target as its parameters. The arrays will contain a set of numbers,
 and in that array, two of those numbers, when added, will add up to the target number that is in the parameter. 
-Grab the the indeces of both numbers that equal the target number
+Grab the the indeces of both numbers that equal the target number.
 
 */
+
+function getTarget(arr, target){
+  
+}
