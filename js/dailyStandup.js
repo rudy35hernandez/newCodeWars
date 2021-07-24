@@ -165,6 +165,8 @@ function stringTransformer(str) {
 
 /*
 
+July 16, 2021
+
 Count all the occurring characters in a string. If you have a string like aba, then the result should be 
 {'a': 2, 'b': 1}.
 
