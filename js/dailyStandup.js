@@ -301,6 +301,8 @@ function switcher(x){ /// got this solution on my own
 
 /*
 
+July 23, 2021
+
 Given a string of words (x), you need to return an array of the words, sorted alphabetically by the final character 
 in each.
 
