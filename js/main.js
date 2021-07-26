@@ -2885,3 +2885,10 @@ Let's assume that all numbers in the input will be integer values.
 
 */
 
+function sumDigits(number) {
+  return number.toString()
+    .replace('-',' ')
+    .split('').map(num => Number(num))
+    .reduce((acc,num)=> acc+num,0)
+}
+
