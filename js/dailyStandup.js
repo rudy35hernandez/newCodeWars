@@ -319,3 +319,9 @@ Test.assertSimilar(last('take me to semynak'), ['take', 'me', 'semynak', 'to']);
 */
 
 
+function sumDigits(number) {
+  return number.toString()
+    .replace('-',' ')
+    .split('').map(num => Number(num))
+    .reduce((acc,num)=> acc+num,0)
+}
