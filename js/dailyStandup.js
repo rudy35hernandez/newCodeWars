@@ -373,3 +373,6 @@ Test.assertDeepEquals(arrayDiff([], [4,5]), [], "a was [], b was [4,5]");
 
 */
 
+function arrayDiff(a, b) {
+  return a.filter(num => !b.includes(num))
+}
