@@ -2903,3 +2903,13 @@ accum("cwAt") -> "C-Ww-Aaa-Tttt"
 The parameter of accum is a string which includes only letters from a..z and A..Z.
 
 */
+
+function accum(s) {
+	// 
+  return s.toLowerCase().split('')
+    .map((letter, index, arr)=> letter.repeat((index) + 1) + '-')
+    .map((letter, index, arr)=> letter.charAt(0).toUpperCase() + letter.slice(1))
+    .map((letter, index, arr)=> arr[arr.length -1] ? letter.slice(0, letter.length -1) : letter)
+    .join('-')
+                                    
+  }
