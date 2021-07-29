@@ -438,3 +438,9 @@ Example
 Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
 
 */
+
+var capitals = function (word) { /// forgot about the Number.isInteger method. Had to look it up
+  return word.split('')
+    .map((letter,index) => letter == letter.toUpperCase() ? index : letter)
+    .filter(el => Number.isInteger(el))
+}      
