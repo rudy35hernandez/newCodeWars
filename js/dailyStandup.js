@@ -426,3 +426,15 @@ twoOldestAges( [1, 2, 10, 8] ) // should return [8, 10]
 function twoOldestAges(ages){
   return ages.sort((a,b)=> a-b).slice(-2)
 }
+
+
+/*
+
+July 29, 2021
+
+Write a function that takes a single string (word) as argument. The function must return an ordered list containing the indexes of all capital letters in the string.
+
+Example
+Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
+
+*/
