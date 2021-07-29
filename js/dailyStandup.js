@@ -356,6 +356,8 @@ function findSum(n) {
 
 /*
 
+July 26, 2021
+
 Your goal in this kata is to implement a difference function, which subtracts one list from another and returns 
 the result.
 
@@ -382,6 +384,8 @@ function arrayDiff(a, b) {
 
 /*
 
+July 27, 2021
+
 You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even 
 numbers at their original positions.
 
@@ -400,3 +404,22 @@ function sortArray(array) {
   return array.map(num => num % 2 ? odd.shift() : num)
   
   }
+
+  /*
+
+  July 28, 2021
+
+  The two oldest ages function/method needs to be completed. It should take an array of numbers as its argument 
+  and return the two highest numbers within the array. The returned value should be an array in the format [second 
+  oldest age, oldest age].
+
+The order of the numbers passed in could be any order. The array will always include at least 2 items. If there 
+are two or more oldest age, then return both of them in array format.
+
+For example:
+
+twoOldestAges( [1, 2, 10, 8] ) // should return [8, 10]
+
+
+*/
+
