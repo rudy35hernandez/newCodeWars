@@ -423,3 +423,6 @@ twoOldestAges( [1, 2, 10, 8] ) // should return [8, 10]
 
 */
 
+function twoOldestAges(ages){
+  return ages.sort((a,b)=> a-b).slice(-2)
+}
