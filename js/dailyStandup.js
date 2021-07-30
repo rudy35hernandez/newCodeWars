@@ -468,3 +468,6 @@ Test.assertDeepEquals(dup(["Woolloomooloo","flooddoorroommoonlighters","chuchchi
 
 */
 
+function dup(s) {
+  return s.map(word => word.split('').filter((letter,i,arr)=> letter !== arr[i - 1]).join(''))
+  }
