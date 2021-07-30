@@ -468,6 +468,8 @@ Test.assertDeepEquals(dup(["Woolloomooloo","flooddoorroommoonlighters","chuchchi
 
 */
 
-function dup(s) {
+function dup(s) { // Needed a little bit of help. I KNEW what methods were needed to solve the problem but
+  ///                I did not know that the entire solution needed to be wrapped up from the first map to end.
+  ///                When it is not wrapped, it creates 3 different arrays, one for each word.
   return s.map(word => word.split('').filter((letter,i,arr)=> letter !== arr[i - 1]).join(''))
   }
