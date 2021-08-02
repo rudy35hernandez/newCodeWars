@@ -2936,3 +2936,10 @@ return integer can't be negative.
 The second value in the first integer array is 0, since the bus is empty in the first bus stop.
 
 */
+
+var number = function(busStops){
+  let gotOn = busStops.map(num => num[0]).reduce((acc, num) => acc + num)
+  let gotOff = busStops.map(num => num[1]).reduce((acc, num) => acc + num)
+  
+  return gotOn - gotOff
+}
