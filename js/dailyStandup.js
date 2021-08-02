@@ -473,3 +473,5 @@ function dup(s) { // Needed a little bit of help. I KNEW what methods were neede
   ///                When it is not wrapped, it creates 3 different arrays, one for each word.
   return s.map(word => word.split('').filter((letter,i,arr)=> letter !== arr[i - 1]).join(''))
   }
+
+  
