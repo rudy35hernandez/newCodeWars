@@ -2962,3 +2962,23 @@ input : 2 strings with substrings separated by ,
 output: number as a string
 
 */
+
+
+function mxdiflg(a1, a2) {
+  // your code
+
+if(a1.length == 0 || a2.length == 0){
+  return -1
+}
+let x = a1.sort((a, b) => a.length - b.length)
+let y = a2.sort((a,b) => b.length - a.length)
+
+let bigY = y[0].length - x[0].length
+let bigX = x[x.length - 1].length - y[y.length - 1].length
+
+ if(bigY > bigX){
+   return bigY
+ } else{
+   return bigX
+ }
+}
