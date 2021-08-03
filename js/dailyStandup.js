@@ -500,3 +500,9 @@ Test.assertEquals(findDeletedNumber([1,2,3,4,5,6,7,8,9], [5,7,6,9,4,8,1,2,3]), 0
 function findDeletedNumber(arr, mixArr) { /// I did some playing around with this. Below is a much EASIER solution
   return Number(arr.filter(num => mixArr.indexOf(num) === -1).toString())
 }
+
+function findDeletedNumber(arr, mixArr) { ////////// This solution is SOOOOOO much easier. 
+  let total1 = arr.reduce((acc, num) => acc + num,0)
+  let total2 = mixArr.reduce((acc,num)=> acc + num,0)
+  return total1 - total2
+}
