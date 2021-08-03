@@ -524,5 +524,9 @@ Note that numbers written as strings are strings and must be sorted with the oth
 function dbSort(a){
   let numbers = a.filter(num => typeof num === "number").sort((a,b)=> a-b)
   let letters = a.filter(letter => typeof letter === "string").sort()
-  return [...numbers, ...letters]
+  return [...numbers, ...letters]  // you also use numbers.concat(letters)  (more common???)
 }
+
+/*
+
+*/
