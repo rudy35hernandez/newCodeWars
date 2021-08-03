@@ -520,3 +520,9 @@ sorted in alphabetic order. The values must maintain their original type.
 Note that numbers written as strings are strings and must be sorted with the other strings.
 
 */
+
+function dbSort(a){
+  let numbers = a.filter(num => typeof num === "number").sort((a,b)=> a-b)
+  let letters = a.filter(letter => typeof letter === "string").sort()
+  return [...numbers, ...letters]
+}
