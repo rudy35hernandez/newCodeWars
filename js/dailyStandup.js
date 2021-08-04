@@ -550,3 +550,9 @@ gimme([5, 10, 14]) => 1
 
 */
 
+function gimme (inputArray) { //// i got help by using the slice method to clone the original array
+  let cloned = inputArray.slice(0)// I initially tried to just create a new variable and sort the org array, but this
+  let middle = cloned.sort((a,b)=> a-b)[1] // changed the original array and sorted it as well
+  return inputArray.indexOf(middle)
+  
+  }
