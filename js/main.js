@@ -3004,3 +3004,8 @@ how to order multiple strings of the same length.
 
 */
 
+function sortByLength (array) { /// did this on my own
+  // Return an array containing the same strings, ordered from shortest to longest
+  
+  return array.sort((a,b)=> a.length - b.length)
+};
