@@ -3031,4 +3031,10 @@ Examples
 
 */
 
-
+function absentVowel(x){
+  let alphabet = "aeiou"
+  let alpharr = [...alphabet]
+  let stringarr = [...x]
+  let missing = alpharr.filter((letter, index, arr) => stringarr.indexOf(letter) === -1 ).join('')
+  return alpharr.indexOf(missing)
+}
