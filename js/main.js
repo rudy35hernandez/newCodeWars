@@ -3013,6 +3013,8 @@ function sortByLength (array) { /// did this on my own
 
 /*
 
+Aug 6, 2021
+
 Your job is to figure out the index of which vowel is missing from a given string:
 
 A has an index of 0,
@@ -3028,4 +3030,5 @@ Examples
 "Bb Smith sent us six neatly arranged range bicycles"  =>  3  ; missing:
 
 */
+
 
