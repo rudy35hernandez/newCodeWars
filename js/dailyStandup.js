@@ -627,3 +627,9 @@ If the average length is not an integer, use Math.round().
 The input array's length > 1
 
 */
+
+
+function averageLength(the) { 
+  let avg = Math.round(the.map(word => word.length).reduce((acc,num,index,arr) => (acc+num) ) / the.length)
+  return the.map(word => word[0].repeat(avg))
+}
