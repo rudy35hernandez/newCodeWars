@@ -3057,3 +3057,20 @@ Method calling example:
 fizzbuzz(3) -->  [1, 2, "Fizz"]
 
 */
+
+// Return an array
+function fizzbuzz(n){
+  let empty = []
+for(let i = 1; i <= n; i++){
+  if(i % 3 == 0){
+    empty.push("Fizz")
+  } else if(i % 5 === 0){
+    empty.push("Buzz")
+  } else if(i % 3 == 0 && i % 5 === 0){
+    empty.push("FizzBuzz")
+  } else{
+    empty.push(i)
+  }
+}
+  return empty
+}
