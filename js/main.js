@@ -3062,12 +3062,12 @@ fizzbuzz(3) -->  [1, 2, "Fizz"]
 function fizzbuzz(n){
   let empty = []
 for(let i = 1; i <= n; i++){
-  if(i % 3 == 0){
-    empty.push("Fizz")
+  if(i % 3 == 0 && i % 5 === 0){
+    empty.push("FizzBuzz")
   } else if(i % 5 === 0){
     empty.push("Buzz")
-  } else if(i % 3 == 0 && i % 5 === 0){
-    empty.push("FizzBuzz")
+  } else if(i % 3 == 0){
+    empty.push("Fizz")
   } else{
     empty.push(i)
   }
