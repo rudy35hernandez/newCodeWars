@@ -671,3 +671,15 @@ Method (well brute force it first, but then no reverse method)!
 
 */
 
+let mystring = 'rudy'
+
+function reverseIt(str){
+  let arrStr = [...str]
+  let empty = []
+  for(let i = arrStr.length; i >= 0; i--){
+    empty.push(arrStr[i])
+  }
+  return empty.join('')
+}
+
+console.log(reverseIt(mystring))
