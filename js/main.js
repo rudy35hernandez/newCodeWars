@@ -3097,3 +3097,9 @@ function Fighter(name, health, damagePerAttack) {
 
 */
 
+function declareWinner(fighter1, fighter2, firstAttacker) {
+  const a = [fighter1, fighter2].find((fighter)=> fighter.name === firstAttacker)
+  const b = [fighter1, fighter2].find((fighter)=> fighter.name !== firstAttacker)
+
+  return Math.ceil(b.health / a.damagePerAttack) <= Math.ceil(a.health / b.damagePerAttack) ? a.name : b.name
+}
