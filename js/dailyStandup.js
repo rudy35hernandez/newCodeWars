@@ -682,4 +682,4 @@ function reverseIt(str){
   return empty.join('')
 }
 
-console.log(reverseIt(mystring))
+// console.log(reverseIt(mystring))
