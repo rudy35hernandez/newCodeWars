@@ -644,3 +644,19 @@ by 2, print out “Fizz”; when it’s divisible by 3, print out “Buzz”; wh
 “Fizz Buzz”.
 
 */
+
+function fizzBuzz(n){
+  let output = []
+  for(let i = 1; i <= n; i++){
+    if(i % 2 === 0 && i % 3 === 0){
+      output.push('fizzbuzz')
+    } else if(i % 2 === 0){
+      output.push('fizz')
+    } else if(i % 3 === 0){
+      output.push('buzz')
+    } else {
+      output.push(i)
+    }
+  }
+  return output
+}
