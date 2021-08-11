@@ -700,3 +700,28 @@ describe("Max Character", () => {
 No String or Array Methods (well brute force it first, but then no methods)
 
 */
+
+function maxCharacter (str){
+  let dictionary = {}
+  for(let i = 0; i <= str.length; i++){
+    if(dictionary[str[i]]){
+      let count = dictionary[str[i]]
+      dictionary[str[i]] = count + 1
+  } else {
+    dictionary[str[i]] = 1
+  }
+}
+  let maxCount = 0;
+  let maxCharacter = null;
+
+  for (let letter in dictionary) {
+    if (dictionary[letter] > maxCount) {
+      maxCount = dictionary[letter];
+      maxCharacter = letter;
+    }
+  }
+
+  return maxCharacter;
+}
+
+console.log(maxCharacter("jammmmmmming"), "m")
