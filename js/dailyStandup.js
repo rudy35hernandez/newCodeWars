@@ -748,3 +748,15 @@ function numOfVowels(word){
   }
   return count
 }
+
+
+
+/*
+
+Aug 13, 2021
+
+Given an array of items, reverse the order.
+
+No reverse method! Unless that is your brute force first...
+
+*/
