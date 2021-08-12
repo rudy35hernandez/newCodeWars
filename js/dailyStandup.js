@@ -725,3 +725,13 @@ function maxCharacter (str){
 }
 
 console.log(maxCharacter("jammmmmmming"), "m")
+
+/*
+
+Aug 12, 2021
+
+Given a string of words or phrases, count the number of vowels.
+
+No Regex! Unless that is your brute force...
+
+*/
