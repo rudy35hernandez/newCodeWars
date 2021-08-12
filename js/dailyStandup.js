@@ -735,3 +735,16 @@ Given a string of words or phrases, count the number of vowels.
 No Regex! Unless that is your brute force...
 
 */
+
+
+
+function numOfVowels(word){
+  let count = 0
+  let vowels = "aeiou"
+  for(let character of word.toLowerCase()){
+    if(vowels.includes(character)){
+      count++
+    }
+  }
+  return count
+}
