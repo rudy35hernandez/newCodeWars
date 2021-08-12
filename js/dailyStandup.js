@@ -760,3 +760,11 @@ Given an array of items, reverse the order.
 No reverse method! Unless that is your brute force first...
 
 */
+
+function reverseArray(arr){
+  let newArr = []
+  for(let i = arr.length; i >= 0; i--){
+    newArr.push(arr[i])
+  }
+  return newArr.slice(1)
+}
