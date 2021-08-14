@@ -768,3 +768,10 @@ function reverseArray(arr){
   }
   return newArr.slice(1)
 }
+
+
+/*
+
+Aug 14 2021
+
+*/
