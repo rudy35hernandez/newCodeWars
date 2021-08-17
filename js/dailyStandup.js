@@ -783,6 +783,16 @@ function reverseArr(arr){
 
 /*
 
-Aug 14 2021
+Aug 16 2021
+
+Given a phrase, reverse the order of the characters of each word.
+
+describe("Reverse Words", () => {
+ it("Should reverse words", () => {
+  assert.equal(reverseWords("I love JavaScript!"), "I evol !tpircSavaJ");
+ });
+});
+
+No Reverse Method! Unless that is your brute force...
 
 */
