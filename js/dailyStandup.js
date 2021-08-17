@@ -811,12 +811,12 @@ function reverseWLoop(str){ /// class solution
   let revArr = [] /// creating an array to put the words in
   str.split(' ').forEach(word => { /// splitting the words into array and doing a foreach to run loop for all words
     let reversedWord = '' /// creating a blank var to push all words backwords
-    for(let i = word.length - 1; i >= 0; i--){ /// run a loop on all words backwords. Add each letter to reverseWord
-      reversedWord += word[i]
+    for(let i = word.length - 1; i >= 0; i--){ /// run a loop on all words backwords. 
+      reversedWord += word[i] /// Add each letter to reverseWord
     }
-    revArr.push(reversedWord)
-  })
-  return revArr.join(' ')
+    revArr.push(reversedWord)  //// push each word in empty revArr. Its still in the for loop so it's adding every
+  })                           //// word, not just one
+  return revArr.join(' ')      //// to this point, we have an array of all words needed, we just join them here
 }
 
 console.log(reverseWLoop(phrase))
