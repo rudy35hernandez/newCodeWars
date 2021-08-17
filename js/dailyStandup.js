@@ -796,3 +796,12 @@ describe("Reverse Words", () => {
 No Reverse Method! Unless that is your brute force...
 
 */
+
+
+let phrase = "hello everyone i am rudy"
+
+function reverseWords(str){
+ return str.split(' ').map(word => word.split('').reverse().join('')).join(' ')
+}
+
+// console.log(reverseWords(phrase))
