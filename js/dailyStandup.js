@@ -805,3 +805,18 @@ function reverseWords(str){
 }
 
 // console.log(reverseWords(phrase))
+
+
+function reverseWLoop(str){ /// class solution
+  let revArr = [] /// creating an array to put the words in
+  str.split(' ').forEach(word => { /// splitting the words into array and doing a foreach to run loop for all words
+    let reversedWord = '' /// creating a blank var to push all words backwords
+    for(let i = word.length - 1; i >= 0; i--){ /// run a loop on all words backwords. Add each letter to reverseWord
+      reversedWord += word[i]
+    }
+    revArr.push(reversedWord)
+  })
+  return revArr.join(' ')
+}
+
+console.log(reverseWLoop(phrase))
