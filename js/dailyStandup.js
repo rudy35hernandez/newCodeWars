@@ -853,3 +853,25 @@ it("Should return false", () => {
 
 
 */
+
+function ransomNote(str, note){
+  let hash = {}
+  note.split(' ').forEach(word => {
+    if(hash[word]){
+      let count = hash[word]
+      hash[word] = count + 1
+    } else{
+      hash[word] = 1
+    }
+  }) //////////// I did up to this point, had help below
+  const splitStr = str.split(' ')
+  let possible = true
+  
+  splitStr.forEach(word => {
+    if(hash[word]){
+      hash[word]--;
+      if(hash[word] < 0) possible = false;
+    } else possible = false
+  })
+  return possible
+}
