@@ -892,14 +892,20 @@ describe("Two Sum", () => {
 
 */
 
-function twoSum(arr, sum){
-  const pairs = []
-  const hash = {}
+function twoSum(array, sum){
+  const pairs = [];
+  const store = {}
 
-  for(let part1 of arr){
+  for (let part1 of array) {
     const part2 = sum - part1;
-    if (hash.indexOf(part2) !== -1){
-    pairs.push(part1, part2)
+    // if (store.indexOf(part2) !== -1){
+    //    pairs.push([part1, part2]);
+    // }
+    if(!store[part2]){
+      store[part1] = 1
+    }else{
+      pairs.push([part1,part2])
     }
   }
-}
+  return pairs;
+};
