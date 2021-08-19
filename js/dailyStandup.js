@@ -824,6 +824,8 @@ console.log(reverseWLoop(phrase))
 
 /*
 
+Aug 17, 2021
+
 Given a magazine of words and a ransom note, determine if it’s possible to “cut out” and create the ransom note 
 from the magazine words.
 
@@ -877,6 +879,7 @@ function ransomNote(str, note){
 }
 
 /*
+Aug 18, 2021
 
 Given an array of numbers, return all pairs that add up to a given sum. The numbers can be used more than once.
 
