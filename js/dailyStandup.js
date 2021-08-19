@@ -879,6 +879,7 @@ function ransomNote(str, note){
 }
 
 /*
+
 Aug 18, 2021
 
 Given an array of numbers, return all pairs that add up to a given sum. The numbers can be used more than once.
@@ -890,3 +891,15 @@ describe("Two Sum", () => {
 });
 
 */
+
+function twoSum(arr, sum){
+  const pairs = []
+  const hash = {}
+
+  for(let part1 of arr){
+    const part2 = sum - part1;
+    if (hash.indexOf(part2) !== -1){
+    pairs.push(part1, part2)
+    }
+  }
+}
