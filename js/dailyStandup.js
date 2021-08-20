@@ -931,15 +931,21 @@ Output: 0
 */
 
 function maxProfits(arr){
-  let min = Number.POSITIVE_INFINITY;
-  let max = 0
+  let min = Number.POSITIVE_INFINITY; /// This creates the greatest number the memory can hold
+  let max = 0  ///// we are setting the max number at 0 to be able to increase it while iterating
 
-  for(let i = 0; i <= arr.length; i++){
-    if(arr[i] < min){
-      min = arr[i]
-    } else {
-      max = arr[i] - min
+  for(let i = 0; i <= arr.length; i++){ /// your normal for loop
+    if(arr[i] < min){ //// here we are checking if the current number is less than min (first one will always be)
+      min = arr[i] /// min now becomes the first number in the array. It continues to be the min until a smaller 
+                  //// number is reached
+    } else if(arr[i] - min > max){ /// here, if the number the loop is at minus min is greater than max, 
+                                /// then max becomes that number minus min
+      max = arr[i] - min 
     }
   }
   return max
 }
+
+/* Here we will break down everything. 9 becomes the new min automatically. Next, 1 is less than min (9), so it 
+becomes the new min.
+[9, 1, 4, 7, 5] 
