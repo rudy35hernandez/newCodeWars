@@ -946,6 +946,13 @@ function maxProfits(arr){
   return max
 }
 
-/* Here we will break down everything. 9 becomes the new min automatically. Next, 1 is less than min (9), so it 
-becomes the new min.
-[9, 1, 4, 7, 5] 
+/* Here we will break down everything. 
+arr = [9, 1, 4, 7, 5] 
+Step 1: 9 becomes the new min automatically. 
+Step 2: Next, 1 is less than min (9), so it becomes the new min. 
+Step 3: Next num, 4 is greater than min (1) so we go to the else if statement. 4 - min (1) is greater than max (0)
+        so 4 - 1 becomes the new max(3).
+Step 4: 7 is greater than min so we skip to else if. 7 - min (1) is 6 which is greater than max(3), so max becomes
+        6. 
+Step 5: Last number, 5, is greater than min so we skip to else if. 5 - min(1) is 4, not greater than max(6), so we
+        move on. Since it is the last number in the array, max remains 6 which is our answer.
