@@ -946,7 +946,7 @@ function maxProfits(arr){
   return max
 }
 
-/* Here we will break down everything. 
+/* Here we will break down everything
 arr = [9, 1, 4, 7, 5] 
 Step 1: 9 becomes the new min automatically. 
 Step 2: Next, 1 is less than min (9), so it becomes the new min. 
