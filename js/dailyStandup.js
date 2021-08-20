@@ -930,3 +930,16 @@ Output: 0
 
 */
 
+function maxProfits(arr){
+  let min = Number.POSITIVE_INFINITY;
+  let max = 0
+
+  for(let i = 0; i <= arr.length; i++){
+    if(arr[i] < min){
+      min = arr[i]
+    } else {
+      max = arr[i] - min
+    }
+  }
+  return max
+}
