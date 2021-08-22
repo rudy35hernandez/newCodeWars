@@ -980,3 +980,24 @@ Output: 2
 
 */
 
+function majElement(arr){
+  let hash = {}
+  let count = 0;
+  let majVal = arr[0]
+  
+  for(let i = 0; i < arr.length; i++){
+    if(!hash[arr[i]]){
+      hash[arr[i]] = 1
+    } else{
+      hash[arr[i]]++
+    }
+  }
+   for(const nums in hash){
+     if(hash[nums] > count){
+       count = hash[nums];
+       majVal = nums
+     }
+   }
+   return majVal
+ }
+
