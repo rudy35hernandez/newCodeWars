@@ -981,23 +981,33 @@ Output: 2
 */
 
 function majElement(arr){
-  let hash = {}
-  let count = 0;
-  let majVal = arr[0]
+  let hash = {} //// to keep track of all nums and its occurences
+  let count = 0; /// starting the count at 0
+  let majVal = arr[0] 
   
-  for(let i = 0; i < arr.length; i++){
-    if(!hash[arr[i]]){
+  for(let i = 0; i < arr.length; i++){ /// looping through the arr
+    if(!hash[arr[i]]){ /// when running the loop, if it doesnt appear more than once, it sets it to 1.
       hash[arr[i]] = 1
     } else{
-      hash[arr[i]]++
+      hash[arr[i]]++  /// if it appears more than once, then here we increment the count each time.
     }
   }
-   for(const nums in hash){
-     if(hash[nums] > count){
-       count = hash[nums];
+   for(const nums in hash){ /// here im just looping the key values, we can call them anything, but it's in reference
+                            //// to the hash object we created, it's looping through the numbers
+     if(hash[nums] > count){ //// conditional, if the key value is more than count (0, at the moment)
+       count = hash[nums]; /// count now becomes the first number it loops, until it reaches the one with highest
+                          /// value
        majVal = nums
      }
    }
    return majVal
+ }
+
+ //// SINCE WE KNOW IT APPEARS MORE THAN n/2 OF THE TIME, HERE IS A MUCH EASIER SOLUTION. BUT OOOONLY IF THE 
+ //CHALLENGE STATES THAT IT APPEARS MORE THAN n/2 OF THE TIME
+
+ function maxOccurence(arr){
+   let nums = arr.sort()
+   return nums[Math.floor(nums.length/2)]
  }
 
