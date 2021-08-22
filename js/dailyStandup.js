@@ -956,3 +956,27 @@ Step 4: 7 is greater than min so we skip to else if. 7 - min (1) is 6 which is g
         6. 
 Step 5: Last number, 5, is greater than min so we skip to else if. 5 - min(1) is 4, not greater than max(6), so we
         move on. Since it is the last number in the array, max remains 6 which is our answer.
+
+*/
+
+
+/* 
+
+Aug 20, 2021
+
+Given an array nums of size n, return the majority element.
+
+The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element 
+always exists in the array.
+
+Example 1:
+
+Input: nums = [3,2,3]
+Output: 3
+Example 2:
+
+Input: nums = [2,2,1,1,1,2,2]
+Output: 2
+
+*/
+
