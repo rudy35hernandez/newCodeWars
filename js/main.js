@@ -3194,3 +3194,17 @@ function arrSorted(arr){
                                                           /// num in the original array, from Index 0, matches
                                                           /// the sortedArr num, starting at index 0.
 }
+
+//other good solutions
+
+function arrSorted2(arr){
+  for(let i = 0; i <= arr.length-1; i++){
+    if(arr[i] > arr[i+1]){
+      return true
+    } else {
+      return false
+    }
+  }
+}
+
+//
