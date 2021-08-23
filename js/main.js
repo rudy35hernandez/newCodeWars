@@ -3186,3 +3186,11 @@ N.B. If your solution passes all fixed tests but fails at the random tests, make
 input array.
 
 */
+
+function arrSorted(arr){ 
+ let sortedArr = arr.slice(0) /// here we clone the arr using slice. If I used sort here, it would mutate original arr
+ sortedArr.sort((a,b) => a-b) /// here we sort them in ascending order on new arr, leaving original untouched
+ return arr.every((num, index) => num == sortedArr[index]) /// this is tricky, but its looping to see if every
+                                                          /// num in the original array, from Index 0, matches
+                                                          /// the sortedArr num, starting at index 0.
+}
