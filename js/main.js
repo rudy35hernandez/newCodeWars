@@ -3207,4 +3207,8 @@ function arrSorted2(arr){
   }
 }
 
-//
+// my fave solution
+
+function arrSorted3(arr){
+  return arr.join('') === arr.sort((a,b) => a-b).join
+}
