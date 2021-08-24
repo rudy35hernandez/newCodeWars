@@ -3229,11 +3229,10 @@ Examples
 */
 
 function vaporcode(string) { /// got it myself but took a while
-  let newString = string.toUpperCase().split('')
   let sent = ''
-  for(let i = 0; i < newString.length; i++){
-    if(newString[i] !== ' ')
-    sent += newString[i] + "  "
+  for(let i = 0; i < string.length; i++){
+    if(string[i] !== ' ')
+    sent += string[i] + "  "
   } 
-  return sent.trim()
+  return sent.toUpperCase().trim()
   }
