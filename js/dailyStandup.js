@@ -1038,3 +1038,18 @@ Input: nums = [1,2,3]
 Output: 0
 
 */
+
+function goodPairs(arr){
+  const hashmap = {}
+  let count = 0
+  
+  for(const num of arr){
+    if(hashmap[num]){
+      count += hashmap[num]
+      hashmap[num] += 1
+    } else {
+      hashmap[num] = 1
+    }
+  }
+  return count
+}
