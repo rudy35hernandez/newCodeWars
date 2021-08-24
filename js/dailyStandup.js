@@ -1078,8 +1078,9 @@ Output: true
 */
 
 function multiplesPresent(arr){
-  let newOne = [...new Set(arr)]
-  if(newOne.length !== arr.length){
+  let newOne = [...new Set(arr)] /// this is creating a new array with unique numbers
+  if(newOne.length !== arr.length){ /// here we have an if statement to compare lengths of arrays. If equal,
+                                    /// there are no multiples. If unequal, that means there were multiples
     return true
   } else {
     return false
