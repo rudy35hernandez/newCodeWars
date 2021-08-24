@@ -3228,3 +3228,12 @@ Examples
 
 */
 
+function vaporcode(string) { /// got it myself but took a while
+  let newString = string.toUpperCase().split('')
+  let sent = ''
+  for(let i = 0; i < newString.length; i++){
+    if(newString[i] !== ' ')
+    sent += newString[i] + "  "
+  } 
+  return sent.trim()
+  }
