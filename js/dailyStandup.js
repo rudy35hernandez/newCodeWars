@@ -1077,3 +1077,11 @@ Output: true
 
 */
 
+function multiplesPresent(arr){
+  let newOne = [...new Set(arr)]
+  if(newOne.length !== arr.length){
+    return true
+  } else {
+    return false
+  }
+}
