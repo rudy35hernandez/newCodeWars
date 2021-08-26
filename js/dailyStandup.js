@@ -1132,3 +1132,12 @@ All the characters of jewels are unique.
 
 */
 
+function getStones(str, str2){
+  let count = 0
+  for(let letter of str2){
+    if(str1.includes(letter)){
+      count++
+    }
+  }
+  return count
+}
