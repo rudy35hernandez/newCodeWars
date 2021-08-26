@@ -1086,3 +1086,49 @@ function multiplesPresent(arr){
     return false
   }
 }
+
+
+function multiplesPresent(arr){
+  let hashmap = {} /// making a hashmap
+  let count = 0 /// starting count at 0, incrementing it when duplicates found
+  
+  for(let i = 0; i < arr.length; i++){ //// looping through arr
+    if(hashmap[arr[i]]){
+      count = hashmap[arr[i]]
+      hashmap[arr[i]] = count + 1
+    } else {
+      hashmap[arr[i]] = 1
+    }
+  }
+  for(const [key, value] of Object.entries(hashmap)){
+    return (key, value) > 1 
+  }
+}
+
+
+/*
+
+you're given strings jewels representing the types of stones that are jewels, and stones representing the stones 
+you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have 
+are also jewels.
+
+Letters are case sensitive, so "a" is considered a different type of stone from "A".
+
+Example 1:
+
+Input: jewels = "aA", stones = "aAAbbbb"
+Output: 3
+Example 2:
+
+Input: jewels = "z", stones = "ZZ"
+Output: 0
+ 
+
+Constraints:
+
+1 <= jewels.length, stones.length <= 50
+jewels and stones consist of only English letters.
+All the characters of jewels are unique.
+
+*/
+
