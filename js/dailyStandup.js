@@ -1108,6 +1108,8 @@ function multiplesPresent(arr){
 
 /*
 
+Aug 25, 2021
+
 you're given strings jewels representing the types of stones that are jewels, and stones representing the stones 
 you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have 
 are also jewels.
@@ -1133,9 +1135,21 @@ All the characters of jewels are unique.
 */
 
 function getStones(str, str2){
+  let count = 0 /// create a count for it
+  for(let letter of str2){ // we are looping through str 2, letter is like i in a for loop
+    if(str1.includes(letter)){ /// checking each letter, if it is a letter included in str1, it ups the count
+      count++ //// incrementing the count with each
+    }
+  }
+  return count
+}
+
+/// running it as a regular for loop
+
+function checkStones(str1, str2){
   let count = 0
-  for(let letter of str2){
-    if(str1.includes(letter)){
+  for(let i = 0; i <= str2.length; i++){
+    if(str1.includes(str2[i])){
       count++
     }
   }
