@@ -3272,3 +3272,4 @@ function splitInParts(s, partLength){
   }
   return newStr.slice(1) /// I couldnt get the newStr to return without a space at index 1 so i just sliced it at 1
 }
+
