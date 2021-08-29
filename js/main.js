@@ -3262,13 +3262,13 @@ Size is always positive
 */
 
 function splitInParts(s, partLength){
-  let newStr = ''
-  for(let i = 0; i < s.length; i++){
-    if(i % partLength === 0){
-      newStr += ` `+s[i]
+  let newStr = '' /// created an empty string to return new one with partLength space
+  for(let i = 0; i < s.length; i++){ /// reg for loop
+    if(i % partLength === 0){ //// here, we create the condition for where we want the space
+      newStr += ` `+s[i] /// the kata asks for a space before the letter to be added to empty str
     } else {
-      newStr += s[i]
+      newStr += s[i]  /// if its not a letter that meets the condition, add it to string as is
     }
   }
-  return newStr.slice(1)
+  return newStr.slice(1) /// I couldnt get the newStr to return without a space at index 1 so i just sliced it at 1
 }
