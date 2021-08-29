@@ -3240,6 +3240,8 @@ function vaporcode(string) { /// got it myself but took a while
 
   /*
 
+Aug 28, 2021 (self practice kata 7)
+
   The aim of this kata is to split a given string into different strings of equal size (note size of strings is 
   passed to the method)
 
@@ -3256,3 +3258,5 @@ Assumptions:
 String length is always greater than 0
 String has no spaces
 Size is always positive
+
+*/
