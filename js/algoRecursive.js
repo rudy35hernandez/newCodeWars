@@ -14,4 +14,15 @@ function joinArr(arr, joinElement){
   }
   
   console.log(joinArr(['s', 'cr', 't cod', ' :) :)'], "e"))
-  
+
+
+  /////////////////// Linear Search for an item in an array ///////////////////////////
+
+  /*
+
+  Create a function that takes two arguments, the first argument will be an array, the second argument will be a
+  number. We want the function to search through the array in linear fashion. If the number exists in the array,
+  return the index of the array. If it does not exist, return the index as -1
+
+  */
+
