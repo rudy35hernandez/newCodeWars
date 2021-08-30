@@ -3299,3 +3299,9 @@ var number=function(array){
   }
   return newArr
 }
+
+//// easier solution
+
+var number=function(array){
+  return array.map((letter,index,arr) => index+1 + `: ${letter}` )
+}
