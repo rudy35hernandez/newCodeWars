@@ -3322,3 +3322,9 @@ A string consists of lowercase latin letters, digits and symbols.
 [output] a string
 
 */
+
+function reverseLetter(str) {
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  
+  return str.split('').filter(letter => alphabet.includes(letter)).reverse().join('')
+}
