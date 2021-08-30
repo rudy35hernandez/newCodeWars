@@ -3287,3 +3287,15 @@ number([]) // => []
 number(["a", "b", "c"]) // => ["1: a", "2: b", "3: c"]
 
 */
+
+var number=function(array){
+  let newArr = []
+  if(array.length === 0){
+    return []
+  } else {
+  for(let i = 0; i <= array.length -1; i++){
+    newArr.push(i+1 + ": " + array[i])
+    }
+  }
+  return newArr
+}
