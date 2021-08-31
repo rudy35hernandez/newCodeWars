@@ -40,9 +40,13 @@ function joinArr(arr, joinElement){
   console.log(bringBackIndex([3, 5, 10, 91, 101, 120], 90))
 
 
-  
+
   //// One line of code can solve this problem
 
   function bringBackIndex2(arr,num){
       return arr.indexOf(num)
   }
+
+
+  
+  //Now here we want the same thing with a binary search. Meaning, we cut it in half until we find it
