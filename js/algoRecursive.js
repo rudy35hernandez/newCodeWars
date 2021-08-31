@@ -50,3 +50,24 @@ function joinArr(arr, joinElement){
 
   
   //Now here we want the same thing with a binary search. Meaning, we cut it in half until we find it
+  /// This is considered divide and conquer
+
+  function binarySearch(arr, num){
+      let min = 0
+      let max = arr.length - 1
+      let guess;
+
+      while(min <= max){
+          guess = Math.floor((min + max) / 2)
+          if(arr[guess] === num) {
+              return guess
+          } else {
+              if(arr[guess] < num){
+                  min = arr[guess] + 1
+              } else {
+                  max = arr[guess] - 1
+              }
+          }
+      }
+      return -1
+  }
