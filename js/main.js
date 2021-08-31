@@ -3322,9 +3322,15 @@ A string consists of lowercase latin letters, digits and symbols.
 [output] a string
 
 */
+/// The function will take a string. The string may be filled with letters and non alphabet characters.
+/// We need to return the string in reverse. And we also need to remove non alphabet letters in the string
+/// that we return
 
 function reverseLetter(str) {
-  let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz' //// created a library of items that are only alphabet characters
   
-  return str.split('').filter(letter => alphabet.includes(letter)).reverse().join('')
+  return str.split('') /// split the str into an array, character by character
+            .filter(letter => alphabet.includes(letter)) /// here we filter through and only return items in the alphabet
+            .reverse() //// we then reverse the array as 
+            .join('')
 }

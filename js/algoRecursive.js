@@ -26,3 +26,17 @@ function joinArr(arr, joinElement){
 
   */
 
+
+  function bringBackIndex(arr, num){
+    let index = -1;
+     arr.forEach((arrItem, i) => {
+       if(arrItem === num){
+         index = i
+       } 
+     })
+    return index
+  }
+  
+  console.log(bringBackIndex([3, 5, 10, 91, 101, 120], 90))
+
+  
