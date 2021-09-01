@@ -63,9 +63,9 @@ function joinArr(arr, joinElement){
               return guess
           } else {
               if(arr[guess] < num){
-                  min = arr[guess] + 1
+                  min = guess + 1
               } else {
-                  max = arr[guess] - 1
+                  max = guess - 1
               }
           }
       }
