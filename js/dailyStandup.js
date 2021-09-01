@@ -1191,3 +1191,14 @@ function fibonacci(num){
   }
   return arr[num]
 }
+
+
+
+/*
+
+Aug 31,2021
+
+Same problem as the last daily standup, which was the fibonacci algorithm. Only this time, we want it
+solved in with the recursion method
+
+*/
