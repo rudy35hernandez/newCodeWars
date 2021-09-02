@@ -1254,3 +1254,18 @@ function factMult(num){
 function factorialRecursion(num){
   return num < 2 ? 1 : num * factorialRecursion(num - 1)
 }
+
+/// explanation?  lets say the number is 5
+
+/* 
+5 is greater than 2, so we skip the first conditional and jump to the next 
+
+5 * factorialRecursion(5 - 1) = 20 (count is now 20)
+
+20 * factorialRecursion(4 - 1) = 60 (count is now 60)
+
+60 * factorialRecursion(3 - 1) = 120 (count is 120)
+
+120 * factorialRecursion(2-1) = 120 
+
+*/
