@@ -1248,3 +1248,9 @@ function factMult(num){
   }
   return count
 }
+
+/// This is the recursion method, which I am still having a little trouble understanding
+
+function factorialRecursion(num){
+  return num < 2 ? 1 : num * factorialRecursion(num - 1)
+}
