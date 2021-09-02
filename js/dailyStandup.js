@@ -1184,11 +1184,13 @@ Output: 3
 
 */
 
-function fibonacci(num){
-  let arr = [0,1]
-  for(let i = 2; i <= num; i++){
-    arr[i] = arr[i - 1] + arr[i - 2]
-  }
+function fibonacci(num){  
+  let arr = [0,1] /// we start off with array 0 and 1 already created, because this will only return 0 and 1
+  for(let i = 2; i <= num; i++){ /// here, we start the conditional of i being 2, and if the num is less or equal 
+                                 /// to 2, we run the code on the next line, if not, we skip and run the last command
+  arr[i] = arr[i - 1] + arr[i - 2] //// here if conditional is met, lets say num is 2, we would get back 1 b/c
+                                  /// arr[2] = arr[]
+  }                  
   return arr[num]
 }
 
@@ -1202,3 +1204,34 @@ Same problem as the last daily standup, which was the fibonacci algorithm. Only 
 solved in with the recursion method
 
 */
+
+function fibonacci1(num){
+  if(num <= 2){
+    return 1
+  } else {
+    return fibonacci1(num - 2) + fibonacci1(num - 1)
+  }
+}
+
+console.log(fibonacci1(4))
+
+
+/* 
+
+Sep 1, 2021
+
+Factorial
+
+In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers 
+less than or equal to n. For example,
+
+5! = 5 * 4 * 3 * 2 * 1 = 120.
+
+The value of 0! is 1.
+
+#Your task
+
+You have to create the function factorial that receives n and returns n!. You have to use recursion.
+
+*/
+
