@@ -1235,3 +1235,16 @@ You have to create the function factorial that receives n and returns n!. You ha
 
 */
 
+/// Just for practice, i solved it the brute force way to see if I was still fresh with my methods
+
+function factMult(num){
+  let count = 1
+  if(num == 0){
+    return 0
+  } else {
+    for(let i = 1; i <= num; i++){
+      count *= i
+    }
+  }
+  return count
+}
