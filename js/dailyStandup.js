@@ -1287,7 +1287,7 @@ Test.assertEquals(mygcd(1,1),1)
 
 */
 
-function great(x,y){ 
+function great(x,y){  /// This was all Leon, but he explained how it was done
 
   return y === 0 ? x : great(y, x % y)
   
