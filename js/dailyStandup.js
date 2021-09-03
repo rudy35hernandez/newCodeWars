@@ -1286,3 +1286,9 @@ Test.assertEquals(mygcd(8,9),1)
 Test.assertEquals(mygcd(1,1),1)
 
 */
+
+function great(x,y){ 
+
+  return y === 0 ? x : great(y, x % y)
+  
+}
