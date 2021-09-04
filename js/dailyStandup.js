@@ -1287,8 +1287,26 @@ Test.assertEquals(mygcd(1,1),1)
 
 */
 
+
+////////// Find the greatest common denominator between both numbers in the parameters.
+////////// Must use recursion for this solution
+
+
+
 function great(x,y){  /// This was all Leon, but he explained how it was done
 
-  return y === 0 ? x : great(y, x % y)
+  return y === 0 ? x : great(y, x % y) //// here, we have a conditional, return x if y = 0.
+              /// the way it works, in this recursion case, we flip the numbers, y goes in the place of
+              /// x, and y becomes x % y.
+              /// lets run 30, 12 for Ex.   great(12, 30 % 12) 
+
+              ///                                 x   y      
+              ///                 becomes   great(12, 6)
+
+              /// we run it again       return y === 0 ? x : great(6, 12 % 6 )            
+
+              ///                                 x  y
+              ///                 becomes   great(6, 0)     //// since we've reach y === 0, we return x(6)
   
 }
+
