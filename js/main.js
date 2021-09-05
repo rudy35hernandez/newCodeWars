@@ -3352,7 +3352,7 @@ Examples
 
 */
 
-function removeLast(num){  ////// This is not complete yet, does not solve for null
-  let strNum = num.toString()
-  return num % 3 === 0 ? num : removeLast(strNum.slice(0, strNum.length-1) )
+function prevMultOfThree(n){
+  let strNum = n.toString()
+ return  n === 0 ? null : n % 3 == 0 ? n : prevMultOfThree(Number(strNum.slice(0, strNum.length-1)) ) 
 }
