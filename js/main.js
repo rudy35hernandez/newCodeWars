@@ -3334,3 +3334,25 @@ function reverseLetter(str) {
             .reverse() //// we then reverse the array as 
             .join('')
 }
+
+
+/*
+
+Given a positive integer n: 0 < n < 1e6, remove the last digit until you're left with a number that is a multiple 
+of three.
+
+Return n if the input is already a multiple of three, and return null/nil/None/-1 if no such number exists.
+
+Examples
+1      => null
+25     => null
+36     => 36
+1244   => 12
+952406 => 9
+
+*/
+
+function removeLast(num){  ////// This is not complete yet, does not solve for null
+  let strNum = num.toString()
+  return num % 3 === 0 ? num : removeLast(strNum.slice(0, strNum.length-1) )
+}
