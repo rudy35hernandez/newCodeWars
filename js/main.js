@@ -3354,5 +3354,5 @@ Examples
 
 function prevMultOfThree(n){
   let strNum = n.toString()
- return  n === 0 ? null : n % 3 == 0 ? n : prevMultOfThree(Number(strNum.slice(0, strNum.length-1)) ) 
+ return  n === 0 ? null : n % 3 == 0 ? n : prevMultOfThree(Number(strNum.slice(0, strNum.length-1)) ) /// you can remove strNum.lenght -1 and just use -1 
 }
