@@ -3402,3 +3402,11 @@ Output:
 'alpha beta gamma delta'
 
 */
+
+
+function removeDuplicateWords (s) {
+  let arr = s.split(' ')
+  let newArr = [...new Set(arr)].join(' ')
+  return newArr
+  
+}
