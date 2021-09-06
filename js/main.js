@@ -3410,3 +3410,11 @@ function removeDuplicateWords (s) {
   return newArr
   
 }
+
+///// another solution using indexOf method
+
+function removeDuplicateWords (s) {
+  let hash = []
+  
+ return s.split(' ').filter((word, index, arr) => index == arr.indexOf(word)).join(' ')
+}
