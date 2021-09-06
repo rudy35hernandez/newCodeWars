@@ -3386,3 +3386,7 @@ function minValue(values){
                                         /// only appearing once
   return Number(newValues.sort((a,b)=> a-b).join(''))  /// here we sort the numbers from least to greatest
 }
+
+
+/*
+
