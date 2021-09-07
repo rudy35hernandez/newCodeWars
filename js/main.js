@@ -3429,3 +3429,7 @@ You can assume all values in the array are numbers.
 
 */
 
+function smallEnough(a, limit){
+  let sorted = a.sort((a,b)=> b-a)
+  return sorted[0] <= limit ? true : false
+}
