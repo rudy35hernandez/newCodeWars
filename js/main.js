@@ -3382,6 +3382,7 @@ Explanation:
 */
 
 function minValue(values){
-  let newValues = [...new Set(values)]
-  return Number(newValues.sort((a,b)=> a-b).join(''))
+  let newValues = [...new Set(values)] /// This will remove all the duplicates and return a new arr with numbers
+                                        /// only appearing once
+  return Number(newValues.sort((a,b)=> a-b).join(''))  /// here we sort the numbers from least to greatest
 }
