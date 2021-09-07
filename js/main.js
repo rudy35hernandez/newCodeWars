@@ -3433,3 +3433,9 @@ function smallEnough(a, limit){
   let sorted = a.sort((a,b)=> b-a)
   return sorted[0] <= limit ? true : false
 }
+
+//// easier solution with less code 
+
+function smallEnough(a, limit){
+  return Math.max(...a) <= limit ? true:false
+}
