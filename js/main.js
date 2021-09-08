@@ -3488,3 +3488,11 @@ Simple time difference
 Simple remove duplicates
 
 */
+
+function solve(s){
+  let lowAlph = 'abcdefghijklmnopqrstuvwxyz'
+  
+  let totalLow = s.split('').filter((letter,index,arr)=> lowAlph.includes(letter)).join('').length
+  
+  return totalLow >= s.length / 2 ? s.toLowerCase() : s.toUpperCase()
+}
