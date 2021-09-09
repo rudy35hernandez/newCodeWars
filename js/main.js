@@ -3508,3 +3508,6 @@ is also greater or equal to 1.
 
 */
 
+function mygcd(x,y){
+  return y == 0 ? x : mygcd(y, x % y)
+}
