@@ -3541,3 +3541,9 @@ Example:
 "JACK"  --> "Hello Jack!"
 
 */
+
+
+var greet = function(name) {
+  let lowName = name.slice(1)  /// 
+  return `Hello ${name[0].toUpperCase()}${lowName.toUpperCase()}!`
+};
