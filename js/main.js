@@ -3528,3 +3528,17 @@ function getEvenNumbers(numbersArray){
   return numbersArray.filter(num => num % 2 == 0 ) /// used filter method, returned only the numbers
                                                    /// that equal 0 when using num modulus 2
 }
+
+
+/*
+
+Write a method that takes one argument as name and then greets that name, capitalized and ends with an exclamation 
+point.
+
+Example:
+
+"riley" --> "Hello Riley!"
+"JACK"  --> "Hello Jack!"
+
+*/
+
