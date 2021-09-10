@@ -3544,6 +3544,7 @@ Example:
 
 
 var greet = function(name) {
-  let lowName = name.slice(1)  /// 
-  return `Hello ${name[0].toUpperCase()}${lowName.toUpperCase()}!`
+  let lowName = name.toLowerCase().slice(1)  //// returned all letters in name in lowercase after the first char
+  let first = name[0].toUpperCase()
+  return `Hello ${first}${lowName}!`
 };
