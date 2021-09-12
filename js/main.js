@@ -3562,3 +3562,13 @@ divisors(13); // should return "13 is prime"
 
 */
 
+function divisors(integer) {
+  let divisorNums = []
+  for(let i = 2; i < integer; i++){
+      if(integer % i === 0){
+        divisorNums.push(i)
+        }
+     
+    }
+  return divisorNums.length === 0 ? `${integer} is prime` : divisorNums
+};
