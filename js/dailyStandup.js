@@ -1340,7 +1340,7 @@ As long as the tests pass, go for it!
 
 */
 
-class Queue{
+class Queue{ //// this is a FIFO method .
   constructor(){
     this.queue = []
   }
