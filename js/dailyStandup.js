@@ -1342,20 +1342,20 @@ As long as the tests pass, go for it!
 
 class Queue{ //// this is a FIFO method .
   constructor(){
-    this.queue = []
+    this.queue = [] /// we create our empty array for our currently empty queue
   }
 
-  enqueue(el){
+  enqueue(el){    ///// This method here pushes (to the back) something to the queue, in the case, el
     this.queue.push(el)
   }
 
-  dequeue(){
+  dequeue(){  //// This method in our class, shifts out the first item in the array (FIFO)
     return this.queue.shift()
   }
 
-  size(){
+  size(){   //// This method gives you the length, or count of how many are in the queue
     return this.queue.length
   }
 }
 
-let q1 = new Queue()
+let q1 = new Queue()  //// q1 is the name of our queue
