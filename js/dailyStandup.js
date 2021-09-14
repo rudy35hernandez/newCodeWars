@@ -1339,3 +1339,23 @@ As long as the tests pass, go for it!
 
 
 */
+
+class Queue{
+  constructor(){
+    this.queue = []
+  }
+
+  enqueue(el){
+    this.queue.push(el)
+  }
+
+  dequeue(){
+    return this.queue.shift()
+  }
+
+  size(){
+    return this.queue.length
+  }
+}
+
+let q1 = new Queue()
