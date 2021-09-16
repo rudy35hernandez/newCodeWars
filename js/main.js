@@ -3609,3 +3609,18 @@ isPowerOfTwo(333)  // -> false
 Beware of certain edge cases - for example, 1 is a power of 2 since 2^0 = 1 and 0 is not a power of 2.
 
 */
+
+
+
+/*
+
+Complete the solution so that it takes the object (JavaScript/CoffeeScript) or hash (ruby) passed in and generates 
+a human readable string from its key/value pairs.
+
+The format should be "KEY = VALUE". Each key/value pair should be separated by a comma except for the last pair.
+
+Example:
+
+solution({a: 1, b: '2'}) // should return "a = 1,b = 2"
+
+*/
