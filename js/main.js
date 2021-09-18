@@ -3586,6 +3586,19 @@ You can assume the array will always be valid, and there will always be one corr
 
 */
 
+function isSortedAndHow(array) {
+  let ascending = array.slice(0).sort((a,b)=>a-b)
+  let descending = array.slice(0).sort((a,b)=> b-a)
+  
+  if(array.every((entry, index)=> entry === ascending[index])){
+    return 'yes, ascending'
+  } else if(array.every((entry, index) => entry === descending[index])){
+    return 'yes, descending'
+  } else {
+    return 'no'
+  }
+}
+
 
 
 
