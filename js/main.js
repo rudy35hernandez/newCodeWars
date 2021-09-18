@@ -3590,18 +3590,14 @@ function isSortedAndHow(array) {
   let ascending = array.slice(0).sort((a,b)=>a-b)
   let descending = array.slice(0).sort((a,b)=> b-a)
   
-  if(array.every((entry, index)=> entry === ascending[index])){
-    return 'yes, ascending'
+  if(array.every((entry, index)=> entry === ascending[index])){ ///<<<<<<<< THIS IS THE PIECE OF CODE THAT YOU NEED
+    return 'yes, ascending'                                     /////////// TO IMPLANT IN YOUR BRAIN
   } else if(array.every((entry, index) => entry === descending[index])){
     return 'yes, descending'
   } else {
     return 'no'
   }
 }
-
-
-
-
 
 
 
@@ -3638,6 +3634,12 @@ solution({a: 1, b: '2'}) // should return "a = 1,b = 2"
 
 */
 
+
+function solution(pairs){
+  return Object.keys(pairs)
+    .map(function(k) { return k + ' = ' + pairs[k] })
+    .join(',');
+}
 
 
 /*
