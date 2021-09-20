@@ -3731,7 +3731,7 @@ flatten([[[1,2,3]]]) // => [[1,2,3]]
 */
 
 function flatten (array){
-  return [].concat(...array) 
+  return [].concat(...array) /// empty array, concats all the arrays in the original array into one array
 }
 
 
