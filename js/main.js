@@ -3763,8 +3763,8 @@ Explanation:
 The first element 80 is the total weight of team 1, and the second element 0 is the total weight of team 2.
 
 */
-
-function rowWeights(array){
+ 
+function rowWeights(array){ //// very brute force. 
   let evens = array.slice().filter((num, index, arr) => index % 2 == 0).reduce((sum, num) => sum+num,0)
   let odds = array.slice(0).filter((num, index, arr) => index % 2 !== 0).reduce((sum, num) => sum+num,0)
   
