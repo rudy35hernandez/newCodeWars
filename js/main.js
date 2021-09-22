@@ -3708,3 +3708,11 @@ e.g. If 4 is given: 1 + 3 + 6 + 10 = 20.
 Triangular Numbers cannot be negative so return 0 if a negative number is given.
 
 */
+
+function sumTriangularNumbers(n) {
+  let count = 0
+  for(let i = 0; i <= n; i++){
+    count += i * ((i+1) / 2)
+  }
+return count
+}
