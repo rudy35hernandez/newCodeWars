@@ -3815,8 +3815,12 @@ function multiplyAll(arr){
 
 function multiplyAll(arr){
   let total = 1
-  for(let i = 0; i < arr.length; i++){ /// looping through the main arr. 
-    for(let j = 0; j < arr[i].length; j++){
+  for(let i = 0; i < arr.length; i++){ /// looping through the main arr to get length, which is 3 (3 subarrays)
+    for(let j = 0; j < arr[i].length; j++){ /// this is ran three times because there are 3 subarrays,
+                                            /// each time it is ran, j will go through one subarray at a time, 
+                                            /// first time its arr[0].length, then its arr[1].length, 
+                                            /// once it's looping, total is multiplied, the first one would be 1,
+                                            /// then * 2, then it moves on to arr[1].length, and its total * 3, etc
       total *= arr[i][j]
     }
   }
