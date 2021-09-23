@@ -3792,3 +3792,13 @@ function findLongest(array){
  }
   return Number(biggestNum)
 }
+
+
+/*
+
+Take an array filled with subarrays that contain numbers. Create a function that multiplies all of the numbers 
+together and return the amount.
+
+*/
+
+// Ex. multiplyAll([[1,2],[3,4],[5,6,7]])
