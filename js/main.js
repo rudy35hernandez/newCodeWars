@@ -3802,3 +3802,10 @@ together and return the amount.
 */
 
 // Ex. multiplyAll([[1,2],[3,4],[5,6,7]])
+
+//// I will first solve this question by combining all of the subarrays into one, and using reduce to multiply.
+
+function multiplyAll(arr){
+  let newArr = [].concat(...arr)
+  return newArr.reduce((sum, nums)=> sum * nums,1)
+}
