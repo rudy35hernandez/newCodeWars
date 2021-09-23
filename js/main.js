@@ -3780,3 +3780,15 @@ Find the number with the most digits.
 If two numbers in the argument array have the same number of digits, return the first one in the array.
 
 */
+
+
+function findLongest(array){
+  let newArr = array.map(num => num.toString())
+ let biggestNum = 0
+ for(let i = 0; i < newArr.length; i++){
+   if(newArr[i].length > biggestNum.toString().length){
+     biggestNum = newArr[i]
+   }
+ }
+  return Number(biggestNum)
+}
