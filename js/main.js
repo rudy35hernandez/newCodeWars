@@ -3809,3 +3809,16 @@ function multiplyAll(arr){
   let newArr = [].concat(...arr)
   return newArr.reduce((sum, nums)=> sum * nums,1)
 }
+
+
+//// Now I will solve it using nested loops
+
+function multiplyAll(arr){
+  let total = 1
+  for(let i = 0; i < arr.length; i++){ /// looping through the main arr. 
+    for(let j = 0; j < arr[i].length; j++){
+      total *= arr[i][j]
+    }
+  }
+  return total
+}
