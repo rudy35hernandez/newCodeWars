@@ -237,4 +237,11 @@ var logger = function(val){
   console.log(val)
 }
 //// Again, _.each takes in the array in the parameter
-_.each(rooms1, logger) // => "observatory" "ballroom" "library"
+// _.each(rooms1, logger) // => "observatory" "ballroom" "library"
+
+const _ = {}
+
+_.each = function(list, callback){
+    // loop through the list
+    // call the callback with a list
+}
