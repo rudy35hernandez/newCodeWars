@@ -3882,3 +3882,7 @@ for(let i = 0; i < str.length; i++){
   
   return vowelsCount;
 }
+
+function getCount(str){
+  return str.split('').filter(letter => 'aeiou'.includes(letter)).length-
+}
