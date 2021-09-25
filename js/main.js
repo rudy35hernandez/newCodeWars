@@ -3855,3 +3855,11 @@ Examples
   }
   return array;
 };
+
+/*
+
+Oldie but goodie, went back and attempted a challenge ive done before. Solved it with array method, plus with
+a for loop
+
+*/
+
