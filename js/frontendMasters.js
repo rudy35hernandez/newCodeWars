@@ -261,10 +261,14 @@ if(Array.isArray(list)){
     //celebrate
 }
 
-_.each(['sally', 'georgie', 'porgie'], function(name, i, list){
-    if(list[i + 1]){
-      console.log(name, "is younger than", list[i + 1]);
-    } else {
-      console.log(name, 'is the oldest')
-    }
-})
+let myList = ["rudy", "erika", "rudy jr", "adam"]
+
+let ages = function(name, i, list){
+  if(list[i+1]){
+    console.log(name, "is older than", list[i+1])
+  } else {
+    console.log(name, "is the youngest")
+  }
+}
+
+_.each(myList, ages)
