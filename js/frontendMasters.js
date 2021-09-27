@@ -230,3 +230,11 @@ for(let j = 0; j < newSuspects.length; j++){
   })
   
   // console.log(newSuspectsList) // ==> This adds the 3 objects to the newSuspectsList, just like the forLoop above.
+
+var rooms1 = ['ovservatory', 'ballroom', 'library'];
+
+var logger = function(val){
+  console.log(val)
+}
+//// Again, _.each takes in the array in the parameter
+_.each(rooms1, logger)
