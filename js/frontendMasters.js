@@ -160,6 +160,7 @@ let clue = {
    /// console.log(game[prop][0].name)  => returns "Rusty
   }
   
+
   
   /// Destructure!!! Create 2 variables, one thatll hold the val orange and one red
   
@@ -172,4 +173,24 @@ let clue = {
      console.log(ora, red)
     }
   
-  console.log(useMap(game))
+  // console.log(useMap(game))
+
+
+
+  function createSuspectObjects(name){
+    return {
+      name: name,
+      color: name.split(' ')[1],
+      speak: function (){
+        console.log("my name is ", name);
+      }
+    };
+  };
+  
+  let newSuspects = ["tony Danza", "joe", "chick"]
+  
+  let newSuspectsList = [];
+  
+  let y = createSuspectObjects(newSuspects[0])
+  
+  // console.log(y)  ==> returns {"tony Danza", color: "Danza"}
