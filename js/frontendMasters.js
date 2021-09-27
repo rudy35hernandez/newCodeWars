@@ -187,10 +187,28 @@ let clue = {
     };
   };
   
-  let newSuspects = ["tony Danza", "joe", "chick"]
+  let newSuspects = ["tony Danza", "joe thomas", "chick roos"]
   
   let newSuspectsList = [];
   
   let y = createSuspectObjects(newSuspects[0])
   
   // console.log(y)  ==> returns {"tony Danza", color: "Danza"}
+
+
+  
+for(let j = 0; j < newSuspects.length; j++){
+    newSuspectsList.push(createSuspectObjects(newSuspects[j]))
+  }
+  
+  // console.log(newSuspectsList) // ==> this will return an array of objects, [{name: "Tony Danza", color: "Danza"},{name: "Joe Thomas", color: "thomas"},{name: "Chick roos", color: "roos"}]
+
+
+
+  
+  _.each(newSuspects, function(name) {
+    let suspectObj = createSuspectObjects(name);
+    newSuspectsList.push(suspectObj)
+  })
+  
+  // console.log(newSuspectsList) // ==> This adds the 3 objects to the newSuspectsList, just like the forLoop above.
