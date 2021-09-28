@@ -205,8 +205,26 @@ for(let j = 0; j < newSuspects.length; j++){
 
 
 
-  
-  _.each(newSuspects, function(name) {
+
+///////////////////////////////////////// HERE WE CREATE THE SAME RESULT FROM ABOVE USING _.each METHOD ///////////
+
+
+// function createSuspectObjects(name){
+//   return {
+//     name: name,
+//     color: name.split(' ')[1],
+//     speak: function (){
+//       console.log("my name is ", name);
+//     }
+//   };
+// };
+
+// let newSuspects = ["tony Danza", "joe thomas", "chick roos"]
+
+// let newSuspectsList = [];
+
+
+  _.each(newSuspects, function(name) {   /// instead of placing the array before the method, you add it in the parameter
     let suspectObj = createSuspectObjects(name);
     newSuspectsList.push(suspectObj)
   })
