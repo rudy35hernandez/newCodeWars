@@ -239,7 +239,11 @@ var logger = function(val){
 //// Again, _.each takes in the array in the parameter
 // _.each(rooms1, logger) // => "observatory" "ballroom" "library"
 
+
+/// setting up the _ method
 const _ = {}
+
+/// creating a method for whenever you use _.each
 
 _.each = function(list, callback){
     // 
@@ -261,8 +265,12 @@ if(Array.isArray(list)){
     //celebrate
 }
 
+
+/// setting up an array to throw it in the _.each method
 let myList = ["rudy", "erika", "rudy jr", "adam"]
 
+
+/// creating a function to be thrown in as the callback
 let ages = function(name, i, list){
   if(list[i+1]){
     console.log(name, "is older than", list[i+1])
