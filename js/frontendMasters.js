@@ -280,3 +280,14 @@ let ages = function(name, i, list){
 }
 
 // _.each(myList, ages)
+
+
+//////////////////////// using _.map()////////////////////////////////////////
+
+const weapons = ['candlestick', 'lead pipe', 'revolver']
+
+const makeBroken = function(item){
+  return `broken ${item}`
+}
+
+const brokenWeapons = _.map(weapons, makeBroken)
