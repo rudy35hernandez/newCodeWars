@@ -273,10 +273,10 @@ let myList = ["rudy", "erika", "rudy jr", "adam"]
 /// creating a function to be thrown in as the callback
 let ages = function(name, i, list){
   if(list[i+1]){
-    console.log(name, "is older than", list[i+1])
+    console.log(`${name}, is older than ${list[i+1]}`)
   } else {
-    console.log(name, "is the youngest")
+    console.log(`${name}, is the youngest`)
   }
 }
 
-_.each(myList, ages)
+// _.each(myList, ages)
