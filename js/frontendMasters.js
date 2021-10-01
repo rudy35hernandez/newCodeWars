@@ -321,3 +321,29 @@ let suspectObjectsList = []
  _.each(newSuspects, function(suspect){
   suspectObjectsList.push(createSuspectObjects(suspect))
  })
+
+
+ ////////// Implementing a _.map function ////////////
+
+ _.map = function(list, callback){
+   /// create an empty array to store
+   let storage = [];
+   /// check if list is an array
+   /// loopin'
+   for(let i = 0; i < list.length; i++){
+     /// push it to our array
+      storage.push(callback(list[i], i, list));
+   }
+    /// return updated storage
+    return storage 
+}
+
+// lets try it with a _.each inside our _.map function instead of a for loop
+
+_.map = function(list, callback){
+  let storage2 = [];
+  _.each(list, function(v, i, list){
+    storage.push(callback(v, i, list))
+  })
+  return storage
+}
