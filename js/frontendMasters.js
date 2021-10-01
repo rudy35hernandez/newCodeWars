@@ -291,3 +291,33 @@ const makeBroken = function(item){
 }
 
 const brokenWeapons = _.map(weapons, makeBroken)
+
+/*
+
+function createSuspectObjects(name){
+   return {
+     name: name,
+     color: name.split(' ')[1],
+     speak: function (){
+       console.log("my name is ", name);
+     }
+   };
+};
+
+*/
+
+ let newSuspects = ["tony Danza", "joe thomas", "chick roos"]
+
+ const suspectsList = _.map(newSuspects, function(name){
+    return createSuspectObjects(name);
+ });
+
+ _.each(newSuspects, function(suspect){
+   suspect.speak
+ })
+
+let suspectObjectsList = []
+
+ _.each(newSuspects, function(suspect){
+  suspectObjectsList.push(createSuspectObjects(suspect))
+ })
