@@ -3919,7 +3919,9 @@ function getCount(str){
 
 function lookUpProfile(name, prop) {
   // Only change code below this line
-
+  for(let i = 0; i < contacts.length; i++){
+    
+  }
   // Only change code above this line
 }
 
