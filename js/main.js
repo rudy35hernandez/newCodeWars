@@ -3928,7 +3928,7 @@ function lookUpProfile(name, prop) {
     if(!profile){
       return "No such contact"
     }
-    const value = profile(prop);
+    const value = profile[prop];
     if(!value){
       return "No such property"
     }
