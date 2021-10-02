@@ -3919,9 +3919,20 @@ function getCount(str){
 
 function lookUpProfile(name, prop) {
   // Only change code below this line
+  let profile;
   for(let i = 0; i < contacts.length; i++){
-    
+    if(name == contacts[i].firstName){
+      profile = contacts[i]
+    }
   }
+    if(!profile){
+      return "No such contact"
+    }
+    const value = profile(prop);
+    if(!value){
+      return "No such property"
+    }
+    return value
   // Only change code above this line
 }
 
