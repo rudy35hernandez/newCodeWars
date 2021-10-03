@@ -447,8 +447,8 @@ _.filter = function(arr, callback){
 _.filter = function(arr, callback){
   let storage = []
   _.each(arr, function(val, i, list){
-    if(callback(arr[i], i, arr) === true){
-      storage.push(arr[i])
+    if(callback(item, i, list) === true){
+      storage.push(item)
     }
   })
   return storage
