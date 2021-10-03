@@ -445,11 +445,16 @@ _.filter = function(arr, callback){
 /// lets write the same function with _.each
 
 _.filter = function(arr, callback){
+  /// create empty arr to push to
   let storage = []
-  _.each(arr, function(val, i, list){
+  /// loop arr with each method
+  _.each(arr, function(item, i, list){
+  /// check to see if its true
     if(callback(item, i, list) === true){
+  /// push items into arr that pass the condition
       storage.push(item)
     }
   })
+  /// returns the arr of items
   return storage
 }
