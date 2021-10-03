@@ -429,15 +429,27 @@ const videoData = {
 
 const _ = {}
 
-_.filter = function(list, callback){
+_.filter = function(arr, callback){
   /// create a new array
   let storage = []
   /// run a for loop for each item
-  for(let i = 0; i < list.length; i++){
+  for(let i = 0; i < arr.length; i++){
     /// check if callback returns true, if it does, push into array
-    if(callback(list[i], i, list) === true){
+    if(callback(arr[i], i, arr) === true){
       storage.push(arr[i])
     }
   }
+  return storage
+}
+
+/// lets write the same function with _.each
+
+_.filter = function(arr, callback){
+  let storage = []
+  _.each(arr, function(val, i, list){
+    if(callback(arr[i], i, arr) === true){
+      storage.push(arr[i])
+    }
+  })
   return storage
 }
