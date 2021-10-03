@@ -434,9 +434,10 @@ _.filter = function(list, callback){
   let storage = []
   /// run a for loop for each item
   for(let i = 0; i < list.length; i++){
+    /// check if callback returns true, if it does, push into array
     if(callback(list[i], i, list) === true){
       storage.push(arr[i])
     }
   }
-  /// check if callback returns true, if it does, push into array
+  return storage
 }
