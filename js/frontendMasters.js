@@ -458,3 +458,10 @@ _.filter = function(arr, callback){
   /// returns the arr of items
   return storage
 }
+
+let presentCharacters = _.filter(videoData, function(suspectObject){
+  return suspectObject.present
+})
+
+
+
