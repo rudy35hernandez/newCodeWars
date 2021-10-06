@@ -501,3 +501,10 @@ myArr.forEach(val => console.log(val))
 ${'button'}.on('click', () => {
   console.log('Don/t press my buttons!')
 })
+
+
+/// template string. The name part is called interpolation  `hello ${name}, how are you` 
+
+
+/// NEXT LESSON, PROJECTING (TAKING A VALUE OUT OF A DATA STRUCTURE AND TURN IT INTO ANOTHER DATA STRUCTURE)
+
