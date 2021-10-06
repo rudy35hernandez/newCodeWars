@@ -465,3 +465,39 @@ let presentCharacters = _.filter(videoData, function(suspectObject){
 
 
 
+/////////////////////// MOST IMPORTANT THINGS TO KNOW ABOUT JS //////////////
+
+/* 
+
+- Never mutate data. Either change it, or share it, but don't do both.
+- Know how to read documentation.
+
+
+////////////////////////// Arrow Functions ////////////////////////////////////////////////
+
+*/
+//// 
+         /// Reg ////
+var nameImprover = function(name, adj){
+  return `Col ${name} Mc ${adj} pants`;
+}
+
+${'body'}.hide();
+
+${'button'}.on('click', function(){
+  console.log('Don/t press my button')
+})
+///////////////// VS /////////////////
+
+        /// Arrow ///
+var nameImprover = (name, adj) => {
+  return `Col ${name} Mc ${adj} pants`
+}
+
+${'body'}.hide()
+
+myArr.forEach(val => console.log(val))
+
+${'button'}.on('click', () => {
+  console.log('Don/t press my buttons!')
+})
