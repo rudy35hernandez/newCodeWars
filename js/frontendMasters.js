@@ -351,7 +351,7 @@ _.map = function(list, callback){
 
 /////////////////////// filter() practice next ///////////////////////////////////
 
-const videoData = {
+const videoData = [
   {
     name: "Miss Scarlet",
     present: true,
@@ -425,7 +425,7 @@ const videoData = {
     ]
   }
 
-};
+];
 
 const _ = {}
 
@@ -462,6 +462,8 @@ _.filter = function(arr, callback){
 let presentCharacters = _.filter(videoData, function(suspectObject){
   return suspectObject.present
 })
+
+
 
 
 
@@ -508,3 +510,6 @@ ${'button'}.on('click', () => {
 
 /// NEXT LESSON, PROJECTING (TAKING A VALUE OUT OF A DATA STRUCTURE AND TURN IT INTO ANOTHER DATA STRUCTURE)
 
+//// question is, filter through the data to see who was present, and return only the names in a new array ///
+
+/// lets set up our filter and map methods as if its never been done
