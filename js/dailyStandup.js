@@ -1373,6 +1373,17 @@ Note: You can expect all of the inputs to be the same length.
 
 
 */
+/// create a new string, add one by one with a for loop
+/// create an empty variable to add on to it as it loops
+/// since all string in parameters are equal in length, i can just use one for the for loop
+/// return the variable that WAS empty after loop completes
+function tripleTrouble(one, two, three){
+  let newString = ""
+  for(let i = 0; i < one.length; i++){
+    newString += one[i] + two[i] + three[i]
+  }
+  return newString
+ }
 
 
 /*
