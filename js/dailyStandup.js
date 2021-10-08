@@ -1396,3 +1396,12 @@ Don't worry about numbers, special characters, or non-string types being passed 
 lengths will be from 1 character up to 10 characters, but will never be empty.
 
 */
+
+/// return the word with first letter capitalized
+/// we can create a variable that takes the first letter only and capitalizes it
+/// we can then return that variable plus the string sliced at 1.
+
+function capitalizeWord(word) {
+  let capital = word[0].toUpperCase();
+   return capital + word.slice(1)
+ }
