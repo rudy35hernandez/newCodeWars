@@ -1405,3 +1405,18 @@ function capitalizeWord(word) {
   let capital = word[0].toUpperCase();
    return capital + word.slice(1)
  }
+
+
+
+ /*
+
+ 10/8/2021
+
+ create a function that removes the first and last characters of a string. You're given one parameter, the 
+ original string. You don't have to worry with strings with less than two characters.
+
+Ex.
+'eloquent' => 'loquen'
+'country' => 'ountr'
+
+*/
