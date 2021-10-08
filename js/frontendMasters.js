@@ -513,3 +513,35 @@ ${'button'}.on('click', () => {
 //// question is, filter through the data to see who was present, and return only the names in a new array ///
 
 /// lets set up our filter and map methods as if its never been done
+
+const _ = {};
+
+_.map = function(arr, callback){
+  let storage = [];
+  for(let i = 0; i < arr.length; i++){
+    storage.push(callback(arr[i], i, arr))
+  }
+  return storage
+}
+
+_.filter = function(arr, callback){
+  let storage = [];
+  for(let i = 0; i < arr.length; i++){
+    if(callback(arr[i], i, arr)){
+      storage.push(arr[i])
+    }
+  }
+  return storage
+}
+
+///// return all objects with present people, give a var name
+
+const presentChar = _.filter(videoData, function(suspObj){
+    return suspObj.present
+})
+
+//// now we map those and return arr of their names only
+
+const onlyNames = _.map(presentChar, function(onlyName){
+  return onlyName.name
+})
