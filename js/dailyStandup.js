@@ -1379,5 +1379,9 @@ Note: You can expect all of the inputs to be the same length.
 
 10/7/2021
 
+Create a function that takes in a word and returns the word with the first letter capitalized.
+
+Don't worry about numbers, special characters, or non-string types being passed to the function. The string 
+lengths will be from 1 character up to 10 characters, but will never be empty.
 
 */
