@@ -636,18 +636,22 @@ var nameImprover = function (name, adj) {
 
 //
 //func name(body)        func name(hide)
+//             invocation(calling the func)
  $('body').hide();
 
 
 //    func name(forEach)/ func definition 
 //                                    func name(log)
-//                             func body       
+//        invocation                func body / incovation      
  myArr.forEach(function(val) {console.log(val);})
 
 
 ///      func name(on)              func def
  $('button').on('click', function()){
   //      func name(log)
-  // func body
+  // func body  / invocation (calling the func)
    console.log('Don\'t press my buttons!');
  }
+
+
+ /////////////////////////// ARROW FUNCTIONS //////////////////////////////////////////
