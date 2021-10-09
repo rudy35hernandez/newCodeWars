@@ -625,3 +625,23 @@ const onlyNames = _.map(presentChar, function(onlyName){
 })
 
 
+/// function scavenger hunt: Definitions, Fn Names, Invocations, Arguemnts, Parameters, Fn Bodies, Return Values, Side Effects //////////////////
+
+///                 func def/ parameters
+var nameImprover = function (name, adj) {
+  // return val
+  return 'Col ' + name + ' Mc' + adj + ' pants';
+ }
+
+
+ $('body').hide();
+
+
+//              func definition
+ myArr.forEach(function(val) {console.log(val);})
+
+ 
+///                       func def
+ $('button').on('click', function()){
+   console.log('Don\'t press my buttons!');
+ }
