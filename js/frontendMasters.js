@@ -516,6 +516,81 @@ ${'button'}.on('click', () => {
 
 /// lets set up our filter and map methods as if its never been done so you can see the difference
 
+// const videoData = [
+//   {
+//     name: "Miss Scarlet",
+//     present: true,
+//     rooms: [
+//       {kitchen: false},
+//       {ballroom: false},
+//       {conservatory: false},
+//       {'dining room': false},
+//       {'billiard room': false},
+//       {library: false},
+//     ]
+//   },
+//   {
+//     name: "Mrs. White",
+//     present: false,
+//     rooms: [
+//       {kitchen: false},
+//       {ballroom: false},
+//       {conservatory: false},
+//       {'dining room': false},
+//       {'billiard room': false},
+//       {library: false},
+//     ]
+//   },
+//   {
+//     name: "Reverend King",
+//     present: false,
+//     rooms: [
+//       {kitchen: false},
+//       {ballroom: false},
+//       {conservatory: false},
+//       {'dining room': false},
+//       {'billiard room': false},
+//       {library: false},
+//     ]
+//   },
+//   {
+//     name: "Rusty",
+//     present: false;
+//     rooms: [
+//       {kitchen: false},
+//       {ballroom: false},
+//       {conservatory: false},
+//       {'dining room': false},
+//       {'billiard room': false},
+//       {library: false},
+//     ]
+//   },
+//   {
+//     name: "Colonel Mustard",
+//     present: true,
+//     rooms: [
+//       {kitchen: false},
+//       {ballroom: false},
+//       {conservatory: false},
+//       {'dining room': false},
+//       {'billiard room': false},
+//       {library: false},
+//     ]
+//   },
+//   {
+//     name: "Professor Plum",
+//     present: true,
+//     rooms: [
+//       {kitchen: false},
+//       {ballroom: false},
+//       {conservatory: false},
+//       {'dining room': false},
+//       {'billiard room': false},
+//       {library: false},
+//     ]
+//   }
+
+// ];
 
 const _ = {};
 
@@ -548,3 +623,5 @@ const presentChar = _.filter(videoData, function(suspObj){
 const onlyNames = _.map(presentChar, function(onlyName){
   return onlyName.name
 })
+
+
