@@ -654,4 +654,16 @@ var nameImprover = function (name, adj) {
  }
 
 
- /////////////////////////// ARROW FUNCTIONS //////////////////////////////////////////
+ /////////////////////////// ARROW FUNCTIONS, ex from functions up top //////////////////////////////////////////
+
+ var nameImprover = (name, adj) => {
+   return 
+ }
+
+ $('body').hide();
+
+ myArr.forEach(val => console.log(val));
+
+ $('button').on('click', () => {
+   console.log('Don\'t press my buttons!');
+ })
