@@ -508,11 +508,14 @@ ${'button'}.on('click', () => {
 /// template string. The name part is called interpolation  `hello ${name}, how are you` 
 
 
+
+
 /// NEXT LESSON, PROJECTING (TAKING A VALUE OUT OF A DATA STRUCTURE AND TURN IT INTO ANOTHER DATA STRUCTURE)
 
 //// question is, filter through the data to see who was present, and return only the names in a new array ///
 
-/// lets set up our filter and map methods as if its never been done
+/// lets set up our filter and map methods as if its never been done so you can see the difference
+
 
 const _ = {};
 
