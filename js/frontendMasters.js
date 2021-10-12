@@ -657,7 +657,7 @@ var nameImprover = function (name, adj) {
  /////////////////////////// ARROW FUNCTIONS, ex from functions up top //////////////////////////////////////////
 
  var nameImprover = (name, adj) => {
-   return 
+   return `Col ${name} Mc ${adj} pants`
  }
 
  $('body').hide();
@@ -667,3 +667,16 @@ var nameImprover = function (name, adj) {
  $('button').on('click', () => {
    console.log('Don\'t press my buttons!');
  })
+
+ /////////////////////////// SPREAD OPERATOR //////////////////////////////////////////
+
+ const createTuple = (a,b,c,d) => {
+   return [[a,c], [b,d]]
+  }
+
+  createTuple('it', 'be', 'could', 'anyone', 'no one') /// [["it", "could"], ["be"]]
+
+  /// Spread
+  const createTuple = (a, b, c, ...d) => {
+    return [[a, c], [b, d]]
+  }
