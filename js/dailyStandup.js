@@ -1461,3 +1461,9 @@ getAverage([1,2,3,4,5,]),3);
 getAverage([1,1,1,1,1,1,1,2]),1)
 
 */
+
+// Since we know we need to get the average, we need to add up all numbers and divide by the amount of numbers
+// first, we will add up all of the numbers with the map.reduce method.
+// after adding up all of the numbers, we need to divide it by the array.length
+// after getting the total, we can add the Math.floor method to round down to the nearest integer
+
