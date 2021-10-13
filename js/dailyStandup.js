@@ -1462,8 +1462,12 @@ getAverage([1,1,1,1,1,1,1,2]),1)
 
 */
 
+// Our parameter will take in an array of numbers
 // Since we know we need to get the average, we need to add up all numbers and divide by the amount of numbers
 // first, we will add up all of the numbers with the map.reduce method.
 // after adding up all of the numbers, we need to divide it by the array.length
 // after getting the total, we can add the Math.floor method to round down to the nearest integer
 
+function getAverage(marks){
+  return Math.floor(marks.reduce((sum, num) => num + sum,0) / marks.length)
+}
