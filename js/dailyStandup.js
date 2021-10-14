@@ -1537,3 +1537,9 @@ GO!
 // We have to loop through the arr and find all even numbers
 // we can then use slice with the arr.length - the 2nd parameter?
 
+function evenNumbers(arr, num){
+  let evenArr = [];
+  for(let i = 0; i < arr.length; i++){
+    
+  }
+}
