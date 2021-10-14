@@ -1498,3 +1498,20 @@ function nonRepeatsSum(arr){
   arr.filter((num, index, array) => array.indexOf(num) === array.lastIndexOf(num))
      .reduce((sum, num) => sum + num,0)
 }
+
+/// Lets add a second solution with for loops
+// first, lets set up a tracker that we will use to add the unique numbers, well call it count
+// lets loop through the arr with for loop
+// we will again use the indexOf and lastIndexOf method to only pass through the unique numbers
+// after each loop, we will start adding the total to count
+// last, we will return count
+
+function nonRepeatsSumLoop(arr){
+  let count = 0
+  for(let i = 0; i < arr.length; i++){
+    if(arr.indexOf(arr[i]) === arr.lastIndexOf(arr[i])){
+      count += arr[i]
+    }
+  }
+  return count
+}
