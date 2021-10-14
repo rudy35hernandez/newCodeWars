@@ -1546,3 +1546,9 @@ function evenNumbers(arr, num){
   }
   return evenArr.slice(evenArr.length - num)
 }
+
+/// another way using array methods only
+
+function evenNumber2(arr,num){
+  return arr.filter(num => num % 2 == 0).slice(-number)
+}
