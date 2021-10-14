@@ -1532,3 +1532,8 @@ For example:
 GO!
 */
 
+// We are creating a function with two parameters, an arr, and a number.
+// The number will be the length of the new array we are creating. 
+// We have to loop through the arr and find all even numbers
+// we can then use slice with the arr.length - the 2nd parameter?
+
