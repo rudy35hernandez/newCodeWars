@@ -1489,3 +1489,12 @@ repeats([5, 17, 18, 11, 13, 18, 11, 13]),22)
 repeats([5, 10, 19, 13, 10, 13]),24)
 
 */
+
+// So, we know that our parameter will take in an array of numbers
+// First thing we want to do is get rid of all of the numbers that occur more than once. We'll use filter for this.
+// To remove all repeats, a simple way is to use the indexOf and lastIndexOf arr method. We compare
+
+function nonRepeatsSum(arr){
+  arr.filter((num, index, array) => array.indexOf(num) === array.lastIndexOf(num))
+     .reduce((sum, num) => sum + num,0)
+}
