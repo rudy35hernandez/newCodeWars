@@ -1573,3 +1573,16 @@ solve([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]),72)
 
 
 */
+
+// Test case [[1, 2], [4, 4], [5, 6, 6]] // should return 4
+
+// This one is knowing a bit about math to get total possibilities
+// First, we want create a new array and subarrays with no duplicates inside the subarrays
+//
+
+function possibilites(arr){
+  ///     This removes all duplicates from the subarrays. arr becomes [[1,2], [4], [5, 6]]
+  ///     We the add the length method at the end to get length of each subarr
+  ///     unique now is [2, 1, 2]
+  let unique = arr.map(num => [...new Set(num)].length);
+}
