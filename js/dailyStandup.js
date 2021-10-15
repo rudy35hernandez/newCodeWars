@@ -1585,4 +1585,6 @@ function possibilites(arr){
   ///     We the add the length method at the end to get length of each subarr
   ///     unique now is [2, 1, 2]
   let unique = arr.map(num => [...new Set(num)].length);
+  ///     Now we just multiply all numbers together to get the total possibilities
+  return unique.reduce((acc,num)=> acc * num,1) 
 }
