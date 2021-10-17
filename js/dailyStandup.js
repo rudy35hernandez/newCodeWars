@@ -1592,6 +1592,8 @@ function possibilites(arr){
 
 /*
 
+Oct 19, 2021 challenge
+
 Given an array of integers , Find the Nth smallest element in this array of integers.
 
 Notes
