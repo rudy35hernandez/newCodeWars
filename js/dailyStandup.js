@@ -1613,3 +1613,9 @@ nthSmallest({177,225,243,-169,-12,-5,2,92} ,5) ==> return (92)
 // We want to make a function that takes two parameters, an array, and a number.
 // The array needs to be sorted to be able to choose by index
 // since arrays start at zero, the number in our argument needs to be subtracted by one
+
+function nthSmallestNum(arr, num){
+  // first lets sort the array and store it in a new variable
+  let sortedArr = arr.sort((a,b) => a-b)
+  return sortedArr[num-1]
+}
