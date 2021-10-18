@@ -1588,3 +1588,8 @@ function possibilites(arr){
   ///     Now we just multiply all numbers together to get the total possibilities
   return unique.reduce((acc,num)=> acc * num,1) 
 }
+
+
+/*
+
+
