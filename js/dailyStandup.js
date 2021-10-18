@@ -1619,3 +1619,9 @@ function nthSmallestNum(arr, num){
   let sortedArr = arr.sort((a,b) => a-b)
   return sortedArr[num-1]
 }
+
+/// we can even make this shorter
+
+function nthSmallestNum2(arr,num){
+  return arr.sort((a,b)=> a-b)[num-1]
+}
