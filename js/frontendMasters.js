@@ -691,3 +691,35 @@ const createTuple = (a, b, c, ...d) => {
 }
 
 createTuple("it", "be", "could", "anyone", "no one") 
+
+////////////////////////////// Default Parameters //////////////////////////////////////
+
+// E6
+const add = function(a, b = 2) {  /// b is being assigned as 2 in case an argument is not passed 
+  console.log(arguments) // logs [3] 
+  return a + b
+}
+
+add(3) // returns 5
+add(3, 1) // return 4
+
+// before E6
+
+const add = function(a,b) {
+  b = b || 2;
+  return a + b
+}
+
+
+//////////// Array-like Object //////////////////
+
+const constructArr = function() {
+  const arr = Array.prototype.slice.call(arguments); /// this turns your array-like object to an actual array
+  /// ['was', 'it', 'in']
+  arr.push('the billiards room?');
+  // ['was', 'it', 'in', 'the billiards room?']
+  return arr.join(' ');
+  /// 'was it in the billiards room?'
+}
+
+constructArr('was', 'it', 'in')
