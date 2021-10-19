@@ -681,7 +681,13 @@ var nameImprover = function (name, adj) {
     return [[a, c], [b, d]]
   }
 
-  createTuple("it", "could", "be", "anyone", "no one") /// [ ["it", "could"], ["be", ["anyone", "no one"]] ]
+  createTuple("it", "be", "could", "anyone", "no one") /// [ ["it", "could"], ["be", ["anyone", "no one"]] ]
 
                 //// Arguments keyword ///
-                
+  
+const createTuple = (a, b, c, ...d) => {
+  console.log(arguments); // will print it [ {0: "it", 1: "be", 2: "could", 3: "anyone", 4: "no one"}]
+  return [[a, b], [c, d]]
+}
+
+createTuple("it", "be", "could", "anyone", "no one") 
