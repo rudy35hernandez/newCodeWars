@@ -683,7 +683,9 @@ var nameImprover = function (name, adj) {
 
   createTuple("it", "be", "could", "anyone", "no one") /// [ ["it", "could"], ["be", ["anyone", "no one"]] ]
 
-                //// Arguments keyword ///
+
+
+                             //// Arguments keyword ///
   
 const createTuple = (a, b, c, ...d) => {
   console.log(arguments); // will print it [ {0: "it", 1: "be", 2: "could", 3: "anyone", 4: "no one"}]
@@ -720,6 +722,17 @@ const constructArr = function() {
   // ['was', 'it', 'in', 'the billiards room?']
   return arr.join(' ');
   /// 'was it in the billiards room?'
+}
+
+constructArr('was', 'it', 'in')
+
+
+// E6 Array.from
+
+const constructArr2 = function () {
+  const arr = Array.from(arguments);
+  arr.push("the billiards rooms")
+  return arr.join(' ')
 }
 
 constructArr('was', 'it', 'in')
