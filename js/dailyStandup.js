@@ -1642,11 +1642,22 @@ Examples
 
 */
 
-// First, the challenge tells us to ignore case for letters, so lets change the entire string to lower case
-// Also, we need to change it to an array to target each individual letter with map method
-//
+// 1. First, the challenge tells us to ignore case for letters, so lets change the entire string to lower case
+// 2. Also, we need to change it to an array to target each individual letter with map method
+// 3. Now that we have an arr of letters, we will map through it and check to see if a letter appears more than once,
+// we will use the indexOf to see if it equals lastIndexOf
+// 4. Once we return our new characters, we need to convert the array back to a string, we'll use join method.
 
 
 function duplicateEncode(word){
   let lowerWord = word.toLowerCase().split('')
+  let newArr = []
+  lowerWord.forEach((letter, index, arr) => {
+    if(arr.indexOf(letter) === arr.lastIndexOf(letter)){
+      return newArr.push('(')
+    } else {
+      return newArr.push(')')
+    }
+  })
+  return newArr.join('')
 }
