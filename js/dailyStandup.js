@@ -1641,3 +1641,10 @@ Examples
 "(( @"     =>  "))((" 
 
 */
+
+// First, the challenge tells us to ignore case for letters, so lets change the entire string to lower case
+
+
+function duplicateEncode(word){
+  // ...
+}
