@@ -1643,8 +1643,10 @@ Examples
 */
 
 // First, the challenge tells us to ignore case for letters, so lets change the entire string to lower case
+// Also, we need to change it to an array to target each individual letter with map method
+//
 
 
 function duplicateEncode(word){
-  // ...
+  let lowerWord = word.toLowerCase().split('')
 }
