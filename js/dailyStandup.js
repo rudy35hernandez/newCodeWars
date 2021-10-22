@@ -1676,10 +1676,10 @@ function duplicateEncode3(word){
   let wordArr = word.toLowerCase().split('')
   let tree = {}
   wordArr.forEach(letter => {
-    if(tree[letter])[
+    if(tree[letter]){
       let count = 0;
       tree[letter] += count + 1;
-    ] else {
+    } else {
       tree[letter] = 1
     }
   })
