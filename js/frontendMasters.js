@@ -739,3 +739,64 @@ const constructArr2 = function () {
 }
 
 constructArr('was', 'it', 'in')
+
+
+
+////////////// Implement _.from()
+
+const from = arr => {
+  return Array.prototype.slice.call(arr)
+}
+
+
+                 /////////////// Scope walkthrough set up ////////////////////
+
+// Scope is the area where a variable has access to some value
+
+(function () {
+  describe('Scope Exercises', function() { 
+  var ACTUAL;
+
+  // This resets the value to of ACTUAL (to null) before each test is run
+
+  beforeEach(function (){
+    ACTUAL = null;
+  });
+
+
+  /// Lets run through it
+  it('a function has access to its own local scope variales', function() {
+    /// 1. we create a var name fn that contains a function
+    var fn = function () {
+      // 3. since function is called, we go into the body of the function.
+      // we create a var name inner and we assign ACTUAL to name
+      var name = 'inner';
+      ACTUAL = name
+    };
+    //// 2. We call the function with the next line.
+    fn();
+    expect(ACTUAL === 'inner').to.be.true;
+  });
+  
+  it('inputs to a function are treated as local scope variables', function(){
+    var fn = function (name) {
+      ACTUAL = name;
+    };
+    fn('inner');
+    expect(ACTUAL === 'inner').to.be.true;
+  });
+
+  it('block scope can be created with let', function(){
+    var fn = function(){
+      var where = 'outer'
+      {
+        //// in ES6, we now have block scopes. because we used let, the let where is out of the scope for the next line.
+        /// if we change the let to var, it is no longer a block scope and where is just rewritten to 'inner'
+        let where = 'inner'
+      }
+      ACTUAL = where
+    };
+    fn();
+    expect(ACTUAL === "outer").to.be.true
+  });
+})
