@@ -1661,3 +1661,11 @@ function duplicateEncode(word){
   })
   return newArr.join('')
 }
+
+// Shorter answer 
+
+function duplicateEncode2(word){
+  return word.toLowerCase().split("")
+  .map((letter, index, arr) => arr.indexOf(letter) === arr.lastIndexOf(letter) ? "(" : ")")
+  .join('')
+}
