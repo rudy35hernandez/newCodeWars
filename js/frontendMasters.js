@@ -731,8 +731,11 @@ constructArr('was', 'it', 'in')
 
 const constructArr2 = function () {
   const arr = Array.from(arguments);
+  // ['was', 'it', 'in']
   arr.push("the billiards rooms")
-  return arr.join(' ')
+  // ['was', 'it', 'in', 'the billiards room']
+  return arr.join(' ') // returns 'was it in the billiards room'
+  
 }
 
 constructArr('was', 'it', 'in')
