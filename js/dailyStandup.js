@@ -1669,3 +1669,22 @@ function duplicateEncode2(word){
   .map((letter, index, arr) => arr.indexOf(letter) === arr.lastIndexOf(letter) ? "(" : ")")
   .join('')
 }
+
+// ONE more solution using a tree, then mapping based on whether key value is greater than 1
+
+function duplicateEncode3(word){
+  let wordArr = word.toLowerCase().split('')
+  let tree = {}
+  wordArr.forEach(letter => {
+    if(tree[letter])[
+      let count = 0;
+      tree[letter] += count + 1;
+    ] else {
+      tree[letter] = 1
+    }
+  })
+  let newStr = wordArr.map(function (letter) {
+    return tree[letter] > 1 ? ")" : "("
+  }).join('')
+  return newStr
+}
