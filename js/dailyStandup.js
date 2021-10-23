@@ -1714,5 +1714,5 @@ function reverseCase(str){
 
 /// lets create test cases
 
-console.log(reverseCase("tEsT"), "TeSt")
-console.log(reverseCase("HerNanDeZ"), "hERnANdEz")
+console.log(reverseCase("sTRING Example"), "eXAMPLE String")
+console.log(reverseCase("Yes mAN"), "Man yES")
