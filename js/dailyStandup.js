@@ -1711,3 +1711,8 @@ You may assume the input only contain English alphabet and spaces.
 function reverseCase(str){
   
 }
+
+/// lets create test cases
+
+console.log(reverseCase("tEsT"), "TeSt")
+console.log(reverseCase("HerNanDeZ"), "hERnANdEz")
