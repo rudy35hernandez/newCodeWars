@@ -1705,3 +1705,9 @@ For example:
 You may assume the input only contain English alphabet and spaces.
 
 */
+
+/// first lets set up a function 
+
+function reverseCase(str){
+  
+}
