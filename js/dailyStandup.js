@@ -1711,8 +1711,11 @@ You may assume the input only contain English alphabet and spaces.
 function reverseCase(str){
   // first, lets reverse the word order
   let reverseStr = str.split(' ').reverse().join(' ');
+  /// first, lets split the string letter by letter in array to use array methods
   return reverseStr.split('')
+  /// with map, we will target every single letter, and we'll turn L-case to U-case and U-case to L-case
   .map(letter => letter === letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase())
+  /// lastly, we'll join the letters back to return it to a string
   .join('')
 }
 
