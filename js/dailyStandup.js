@@ -1709,7 +1709,11 @@ You may assume the input only contain English alphabet and spaces.
 /// first lets set up a function 
 
 function reverseCase(str){
-  
+  // first, lets reverse the word order
+  let reverseStr = str.split(' ').reverse().join(' ');
+  return reverseStr.split('')
+  .map(letter => letter === letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase())
+  .join('')
 }
 
 /// lets create test cases
