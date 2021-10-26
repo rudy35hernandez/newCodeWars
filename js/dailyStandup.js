@@ -1741,3 +1741,9 @@ last('what time are we climbing up the volcano'), ['time', 'are', 'we', 'the', '
 last('take me to semynak'), ['take', 'me', 'semynak', 'to']
 
 */
+
+/// first, we need to declare our function and use a str as a parameter
+
+function sortByLast(str){
+  /// 
+}
