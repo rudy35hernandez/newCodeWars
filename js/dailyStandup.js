@@ -1745,5 +1745,14 @@ last('take me to semynak'), ['take', 'me', 'semynak', 'to']
 /// first, we need to declare our function and use a str as a parameter
 
 function sortByLast(str){
-  /// 
+  /// we need to make sure we split the str (sentence) into an array with an element for each word. Let's use split method
+  let strArr = str.split(' ');
+  /// Now that we have an array of words, we need to target the last character for each word. We cant reverse 
+  /// then sort because then it will sort it completely and not just by last letter and position. Let's use 
+  /// charCodeAt method
+  strArr.sort((a,b) => {
+    let sortedArr = a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1);
+    /// we return the sorted by last letter array.
+    return sortedArr
+  })
 }
