@@ -1688,3 +1688,7 @@ function duplicateEncode3(word){
   }).join('')
   return newStr
 }
+
+/*
+
+Oct

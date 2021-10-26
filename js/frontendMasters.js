@@ -799,4 +799,6 @@ const from = arr => {
     fn();
     expect(ACTUAL === "outer").to.be.true
   });
+
 })
+
