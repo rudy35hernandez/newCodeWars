@@ -1775,3 +1775,9 @@ If no number was deleted from the starting array, your function should return th
 Note: N may be 1 or less (in the latter case, the first array will be []).
 
 */
+
+/// So, we need to find the missing number in list of numbers that makes it a sequence.
+/// First thing I am thinking of, is to sort the arr to find the greatest number in that arr.
+/// Next step would be to run a for loop for the greatest number, and each number will be added to a count variable that starts at 0.
+/// After we get the sum of the variable count, we can compare it to the original array by subtracting it, this will get us our missing number.
+
