@@ -1781,13 +1781,15 @@ Note: N may be 1 or less (in the latter case, the first array will be []).
 /// If it isnt, we will get the missing number by subtracting the first reduced arr by the second
 
 function findMissingNum(sortedArr, mixedArr){
-  
+
   /// first, lets set up a conditional to return 0 if the array is empty
-  if(!arr.length){
+  if(!sortedArr.length){
     return 0
   } else {
-    let sortedArr = arr.sort((a,b) => b-a)
-    
+    let sortedTotal = arr.reduce((sum, num) => sum + num,0)
+    let mixedTotal = arr.reduce((sum, num) => sum + num,0)
 
+    return sortedTotal - mixedTotal
+    
   }
 }
