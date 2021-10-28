@@ -1776,8 +1776,18 @@ Note: N may be 1 or less (in the latter case, the first array will be []).
 
 */
 
-/// So, we need to find the missing number in list of numbers that makes it a sequence.
-/// First thing I am thinking of, is to sort the arr to find the greatest number in that arr.
-/// Next step would be to run a for loop for the greatest number, and each number will be added to a count variable that starts at 0.
-/// After we get the sum of the variable count, we can compare it to the original array by subtracting it, this will get us our missing number.
+/// First, lets add up both arrays by using reduce methods and assign them each to a variable name
+/// After we have the total of each, we can run a conditional to see if an arr is empty, if it is, just return 0
+/// If it isnt, we will get the missing number by subtracting the first reduced arr by the second
 
+function findMissingNum(sortedArr, mixedArr){
+  
+  /// first, lets set up a conditional to return 0 if the array is empty
+  if(!arr.length){
+    return 0
+  } else {
+    let sortedArr = arr.sort((a,b) => b-a)
+    
+
+  }
+}
