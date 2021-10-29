@@ -1822,10 +1822,10 @@ arrayDiff([1,8,2], []), [1,8,2], "a was [1,8,2], b was []"
 /// lets set up our function declaration
 
 function subtractArr(a, b){
-  return a.map(num => b.)
+  return a.map(num => b.indexAt(num));
 }
 
 
 console.log(subtractArr([1,2], [1]), [2]);
 console.log(subtractArr([2,2,1,4], [2]), [1, 4]);
-console.log(subtractArr([5,5,1,1,2], [5,1]), [2])
+console.log(subtractArr([5,5,1,1,2], [5,1]), [2]);
