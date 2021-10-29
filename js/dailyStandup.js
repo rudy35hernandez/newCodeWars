@@ -1815,4 +1815,17 @@ arrayDiff([1,8,2], []), [1,8,2], "a was [1,8,2], b was []"
 
 */
 
-// First, we need to create a function that will delete 
+// First, we need to create a function that will delete all occurrences of numbers in array a that are in arr b
+// We know we want to return an array with no b elements in a, so Filter would be a good method
+// The best option for comparing likeness for two arrays would be to use indexAt(elem) === -1 (this will check if an element does NOT exist)
+
+/// lets set up our function declaration
+
+function subtractArr(a, b){
+  return a.map(num => b.)
+}
+
+
+console.log(subtractArr([1,2], [1]), [2]);
+console.log(subtractArr([2,2,1,4], [2]), [1, 4]);
+console.log(subtractArr([5,5,1,1,2], [5,1]), [2])
