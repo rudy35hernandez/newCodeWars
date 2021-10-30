@@ -1851,3 +1851,15 @@ gimme([5, 10, 14]) => 1
 10 is the number that fits between 5 and 14 and the index of 10 in the input array is 1.
 
 */
+
+function middleIndex(arr){
+  
+
+}
+
+
+/// test cases
+console.log(middleIndex([4, 6, 7]), 0) /// 4 is the middle number, so index is 0
+console.log(middleIndex([1, 4, 7]), 1)
+console.log(middleIndex([3, 9, 6]), 2)
+
