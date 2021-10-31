@@ -1852,9 +1852,11 @@ gimme([5, 10, 14]) => 1
 
 */
 
-function middleIndex(arr){
-  
+/// First thing we need to do is sort the array to be able to grab the middle index. 
+/// We don't want to mutate the original array, so lets clone it, using slice
 
+function middleIndex(arr){
+  let numNeeded = arr.slice(0)
 }
 
 
