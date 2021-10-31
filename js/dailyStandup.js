@@ -1853,10 +1853,15 @@ gimme([5, 10, 14]) => 1
 */
 
 /// First thing we need to do is sort the array to be able to grab the middle index. 
-/// We don't want to mutate the original array, so lets clone it, using slice
+/// We don't want to mutate the original array, so lets clone it, using slice.
+/// After we clone it, we'll create one more variable to grab the middle number.
+/// Now that we have the middle number in a variable, we can return the answer by 
+/// calling on the org array, with indexOf(middle)
 
 function middleIndex(arr){
-  let numNeeded = arr.slice(0)
+  let clone = arr.slice(0)
+  let middle = clone.sort((a,b)=> a-b)[1]
+  return arr.indexOf(middle)
 }
 
 
