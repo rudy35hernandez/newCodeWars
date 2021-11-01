@@ -11,3 +11,7 @@
 // 2. Assignments are constant
 // 3. Accessing elements in an Array (by index) or object (by key) is constant. Ex. arr[3]
 // 4. In a loop, the complexity is the length of the loop times complexity of whatever happens inside the loop
+
+/// Time Complexity (time it takes)
+
+/// Space Complexity (the amount of memory taken up)
