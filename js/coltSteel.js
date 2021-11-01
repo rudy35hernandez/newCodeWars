@@ -14,4 +14,11 @@
 
 /// Time Complexity (time it takes)
 
+
+
+
 /// Space Complexity (the amount of memory taken up)
+
+// Most primitives (booleans, numbers, undefined, null) are constant space
+// Strings require O(n) space (where n is the string length)
+// Reference types are generally O(n), where n is the length (for arrays), or the number of keys (for objects)
