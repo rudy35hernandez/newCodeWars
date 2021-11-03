@@ -1887,3 +1887,13 @@ sortArray([5, 3, 2, 8, 1, 4]), [1, 3, 2, 8, 5, 4])
 sortArray([5, 3, 1, 8, 0]), [1, 3, 5, 8, 0])
 
 */
+
+function sortTheOdds(arr){
+
+}
+
+/// test cases
+
+console.log(sortTheOdds([4, 2, 3, 1, 6, 9]), [4, 2, 1, 3, 6, 9])
+console.log(sortTheOdds([7, 1]), [1, 7])
+console.log(sortTheOdds([5, 1, 3, 6, 9, 2, 7]), [1, 3, 5, 6, 7, 2, 9])
