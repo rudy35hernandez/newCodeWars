@@ -1889,7 +1889,7 @@ sortArray([5, 3, 1, 8, 0]), [1, 3, 5, 8, 0])
 */
 
 function sortTheOdds(arr){
-
+  let odds = arr.filter(num => num % 2 !== 0).sort((a,b) => a-b)
 }
 
 /// test cases
