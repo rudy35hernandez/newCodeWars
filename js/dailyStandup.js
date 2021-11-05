@@ -1923,7 +1923,8 @@ The input array's length > 1
 /// Now that we have a variable that holds the average, we can use the repeat method after grabbing the first char in an element
 
 function avgLengthArr(arr){
-
+  let avg = Math.round(arr.join('').length / arr.length)
+  return arr.map(letters => letters[0].repeat(avg))
 }
 
 console.log(averageLength(['u', 'y']), ['u', 'y'])
