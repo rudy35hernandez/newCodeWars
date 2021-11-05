@@ -1916,3 +1916,16 @@ If the average length is not an integer, use Math.round().
 The input array's length > 1
 
 */
+
+/// edge cases to ask for - Can numbers be in the array? Can there be null? Does case matter for characters?
+/// Now that we get all edge cases out of the way, we need to get the length of all characters. We also need to use math round for non integers
+/// After we get the length of all characters, we need to divide the length by the array length and assign it to a variable.
+/// Now that we have a variable that holds the average, we can use the repeat method after grabbing the first char in an element
+
+function avgLengthArr(arr){
+
+}
+
+console.log(averageLength(['u', 'y']), ['u', 'y'])
+console.log(averageLength(['aa', 'bbb', 'cccc']), ['aaa', 'bbb', 'ccc'])
+console.log(averageLength(['aa', 'bb', 'ddd', 'eee']), ['aaa', 'bbb', 'ddd', 'eee'])
