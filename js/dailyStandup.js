@@ -1930,3 +1930,18 @@ function avgLengthArr(arr){
 console.log(averageLength(['u', 'y']), ['u', 'y'])
 console.log(averageLength(['aa', 'bbb', 'cccc']), ['aaa', 'bbb', 'ccc'])
 console.log(averageLength(['aa', 'bb', 'ddd', 'eee']), ['aaa', 'bbb', 'ddd', 'eee'])
+
+
+/*
+
+Nov 4, 2021
+
+Your task is to remove all consecutive duplicate words from a string, leaving only first words entries. For 
+example:
+
+"alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
+
+--> "alpha beta gamma delta alpha beta gamma delta"
+
+*/
+
