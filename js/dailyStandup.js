@@ -2099,20 +2099,19 @@ divisible by both 2 and 3, print out “Fizz Buzz”.
 
 */
 
+
 function fizzAgain(num){
-  for(let i = 0; i <= num; i++){
-    if(i % 2 === 0 && i % 3 === 0){
-      return "fizz buzz"
+  for(let i = 1; i <= num; i++){
+    if(i % 2 === 0 & i % 3 === 0){
+      console.log("fizzbuzz")
+    } else if(i % 2 === 0){
+      console.log("fizz")
+    } else if(i % 3 === 0){
+      console.log("buzz")
     } else {
-      if(i % 2 === 0){
-        return "fizz"
-      } 
-    } else {
-      if(i % 3 === 0){
-        return "buzz"
-      }
-    } else {
-      return num
+      console.log(i)
     }
   }
 }
+
+console.log(fizzAgain(6))
