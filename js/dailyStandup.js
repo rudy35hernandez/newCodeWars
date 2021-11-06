@@ -1945,3 +1945,10 @@ example:
 
 */
 
+function removeConsecutiveDuplicates(str){
+
+}
+
+console.log(removeConsecutiveDuplicates("hello hello"), "hello")
+console.log(removeConsecutiveDuplicates("hello to hello hello to") "hello to hello to")
+console.log(removeConsecutiveDuplicates("the the best was was the was"), "the best was the was")
