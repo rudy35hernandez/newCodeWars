@@ -1946,7 +1946,14 @@ example:
 */
 
 function removeConsecutiveDuplicates(str){
-
+  let strArr = str.split(' ')
+  let newArr = []
+  for(let i = 0; i < strArr.length; i++){
+    if(strArr[i] !== strArr[i - 1]){
+      newArr.push(strArr[i])
+    }
+  }
+  return newArr.join(' ')
 }
 
 console.log(removeConsecutiveDuplicates("hello hello"), "hello")
