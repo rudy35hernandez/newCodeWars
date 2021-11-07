@@ -1959,3 +1959,24 @@ function removeConsecutiveDuplicates(str){
 console.log(removeConsecutiveDuplicates("hello hello"), "hello")
 console.log(removeConsecutiveDuplicates("hello to hello hello to") "hello to hello to")
 console.log(removeConsecutiveDuplicates("the the best was was the was"), "the best was the was")
+
+
+/*
+
+Nov 8, 2021
+
+You will be given an array of strings and your task is to remove all consecutive duplicate letters from each 
+string in the array.
+
+For example:
+
+dup(["abracadabra","allottee","assessee"]) = ["abracadabra","alote","asese"].
+dup(["kelless","keenness"]) = ["keles","kenes"].
+Strings will be lowercase only, no spaces 
+
+dup(["ccooddddddewwwaaaaarrrrsssss","piccaninny","hubbubbubboo"]),['codewars','picaniny','hubububo'])
+dup(["abracadabra","allottee","assessee"]),['abracadabra','alote','asese'])
+dup(["kelless","keenness"]), ['keles','kenes'])
+
+*/
+
