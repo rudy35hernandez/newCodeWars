@@ -1988,4 +1988,10 @@ dup(["kelless","keenness"]), ['keles','kenes'])
 function remPrevDupl(arr){
   let joinedArr = arr.join(' ');
   let newStr = ""
+  for(let i = 0; i < joinedArr.length; i++){
+    if(joinedArr[i] !== joinedArr[i - 1]){
+      newStr += joinedArr[i]
+    }
+  }
+  return newStr.split(' ')
 }
