@@ -61,7 +61,7 @@ function hashMap(str){
   }
 
 
-  /* create a function that takes in two arrays of numbers, if every number is arr1 is squared, and if every number
+  /* create a function that takes in two arrays of numbers, if every number in arr1 is squared, and if every number
   appears in arr2 (1 for each), then it will return true. The order of the numbers do not matter.
   
   ex. same([1,2,3], [9, 1, 4]) /// true
@@ -69,7 +69,27 @@ function hashMap(str){
 
   */
 
+/// this is O(n2)
   function same(arr1, arr2){
+      if(arr1.length !== arr2){
+          return false
+      }
+
+      for(let i = 0; i < arr1.length; i++){
+          let correctIndex = arr2.indexOf(arr1[i] ** 2)
+          if(correctIndex === -1){
+              return false
+          }
+          arr2.splice(correctIndex, 1)
+      }
+      return true
+  }
+ 
+/// refactored to make it O(n)   
+
+//////// FREQUENCY COUNTER //////////////////
+
+  function same1(arr1, arr2){
       if(arr1.length !== arr2.length){
           return false
       }
@@ -77,7 +97,7 @@ function hashMap(str){
       let frequencyCounter1 = {};
       let frequencyCounter2 = {};
       for(let val of arr1){
-          frequencyCounter1[val] = (frequencyCounter1[val1] || 0) + 1
+          frequencyCounter1[val] = (frequencyCounter1[val] || 0) + 1
       }
       for(let val of arr2){
           frequencyCounter2 = (frequencyCounter2[val] || 0) + 1
@@ -87,7 +107,7 @@ function hashMap(str){
           if(!(key ** 2 in frequencyCounter2)){
               return false
           }
-          if(frequencyCounter2[key ** 2] !== frequencyCounter1(key)){
+          if(frequencyCounter2[key ** 2] !== frequencyCounter1[key]){
               return false
           }
       }

@@ -1980,3 +1980,7 @@ dup(["kelless","keenness"]), ['keles','kenes'])
 
 */
 
+// first, we need to join the arrays together to create one big string, but we'll separate them with a space in the join method
+// next, we need to create a variable that will be empty, this is where we will push our new string which will not contain duplicates
+// we then run a for loop, this will only pass through letters that did not appear right before that letter
+// we will add these letters to the empty string, and in the end, lets split them again to create the array once again.
