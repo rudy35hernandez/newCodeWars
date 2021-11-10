@@ -2017,3 +2017,6 @@ function palindromeUpdated(str){
   /// now we compare 
   return newStr === newStr.split('').reverse().join('')
 }
+
+console.log(palindromeUpdated("race car."), true)
+console.log(palindromeUpdated("1 eye for of 1 eye."), false)
