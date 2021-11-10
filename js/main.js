@@ -3936,6 +3936,18 @@ function lookUpProfile(name, prop) {
   // Only change code above this line
 }
 
-lookUpProfile("Akira", "likes");
+// lookUpProfile("Akira", "likes");
+
+
+/*
+
+//find the longest word in the string, return the length of that word */
+
+
+function findLongestWordLength(str) {
+  let strArr = str.split(' ');
+ 
+  return strArr.sort((a,b) => b.length - a.length)[0].length
+}
 
 
