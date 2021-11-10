@@ -1995,3 +1995,13 @@ function remPrevDupl(arr){
   }
   return newStr.split(' ')
 }
+
+
+/* 
+
+Nov 10, 2021
+
+This is the palindrome algorithm, but unlike past challenges, this one can only have letters and numbers.
+All punctuation and symbols will be ignored
+
+*/
