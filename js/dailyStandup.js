@@ -2008,8 +2008,12 @@ All punctuation and symbols should be ignored also.
 */
 
 function palindromeUpdated(str){
-  /// first let split the str to create an arr
+  /// first let split the str to create an arr and make it all lower case since upper/lower is ignored
   let strArr = str.toLowerCase().split('')
   // next we create a variable that contains all ALLOWED str characters to be evaluated, those not in here will be ommitted
   let alphabet = 'abcdefghijklmnopqrstuvwxyz123456789'
+  /// next we create a new variable that will contain the filtered string
+  let newStr = strArr.filter(char => alphabet.includes(char)).join
+  /// now we compare 
+  return newStr === newStr.split('').reverse().join('')
 }
