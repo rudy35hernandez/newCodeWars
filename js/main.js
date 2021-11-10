@@ -3968,9 +3968,14 @@ Only integers greater than or equal to zero will be supplied to the function. */
 function factorialize(num) {
   /// set up new array to add all numbers
   let newArr = []
+  if(num <= 0){
+    return 1
+  } else {
   for(let i = 0; i <= num; i++){
-
+    newArr.push(i)
+    }
   }
+  return newArr.reduce((sum, num) => sum * num)
 }
 
 
