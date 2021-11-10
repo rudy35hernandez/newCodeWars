@@ -2001,7 +2001,15 @@ function remPrevDupl(arr){
 
 Nov 10, 2021
 
-This is the palindrome algorithm, but unlike past challenges, this one can only have letters and numbers.
-All punctuation and symbols will be ignored
+This is the palindrome algorithm, but unlike past challenges, this one can only have letters and numbers. Lower/
+upper case should be ignored.
+All punctuation and symbols should be ignored also.
 
 */
+
+function palindromeUpdated(str){
+  /// first let split the str to create an arr
+  let strArr = str.toLowerCase().split('')
+  // next we create a variable that contains all ALLOWED str characters to be evaluated, those not in here will be ommitted
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz123456789'
+}
