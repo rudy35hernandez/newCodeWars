@@ -3991,3 +3991,11 @@ Remember, you can iterate through an array with a simple for loop, and access ea
 
 */
 
+/// I couldnt figure out what to do at first, so I went with a brute force solution which assumed it would take
+//  exactly 4 sub array, with exactly 4 elements in each array.//
+
+function largestOfFour(arr) {
+  
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
