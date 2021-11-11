@@ -2020,3 +2020,8 @@ function palindromeUpdated(str){
 
 console.log(palindromeUpdated("race car."), true)
 console.log(palindromeUpdated("1 eye for of 1 eye."), false)
+
+
+/* 
+
+Nov 12, 2021
