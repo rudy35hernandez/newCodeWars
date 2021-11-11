@@ -3997,30 +3997,34 @@ Remember, you can iterate through an array with a simple for loop, and access ea
 //  I then sorted each array and grabbed one element from each (the biggest) and added to a variable
 // Then I added each number(4) to a new array
 function largestOfFour(arr) {
-  let arr1 = []
-  let arr2 = []
-  let arr3 = []
-  let arr4 = []
-  let joinedArr = arr.join().split(',')
+  // let arr1 = []
+  // let arr2 = []
+  // let arr3 = []
+  // let arr4 = []
+  // let joinedArr = arr.join().split(',')
   
-   for(let i = 0; i < joinedArr.length; i++){
-     if(i <= 3){
-       arr1.push(joinedArr[i])
-     } else if(i >= 4 && i <= 7){
-       arr2.push(joinedArr[i])
-     } else if(i >= 8 && i <= 11){
-       arr3.push(joinedArr[i])
-     } else{
-       arr4.push(joinedArr[i])
-     }
+  //  for(let i = 0; i < joinedArr.length; i++){
+  //    if(i <= 3){
+  //      arr1.push(joinedArr[i])
+  //    } else if(i >= 4 && i <= 7){
+  //      arr2.push(joinedArr[i])
+  //    } else if(i >= 8 && i <= 11){
+  //      arr3.push(joinedArr[i])
+  //    } else{
+  //      arr4.push(joinedArr[i])
+  //    }
     
-   }
-  let highest1 = arr1.map(num => Number(num)).sort((a,b) => b-a)[0];
-  let highest2 = arr2.map(num => Number(num)).sort((a,b) => b-a)[0];
-  let highest3 = arr3.map(num => Number(num)).sort((a,b) => b-a)[0];
-  let highest4 = arr4.map(num => Number(num)).sort((a,b) => b-a)[0]
+  //  }
+  // let highest1 = arr1.map(num => Number(num)).sort((a,b) => b-a)[0];
+  // let highest2 = arr2.map(num => Number(num)).sort((a,b) => b-a)[0];
+  // let highest3 = arr3.map(num => Number(num)).sort((a,b) => b-a)[0];
+  // let highest4 = arr4.map(num => Number(num)).sort((a,b) => b-a)[0]
   
-  return [highest1, highest2, highest3, highest4]
+  // return [highest1, highest2, highest3, highest4]
+
+  /// better solution
+
+  return arr.map(group => group.filter((a,b) => b-a)[0])
 }
 
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
