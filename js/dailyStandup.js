@@ -2043,8 +2043,13 @@ Examples
 */
 
 /// first lets create the function and add some test cases
-
+/// Next we create a variable that will hold all vowels in the indexes needed for the test
+/// Next we'll run a loop for each letter in vowels, and test it against the str to see if it does NOT exist,
+/// then we join it.
 function missingVowelIndex(str){
+  let vowels = "aeiou";
+  const missing = vowels.filter(letter => str.indexOf(letter) === -1).join()
+  return vowels.indexOf(missing)
 
 }
 
