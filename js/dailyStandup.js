@@ -2041,3 +2041,12 @@ Examples
 "Bb Smith sent us six neatly arranged range bicycles"  =>  3  ; missing: "o"
 
 */
+
+/// first lets create the function and add some test cases
+
+function missingVowelIndex(str){
+
+}
+
+console.log(missingVowelIndex("ll I do is hve fun"), 0)
+console.log(missingVowelIndex("I love to have fn in the sn"), 4)
