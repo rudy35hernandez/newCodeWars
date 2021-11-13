@@ -2055,3 +2055,18 @@ function missingVowelIndex(str){
 
 console.log(missingVowelIndex("ll I do is hve fun"), 0)
 console.log(missingVowelIndex("I love to have fn in the sn"), 4)
+
+
+/*
+
+Create a function that takes in a string as one parameter, and a number as a second parameter.
+With this function, return the entire string if the length of the string is less than or equal to the number
+in the second parameter. If the string is longer, return the str with the length up to the number in the parameter
+followed by "..."
+
+*/
+
+function shortenStr(str, num){
+
+}
+
