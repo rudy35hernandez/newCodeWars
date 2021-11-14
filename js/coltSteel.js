@@ -115,7 +115,7 @@ function hashMap(str){
   }
 
 
-  //////// ANAGRAM CHALLENGE ////////////
+  //////// ANAGRAM CHALLENGE WITH FREQUENCY COUNTER PATTERN ////////////
   
   /* Given two strings, write a function to determine if the second string is an anagram of the first. An anagram
   is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
@@ -150,3 +150,22 @@ function hashMap(str){
   }
 
   console.log(anagram2("what", "hWta"))
+
+
+  /* the next pattern that is covered is the MULTIPLE POINTERS PATTERN
+
+  A challenge that embodies this is is the sumZero algorith problem.
+
+  Details: Write a function called sumZero which accepts a sorted array of integers. The function should find the 
+  FIRST pair where the sum is 0. Return an array that includes both values that sum to 0 or undefined if a pair
+  does not exist.
+
+  */
+
+  function sumZero(arr){
+
+  }
+
+  console.log(sumZero([-3, -2, -1, 0, 1, 2, 3,]), [-3, 3])
+  console.log(sumZero([-2, 0, 1, 3])) // should return undefined
+  console.log(sumZero([1, 2, 3]))// should return undefined
