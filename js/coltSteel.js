@@ -216,4 +216,7 @@ function hashMap(str){
 Only return the values that appear once. 
 We will be using the multiple pointers method again, only this time we're not going from left to middle and right to
 middle. This time both our pointers will start from the left side 
+
+DETAILS: Implement a function called countUniqueValues, which accepts a sorted array, and counts the unique values
+in the array. There can be negative numbers in the array, but it will always be sorted.
 */
