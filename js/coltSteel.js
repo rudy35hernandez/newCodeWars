@@ -144,3 +144,9 @@ function hashMap(str){
       }
   }
 
+  // easier way to solve
+  function anagram2(str1, str2){
+
+  }
+
+  console.log(anagram2())
