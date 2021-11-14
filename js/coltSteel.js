@@ -181,9 +181,9 @@ function hashMap(str){
   console.log(sumZero([1, 2, 3]))// should return undefined
 
 
-
+//////////////////////////////////////////////////////////////////////////////////////////////
   /// BELOW IS THE OPTIMAL SOLUTION USING MULTIPLE POINTERS PATTERN
-
+//////////////////////////////////////////////////////////////////////////////////////////////
   function sumZero2(arr){
       /// first we initiate our start, for left we make it 0 (will be index 0)
     let left = 0;
@@ -208,3 +208,12 @@ function hashMap(str){
     }
   }
 
+  /// time complexity for this is O(n)
+
+/////////////////////////////////////////////////
+
+/* Next algorithm is to find unique values in an array. For this question, all the values will be integers. 
+Only return the values that appear once. 
+We will be using the multiple pointers method again, only this time we're not going from left to middle and right to
+middle. This time both our pointers will start from the left side 
+*/
