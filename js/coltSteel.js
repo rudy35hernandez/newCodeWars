@@ -185,19 +185,26 @@ function hashMap(str){
   /// BELOW IS THE OPTIMAL SOLUTION USING MULTIPLE POINTERS PATTERN
 
   function sumZero2(arr){
+      /// first we initiate our start, for left we make it 0 (will be index 0)
     let left = 0;
+      /// for the variable right, we make it arr.length - 1 (-1 because our index starts at 0 for arrays)
     let right = arr.length - 1
-
+      /// first we create the condtion, if left is less than right, run the following operations
     while(left < right){
+      /// We are creating a variable named sum that will add arr[left] and arr[right]
         let sum = arr[left] + arr[right];
+      /// if the first iteration is 0, we found our solution and we return both numbers
         if(sum === 0){
             return [arr[left], arr[right]];
+      /// if the two numbers were NOT found, the condition here is if the sum of the two numbers are greater than 0  
         } else if(sum > 0){
+      /// here, we subtract one from right, meaning we go down 1 index to see if its the number we need to make 0
             right--;
+      /// the last condtion is if the sum was less that 0 (a negative number), we move 1 index up on the var left
         } else{
             left++
         }
+      /// If it does not find the answer, it loops all over again until left is no longer less that right
     }
   }
 
-  
