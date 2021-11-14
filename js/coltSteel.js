@@ -146,7 +146,7 @@ function hashMap(str){
 
   // easier way to solve
   function anagram2(str1, str2){
-
+    return str1.toLowerCase().split('').sort('').join('') === str2.toLowerCase().split('').sort().join('')
   }
 
-  console.log(anagram2())
+  console.log(anagram2("what", "hWta"))
