@@ -163,7 +163,16 @@ function hashMap(str){
   */
 
   function sumZero(arr){
-
+  // naive solution where you run a loop inside of a loop. Time complexity would be O(n**2) / not good
+    for(let i = 0; i < arr.length; i++){
+        for(let j = i + 1; j < arr.length; j++){
+            if(arr[i] + arr[j] === 0){
+                return [arr[i], arr[j]]
+            } else {
+                return undefined
+            }
+        }
+    }
   }
 
   console.log(sumZero([-3, -2, -1, 0, 1, 2, 3,]), [-3, 3])
