@@ -2065,7 +2065,7 @@ in the second parameter. If the string is longer, return the str with the length
 followed by "..."
 
 */
-
+// this is a O(n) solution, we can slice it instead a to make it a o(1)
 function shortenStr(str, num){
   if(str.length <= num){
     return str
