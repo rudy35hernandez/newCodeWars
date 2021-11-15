@@ -2077,3 +2077,13 @@ function shortenStr(str, num){
 
 console.log(shortenStr("Hello everyone", 5) "Hello...")
 console.log(shortenStr("Way to go team!", 30) "Way to go team!")
+
+// O(1) solution
+
+function shortenStr(str,num){
+  if(str.length <= num){
+    return str
+  } else {
+    return str.slice(0,num) + "..."
+  }
+}
