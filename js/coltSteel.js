@@ -124,8 +124,23 @@ function hashMap(str){
   */
 
   function anagramChech(str1, str2){
+      /// first, easiest way to prove false is to check if the length of both strings do not match
       if(str1.length !== str2.length){
           return false
+      } else {
+          let frequency = {};
+          for(let val of str1){
+              frequency[val] = (frequency[val] : 0) + 1
+          }
+          for(let i = 0; i < str2.length; i++){
+              let letter = str2[i]
+              if(!frequency[letter]){
+                  return false
+              } else {
+                  frequency[letter] -= 1
+              }
+          }
+          return true
       }
   }
 
