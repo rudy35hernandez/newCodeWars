@@ -2127,3 +2127,12 @@ Count all the occurring characters in a string. If you have a string like aba, t
 What if the string is empty? Then the result should be empty object literal, {}.
 
 */
+
+/// Ask if numbers should be counted, ask if punctuation should be counted.
+/// Ask if the string will contain anything other than letters
+/// Ask if upper case and lower case matters
+/// etc
+
+function getOccurance(str){
+
+}
