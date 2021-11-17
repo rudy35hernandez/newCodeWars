@@ -2158,3 +2158,8 @@ function reverseStr(str){
   }
   return newStr
 }
+
+//// solved using regulare for loop
+function reverseStr2(str){
+  let newStr = ''
+}
