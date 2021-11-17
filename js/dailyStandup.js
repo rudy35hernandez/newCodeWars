@@ -2161,5 +2161,9 @@ function reverseStr(str){
 
 //// solved using regulare for loop
 function reverseStr2(str){
-  let newStr = ''
+  let newStr = '';
+  for(let i = str.length - 1; i >= 0; i--){
+    newStr += str[i]
+  }
+  return newStr
 }
