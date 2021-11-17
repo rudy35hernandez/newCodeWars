@@ -2153,4 +2153,8 @@ No Reverse Method (well brute force it first, but then no reverse method)!
 
 function reverseStr(str){
   let newStr = ""
+  for(let val of str){
+    newStr = val + newStr
+  }
+  return newStr
 }
