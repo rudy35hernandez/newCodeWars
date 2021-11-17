@@ -2134,5 +2134,23 @@ What if the string is empty? Then the result should be empty object literal, {}.
 /// etc
 
 function getOccurance(str){
+  /// creating our object to keep count
+  let hash = {};
+  /// we're going to loop str
+  for(let val of str){
+    hash[val] = (hash[val] || 0) + 1
+  }
+  return hash
+}
 
+/*
+Nov 17, 2021
+
+Given a string of characters as input, write a function that returns it with the characters reversed. 
+No Reverse Method (well brute force it first, but then no reverse method)! 
+
+*/
+
+function reverseStr(str){
+  let newStr = ""
 }
