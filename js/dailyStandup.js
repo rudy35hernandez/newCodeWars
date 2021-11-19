@@ -2197,3 +2197,8 @@ All the characters of jewels are unique.
 
 */
 
+/// So first thing I want to do is turn both parameters into arrays
+/// After creating arrays, a neat trick is to use the filter method with the include method inside
+/// At the end, we add .length to the end to get the total number of jewels
+
+
