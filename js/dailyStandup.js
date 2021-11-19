@@ -2201,4 +2201,12 @@ All the characters of jewels are unique.
 /// After creating arrays, a neat trick is to use the filter method with the include method inside
 /// At the end, we add .length to the end to get the total number of jewels
 
+function numOfJewels(jewels, stones){
+  /// first lets create the arrays
+  let jewelsArr = jewels.split('');
+  let stonesArr = stones.split('');
 
+  /// Now lets use our filter method
+
+  return stonesArr.filter(stone => jewelsArr.includes(stone)).length
+}
