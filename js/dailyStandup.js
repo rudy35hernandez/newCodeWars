@@ -2273,3 +2273,14 @@ checkExam(["a", "a", "b", "c"], ["a", "a", "b", "c"]) → 16
 checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]) → 0
 
 */
+
+///
+
+function checkExam(array1, array2) {
+
+ }
+
+
+ console.log(checkExam(["a", "b", "d", "b"],["a", "b", "d", "b"]))
+ console.log(checkExam(["a", "b", "d", "b"],["a", "b", "", "b"]))
+ console.log(checkExam(["a", "b", "d", "b"],["b", "b", "c", "b"]))
