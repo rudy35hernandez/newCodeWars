@@ -2274,7 +2274,14 @@ checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]) → 0
 
 */
 
-///
+/// Since I know we have to compare both arrays, I will create a for loop to run through every index
+/// Along with a for loop, I also want to create a variable called score which keeps count of the students score
+/// After running the for loop, I need to create 3 conditionals, first, if the answer is empty, do not change score
+/// Second conditional, if the answer is correct, I add 4 points to the score
+/// Last conditional, if the answer is incorrect, subtract a point
+
+/// The last part of the algorithm will check if the score is less than 0, if it is, it will return 0, if its 
+/// greater, it will return the score
 
 function checkExam(array1, array2) {
 
