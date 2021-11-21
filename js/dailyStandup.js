@@ -2331,7 +2331,9 @@ to you.
 /// Once square rooted, i will divide the number by 2, and then use the Math.floor method to round down
 
 function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
-  
+  let arr = [age1,age2,age3,age4,age5,age6,age7,age8];
+  let total = arr.map(num => num ** 2).reduce((sum, num) => sum + num)
+  return Math.floor(Math.sqrt(total) / 2)
 }
 
 console.log(predictAge(65,60,75,55,60,63,64,45), 86);
