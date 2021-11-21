@@ -2325,7 +2325,10 @@ to you.
 */
 
 /// First thing I want to do is create an arr out of the parameters to easily target each number
-/// 
+/// I will then run a map method to square each number, after squaring each number, i will use the reduce method
+/// to get the total
+/// After getting the total, I will grab the square root with the Math.sqrt method
+/// Once square rooted, i will divide the number by 2, and then use the Math.floor method to round down
 
 function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
   
