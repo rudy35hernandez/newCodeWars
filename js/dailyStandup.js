@@ -2229,7 +2229,17 @@ integer can't be negative.
 The second value in the first integer array is 0, since the bus is empty in the first bus stop.
 */
 
-///
+/// First, we need figure out how to map through all arrays to return the total between index 0 minus index 1
+/// To do this, we need to run a map method through all the arrays, and within the map, we can run a reduce method
+/// After we reduce each array, we have to reduce one more time to get the totals from each array.
+/// Example, [1, 3], [9, 2], [4, 5]
+///            [-2],   [7],   [-1]
+///                     4
+
+function numbers(arr){
+  
+}
+
 
 
 
