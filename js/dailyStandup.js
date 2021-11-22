@@ -2237,7 +2237,8 @@ The second value in the first integer array is 0, since the bus is empty in the 
 ///                     4
 
 function numbers(arr){
-  
+  /// since we know there are only two numbers per array, we can target index 0 - index 1 specifically
+  let totals = arr.map(numbers.reduce(acc, num, index, arr) => arr[0] - arr[1])
 }
 
 
