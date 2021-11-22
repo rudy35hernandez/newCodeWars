@@ -2229,3 +2229,11 @@ integer can't be negative.
 The second value in the first integer array is 0, since the bus is empty in the first bus stop.
 */
 
+///
+
+
+
+
+
+console.log(number([[10,0],[3,5],[5,8]]),5);
+console.log(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]),17)
