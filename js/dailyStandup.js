@@ -2240,7 +2240,7 @@ function numbers(arr){
   /// since we know there are only two numbers per array, we can target index 0 - index 1 specifically
   let totals = arr.map(numbers => numbers.reduce((acc, num, index, arr) => arr[0] - arr[1]))
   /// now that we have to totals from each array in one array, we will sum them all up with reduce once again
-
+  return totals.reduce((sum, number)=> sum + number,0)
 }
 
 
