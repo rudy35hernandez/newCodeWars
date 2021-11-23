@@ -2337,3 +2337,18 @@ function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
 }
 
 console.log(predictAge(65,60,75,55,60,63,64,45), 86);
+
+
+/*
+
+Nov 22, 2021
+
+Your task is to write function factorial.
+
+Directions: Write a function that takes in a number as a parameter. The function takes the number and 
+multiplies every number before it up to the point you reach the number.
+For example, if the number passed in is 2- 1*1*2
+                                        5- 1*1*2*3*4*5
+
+*/
+
