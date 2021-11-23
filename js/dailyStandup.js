@@ -2352,3 +2352,11 @@ For example, if the number passed in is 2- 1*1*2
 
 */
 
+function factorial(n){
+
+}
+
+console.log(factorial(1), 1);
+console.log(factorial(3), 6);
+console.log(factorial(7), 5040)
+
