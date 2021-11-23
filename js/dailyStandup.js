@@ -2368,3 +2368,8 @@ console.log(factorial(1), 1);
 console.log(factorial(3), 6);
 console.log(factorial(7), 5040)
 
+
+/// So apparently i did it wrong, i was not supposed to use a for loop, a factorial is a solution where 
+/// the functions parameter is changed each time it runs until it reaches its goal
+
+
