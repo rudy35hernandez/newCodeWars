@@ -2357,7 +2357,11 @@ For example, if the number passed in is 2- 1*1*2
 /// or else it will just return 0
 
 function factorial(n){
- 
+  let sum = 1;
+  for(let i = 1; i <= n; i++){
+    sum *= i;
+  }
+  return sum
 }
 
 console.log(factorial(1), 1);
