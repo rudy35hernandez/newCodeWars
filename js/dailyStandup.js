@@ -2352,8 +2352,12 @@ For example, if the number passed in is 2- 1*1*2
 
 */
 
-function factorial(n){
+/// For this function, I want to add a variable that will keep the sum after each loop.
+/// I will use a for loop for this and multiply each number the accumalated sum. The loop must start at 1 
+/// or else it will just return 0
 
+function factorial(n){
+ 
 }
 
 console.log(factorial(1), 1);
