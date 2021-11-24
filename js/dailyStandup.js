@@ -2396,3 +2396,8 @@ Here's a nice Youtube video about currying, which might help you if this is new 
 // I did some research about currying and it's a function that takes a parameter, and returns another function
 // with the next parameter, and another function with the next parameter, and so forth
 
+let multiplyAll = 
+  arr => 
+    multiplyBy => 
+      arr.map(num => num * multiplyBy)
+
