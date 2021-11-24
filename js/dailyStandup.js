@@ -2401,3 +2401,6 @@ let multiplyAll =
     multiplyBy => 
       arr.map(num => num * multiplyBy)
 
+console.log(multiplyAll([4, 2, 1])(3), [12, 6, 3])
+console.log(multiplyAll([2, 7, 4])(7), [14, 49, 28])
+console.log(multiplyAll([6, 9, 10])(2), [12, 18, 20])
