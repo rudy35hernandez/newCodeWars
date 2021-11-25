@@ -2442,3 +2442,10 @@ alphabetWar("wwwwwwz");  //=> Left side wins!
 
 */
 
+/// First I want to create a string for left and right, and the index + 1 will reflect the points of each
+/// I want to run a for loop that will go through each letter
+/// In the loop, I want to create a conditional that will push the letter into the correct array, one array
+/// for the right side, and one array for the left side. 
+/// Once I have all letters in their correct spaces, I will run a map function that will return each letter
+/// by the points it represents. Then I will run a reduce method that will return the total points of each array
+/// LASTLY, I will finish it off with a ternary that will return the correct result of the match
