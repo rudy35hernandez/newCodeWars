@@ -2498,3 +2498,12 @@ seven(1603) should return [7, 2]
 seven(477557101) should return [28, 7]
 
 */ 
+
+function seven(m){
+
+}
+
+console.log(seven(1021), [10, 2])
+console.log(seven(1603), [7, 2])
+console.log(seven(371), [35, 1])
+console.log(seven(483), [42, 1])
