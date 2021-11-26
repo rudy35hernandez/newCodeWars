@@ -2452,6 +2452,40 @@ alphabetWar("wwwwwwz");  //=> Left side wins!
 
 function alphabetWar(fight){
 
+  function alphabetWar(fight){
+    let left = "0sbpw"
+    let right = "0zdqm"
+    
+    let leftArr = [];
+     let rightArr = [];
+    
+    for(let i = 0; i < fight.length; i++){
+      if(fight[i] == "s" || fight[i] === "b" || fight[i] == "p" || fight[i] == "w"){
+        leftArr.push(fight[i])
+      } else {
+        rightArr.push(fight[i])
+      }
+    }
+     
+     let rightTotal;
+     let leftTotal
+     
+       if(rightArr.length === 0){
+       rightTotal = 0
+   }  else {
+        rightTotal = rightArr.map(letter => right.indexOf(letter)).reduce((sum, num) => sum + num)
+     }
+   //   return rightTotal
+       if(leftArr.length === 0){
+       leftTotal = 0
+       } else{
+       leftTotal = leftArr.map(letter => left.indexOf(letter)).reduce((sum, num) => sum + num)
+       }
+     
+     return rightTotal > leftTotal ? "Right side wins!" : leftTotal > rightTotal ? "Left side wins!" : "Let's fight again!"
+    
+   }
+
 }
 
 console.log(alphabetWar("z") , "Right side wins!" );
