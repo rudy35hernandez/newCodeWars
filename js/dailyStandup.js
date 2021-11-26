@@ -2462,7 +2462,7 @@ function alphabetWar(fight){
     for(let i = 0; i < fight.length; i++){
       if(fight[i] == "s" || fight[i] === "b" || fight[i] == "p" || fight[i] == "w"){
         leftArr.push(fight[i])
-      } else {
+      } else if(fight[i] === "z" || fight[i] == "d" || fight[i] === "q" || fight[i] === "m") {
         rightArr.push(fight[i])
       }
     }
