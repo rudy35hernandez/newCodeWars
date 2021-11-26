@@ -2526,6 +2526,6 @@ So, the function should return 26 because sum of minimums is as 1 + 5 + 20 = 26
 
 Note: You will be always given non-empty array containing Positive values.
 
-ENJOY CODING :)
 
 */
+
