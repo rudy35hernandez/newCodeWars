@@ -2569,7 +2569,10 @@ Note: You will be always given non-empty array containing Positive values.
 /// Once we have mapped and returned index 0 in each array, we want to run a reduce method to return the sum of 
 /// of the first index (lowest integer) of each array
 
-function sumOfMinimums(arr)
+function sumOfMinimums(arr){
+  let sorted = arr.map(array => array.sort((a,b) => a-b))
+}
+
 
 
 
