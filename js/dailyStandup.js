@@ -2570,7 +2570,8 @@ Note: You will be always given non-empty array containing Positive values.
 /// of the first index (lowest integer) of each array
 
 function sumOfMinimums(arr){
-  let sorted = arr.map(array => array.sort((a,b) => a-b))
+  let sorted = arr.map(array => array.sort((a,b) => a-b));
+  return sorted.map(array => array[0]).reduce((sum, num) => sum + num)
 }
 
 
