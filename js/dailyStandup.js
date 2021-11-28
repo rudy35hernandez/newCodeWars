@@ -2563,10 +2563,25 @@ Note: You will be always given non-empty array containing Positive values.
 
 */
 
+/// First thing I want to do is sort each array to move the lowest number to index 0
+/// After sorting the array, I want to run another map method to bring back 3 arrays still, but only index 0 
+/// for each array. 
+/// Once we have mapped and returned index 0 in each array, we want to run a reduce method to return the sum of 
+/// of the first index (lowest integer) of each array
+
 function sumOfMinimums(arr)
+
+
 
 console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]), 9);
 console.log(sumOfMinimums([[11, 12, 14, 54], [67, 89, 90, 56], [7, 9, 4, 3], [9, 8, 6, 7]]), 76)
+
+
+
+/*
+
+Nov 27, 2021
+
 
 
 
@@ -2586,3 +2601,11 @@ No String or Array Methods (well brute force it first, but then no methods)!
 
 */
 
+//// First thing I want to do is create a 
+function maxCharacter2(str){
+
+}
+
+console.log(maxCharacter("hello"), "l")
+console.log(maxCharacter("mississipi"), "s")
+console.log(maxCharacter("javascript"), "a")
