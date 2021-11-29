@@ -2611,7 +2611,10 @@ No String or Array Methods (well brute force it first, but then no methods)!
 /// that appears the most by creating a maxChar variable and a count variable. the highest count will equal 
 /// the maxChar and it will return it
 function maxCharacter2(str){
-
+let hash = {}
+for(const val of str){
+  hash[val] = (hash[val] || 0) + 1
+}
 
 }
 
