@@ -2605,8 +2605,13 @@ No String or Array Methods (well brute force it first, but then no methods)!
 
 */
 
-//// First thing I want to do is create a 
+//// First thing I want to do is create a hash map to keep a count of each letter that appears in the string
+/// After creating the hash, wee will run a for in loop for the string to get the count
+/// After that we want to run a for of loop for the hash map, and in the hash map, I will keep count of the letter
+/// that appears the most by creating a maxChar variable and a count variable. the highest count will equal 
+/// the maxChar and it will return it
 function maxCharacter2(str){
+
 
 }
 
