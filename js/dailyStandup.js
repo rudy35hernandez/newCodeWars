@@ -2617,6 +2617,14 @@ for(const val of str){
 }
   let count = 0;
   let maxChar;
+
+  for(let char in hash){
+    if(hash[char] > count){
+      count = hash[char];
+      maxChar = char
+    }
+  }
+  return maxChar
 }
 
 console.log(maxCharacter("hello"), "l")
