@@ -2615,7 +2615,8 @@ let hash = {}
 for(const val of str){
   hash[val] = (hash[val] || 0) + 1
 }
-
+  let count = 0;
+  let maxChar;
 }
 
 console.log(maxCharacter("hello"), "l")
