@@ -2654,3 +2654,16 @@ Output: true
 
 */
 
+/// First thing I want to do is create a hash map to list each items occurance
+/// After I create the empty object for hash, I want to run a for of loop to get the occurance of each integer
+/// Once my hash is created, I want to run a for in loop, with the conditional to check if any value is greater
+/// than one. If there are values greater than one, then I will return true, if not, return false
+
+function appearsTwice(arr){
+  let hash = {};
+  for(let val of arr){
+    
+  }
+
+}
+
