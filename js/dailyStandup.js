@@ -2677,3 +2677,10 @@ function appearsTwice(arr){
 console.log(appearsTwice([1,2,1,1]), true)
 console.log(appearsTwice([1,2,3]), false)
 console.log(appearsTwice([1,4,9,2,1]), true)
+
+/// A much shorter solution but use up more memory
+
+function appearsTwice2(arr){
+  let unique = [...new Set(arr)];
+  return unique.length !== arr.length
+}
