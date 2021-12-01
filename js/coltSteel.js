@@ -130,7 +130,7 @@ function hashMap(str){
       } else {
           let frequency = {};
           for(let val of str1){
-              frequency[val] = (frequency[val] : 0) + 1
+              frequency[val] = (frequency[val] || 0) + 1
           }
           for(let i = 0; i < str2.length; i++){
               let letter = str2[i]
