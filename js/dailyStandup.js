@@ -2656,14 +2656,24 @@ Output: true
 
 /// First thing I want to do is create a hash map to list each items occurance
 /// After I create the empty object for hash, I want to run a for of loop to get the occurance of each integer
-/// Once my hash is created, I want to run a for in loop, with the conditional to check if any value is greater
-/// than one. If there are values greater than one, then I will return true, if not, return false
+/// Once my hash is created, I want to create a variable called multiple with a value of false. 
+/// Then, I want to run a for in loop, with the conditional to check if any value is greater than one. If there 
+/// are values greater than one, then I will return true, if not, return false
 
 function appearsTwice(arr){
   let hash = {};
   for(let val of arr){
-    
+    hash[val] = (hash[val] || 0) + 1;
   }
-
+    let multiple = false;
+    for(let val in hash){
+      if(hash[val] > 1){
+        multiple = true
+      }
+    }
+    return multiple
 }
 
+console.log(appearsTwice([1,2,1,1]), true)
+console.log(appearsTwice([1,2,3]), false)
+console.log(appearsTwice([1,4,9,2,1]), true)
