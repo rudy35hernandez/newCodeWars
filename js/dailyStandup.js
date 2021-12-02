@@ -2708,3 +2708,14 @@ So friendship is twice stronger than love :-)
 The input will always be in lowercase and never be empty.
 
 */
+
+/// So the algorithm is supposed to return a number.
+/// Every letter has a value, 1-26, a = 1, z = 26.
+/// First thing I want to do is create a variable named alphabet and start at 0abcde...
+/// Then, I want to change that string to an array, map it and return the value for each letter
+/// Then reduce the numbers and add them up
+
+function wordsToMarks(string){
+  let alphabet = '0abcdefghijklmnopqrstuvwxyz';
+  
+}
