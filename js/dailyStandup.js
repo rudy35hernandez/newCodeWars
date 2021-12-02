@@ -2717,5 +2717,5 @@ The input will always be in lowercase and never be empty.
 
 function wordsToMarks(string){
   let alphabet = '0abcdefghijklmnopqrstuvwxyz';
-  
+  return string.split('').map((letter,index,arr)=> alphabet.indexOf(letter)).reduce((sum, num) => sum + num,0)
 }
