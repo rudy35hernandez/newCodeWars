@@ -2735,7 +2735,7 @@ Examples: (Input --> output)
 
 */
 
-/// Im thinking I want to use a for loop and cube each number, and add it a variable named total;
+/// Im thinking I want to use a for loop (start at 1) and cube each number, and add it a variable named total;
 /// In the end, I will return the total variable that will hold the sum
 
 function sumCubes(n){
