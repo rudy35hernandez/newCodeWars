@@ -2782,5 +2782,5 @@ function adjacentElementsProduct(array) {
   for(let i = 0; i < array.length-1; i++){
     arr.push(array[i]*array[i+1])
   }
-  return Math.max(...arr)
+  return Math.max(...arr) /// or arr.sort((a,b)=> b-a)[0]
 }
