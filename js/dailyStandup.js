@@ -2772,3 +2772,7 @@ The maximum product obtained from multiplying -2 * 7 = -14, and they're adjacent
 
 */
 
+/// first thing i want to do is create an empty array to hold all the sums of the numbers multiplied
+/// Next, i want to loop through the array, multiply each index by the next, then push the sum to the empty arr
+/// Now that I have my list of sums, i can just return the maximum num with Math.max(...arr)
+
