@@ -2860,3 +2860,8 @@ it("Should return false", () => {
   assert.equal(ransomNote("sit ad est sint in in in in", magazine), false);
  });
 });
+
+/// what I am thinking is that I want to create a hash map to keep a number of the total amount of each character
+/// that appears in the magazine.
+/// Once I get my hash, I will use a for of loop on the ransom note and subtract 1 from each key value, if it goes
+/// below 0, that means the magazine does not have enough letters needed.
