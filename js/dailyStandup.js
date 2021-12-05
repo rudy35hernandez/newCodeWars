@@ -2861,10 +2861,29 @@ it("Should return false", () => {
  });
 });
 
+*/
+
 /// what I am thinking is that I want to create a hash map to keep a number of the total amount of each character
 /// that appears in the magazine.
 /// Once I get my hash, I will use a for of loop on the ransom note and subtract 1 from each key value, if it goes
 /// below 0, that means the magazine does not have enough letters needed.
 
-*/
+function ransomNote2(ransomNote, magazine){
+  let hash = {};
+  for(let char of magazine){
+    if(hash[char]){
+      hash[char] = (hash[char] || 0) + 1;
+    }
+  }
+  let possible = true;
+
+  for(let letter of ransomNote){
+    if(hash[letter]){
+      --hash[letter]
+    } else {
+      return false
+    }
+  }
+  return possible
+}
 
