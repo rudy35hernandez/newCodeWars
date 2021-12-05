@@ -2805,3 +2805,7 @@ Input: nums = [2,2,1,1,1,2,2]
 Output: 2
 
 */
+
+/// brute force way, I want to create a hash, then a count variable to keep track of the highest occurance
+/// for each key, then return that key
+
