@@ -2881,7 +2881,7 @@ function ransomNote2(ransomNote, magazine){
     if(hash[letter]){
       --hash[letter]
     } else {
-      return false
+      possible = false
     }
   }
   return possible
