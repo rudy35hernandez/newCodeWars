@@ -2826,3 +2826,5 @@ function majorityElement(nums) {
    return maxChar
   
 };
+
+/// find a linear solution, this is a 0(n) solution
