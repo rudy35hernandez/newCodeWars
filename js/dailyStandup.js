@@ -2887,3 +2887,5 @@ function ransomNote2(ransomNote, magazine){
   return possible
 }
 
+console.log(ransomNote2("aabb", "aab"), false);
+console.log(ransomNote2("the one", "one the"), true)
