@@ -2809,3 +2809,20 @@ Output: 2
 /// brute force way, I want to create a hash, then a count variable to keep track of the highest occurance
 /// for each key, then return that key
 
+
+function majorityElement(nums) {
+   let hash = {};
+   for(let val of nums){
+       hash[val] = (hash[val] || 0) + 1
+   }
+ let count = 0
+ let maxChar;
+   for(let num in hash){
+     if(count < hash[num]){
+         count = hash[num];
+         maxChar = num
+     }
+       }
+   return maxChar
+  
+};
