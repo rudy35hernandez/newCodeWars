@@ -2906,3 +2906,15 @@ describe("Two Sum", () => {
 */
 
 /// Brute force thinking, nested for loop to grab two values that equal given number
+
+function twoSum(arr, sum){
+  let answer = [];
+  for(let i = 0; i < arr.length; i++){
+    for(let j = i + 1; j < arr.length; j++){
+      if(arr[i] + arr[j] === sum){
+        answer.push([arr[i], arr[j]])
+      }
+    }
+  }
+  return answer
+}
