@@ -2905,3 +2905,4 @@ describe("Two Sum", () => {
 
 */
 
+/// Brute force thinking, nested for loop to grab two values that equal given number
