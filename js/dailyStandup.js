@@ -2918,3 +2918,9 @@ function twoSum(arr, sum){
   }
   return answer
 }
+
+//// Lets try to use a hashmap solution!
+
+function twoSum2(arr, sum){
+  
+}
