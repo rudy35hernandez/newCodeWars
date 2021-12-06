@@ -2889,3 +2889,19 @@ function ransomNote2(ransomNote, magazine){
 
 console.log(ransomNote2("aabb", "aab"), false);
 console.log(ransomNote2("the one", "one the"), true)
+
+
+/* 
+
+Dec 6, 2021
+
+iven an array of numbers, return all pairs that add up to a given sum. The numbers can be used more than once.
+
+describe("Two Sum", () => {
+ it("Should implement two sum", () => {
+  assert.deepEqual(twoSum([1, 2, 2, 3, 4], 4), [[2, 2], [3, 1]]);
+ });
+});
+
+*/
+
