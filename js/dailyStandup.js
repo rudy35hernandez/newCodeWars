@@ -2921,6 +2921,11 @@ function twoSum(arr, sum){
 
 //// Lets try to use a hashmap solution!
 
+/// first, I want to create an empty object for my hashmap
+/// then I want to create an empty arr variable named pairs
+// Next, I will use a for of loop on the arr, and create a variable named num2 which will equal sum - looped num
+/// Next, I will check if the object contains the num2 variable, if it doesnt the looped number will go in the obj
+/// If it is in there, we will push the looped number and num 2 into the empty arr
 function twoSum2(arr, sum){
-  
+
 }
