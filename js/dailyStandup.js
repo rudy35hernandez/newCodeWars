@@ -2927,5 +2927,15 @@ function twoSum(arr, sum){
 /// Next, I will check if the object contains the num2 variable, if it doesnt the looped number will go in the obj
 /// If it is in there, we will push the looped number and num 2 into the empty arr
 function twoSum2(arr, sum){
-
+  const hash = {};
+  const pairs = [];
+  for(let num of arr){
+    const num2 = sum - num;
+    if(!hash[num2]){
+      hash[num] = 1
+    } else {
+      pairs.push([num], [num2])
+    }
+  }
+  return pairs
 }
