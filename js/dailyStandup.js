@@ -2968,3 +2968,9 @@ Output: 3
 Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
 
 */
+
+/// had to review old notes, forgot how to solve this one.
+/// First, you want to create an arr variable with [0,1], this is so it will return 0 and 1 for those inputs
+/// next, we want to run a forloop and set i to 2. 
+/// We then want arr[i] = arr[i-1] + arr[i-2], since input should equal previous two nums sums
+/// we then return arr[num]
