@@ -2974,3 +2974,11 @@ Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
 /// next, we want to run a forloop and set i to 2. 
 /// We then want arr[i] = arr[i-1] + arr[i-2], since input should equal previous two nums sums
 /// we then return arr[num]
+
+function fibAgain(n){
+  const arr = [0,1];
+  for(let i = 2; i <= n; i++){
+    arr[i] = arr[i-1] + arr[i-2]
+  }
+  return arr[n]
+}
