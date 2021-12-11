@@ -3030,8 +3030,15 @@ The number passed may be as large as 1000 digits.
 /// Will there be any decimals?
 /// Do we return it as a number and not a string?
 
+
+
 function greatestConsecutive(str){
-  
+  let arr = []
+  let digitsArr = digits.split('')
+  for(let i = 0; i < digitsArr.length; i++){
+    arr.push([digitsArr[i], digitsArr[i+1], digitsArr[i+2], digitsArr[i+3], digitsArr[i+4]])
+  }
+  return Number(arr.map(combo => combo.join('')).sort((a,b) => b-a)[0])
 }
 
 console.log(greatestConsecutive('1234567890'), 67890);
