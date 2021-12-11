@@ -3024,3 +3024,9 @@ The number passed may be as large as 1000 digits.
 
 */
 
+/// Questions ///
+/// Can the argument have letters? 
+/// Can it have negative numbers?
+/// Will there be any decimals?
+/// Do we return it as a number and not a string?
+
