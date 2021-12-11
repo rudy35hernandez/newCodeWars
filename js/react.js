@@ -82,3 +82,12 @@ const double = numbers.map((nums) => {
 })
 
 console.log(double) // [2, 4, 6]
+
+/////////////////////////////// React /////////////////////////////////////////
+
+// Declarative approach- Unlike vanilla javascript, you will not tell react that a certain html element should be created and inserted in a 
+// specific place on the user interface. 
+// Instead, you will always define the desired end state/target state, and React figures out which elements on 
+// the webpage need to be added/removed/updated. We dont write concrete dom updating instructions on your own, 
+// instead we just define the end/target state and under which conditions which state should be used.
+
