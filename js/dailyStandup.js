@@ -3030,3 +3030,11 @@ The number passed may be as large as 1000 digits.
 /// Will there be any decimals?
 /// Do we return it as a number and not a string?
 
+function greatestConsecutive(str){
+  
+}
+
+console.log(greatestConsecutive('1234567890'), 67890);
+console.log(greatestConsecutive('1234567898765'), 98765);
+console.log(greatestConsecutive('731674765'), 74765)
+
