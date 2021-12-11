@@ -3030,7 +3030,12 @@ The number passed may be as large as 1000 digits.
 /// Will there be any decimals?
 /// Do we return it as a number and not a string?
 
-
+/// pseudo code ///
+/// I want to create an empty arr that will contain all possible 5 digit combinations in sequence
+/// for loop the str to push each 5
+/// map through all arrays and join the 5 digits to form 1 number
+/// sort the arrays from greatest to least
+/// return the first arr (greatest)
 
 function greatestConsecutive(str){
   let arr = []
