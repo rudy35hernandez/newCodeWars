@@ -4048,8 +4048,14 @@ work out if you make it home safely. 15 bumps or under, return "Woohoo!", over 1
 // Lastly, use a ternary to see if total is more than 15, if so "car dead", if not "Woohoo!"
 
 
-function carDead(str){
-
+function carDead(x){
+  if(!x.includes("n")){
+    return "Woohoo!"
+  } else {
+    let arr = x.split('');
+    let total = arr.filter(letter => letter === "n").length
+    return total > 15 ? "Car Dead" : "Woohoo!"
+  }
 }
 
 console.log(carDead("___nn___nnnn_n"), "Woohoo!")
