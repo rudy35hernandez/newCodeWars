@@ -91,3 +91,6 @@ console.log(double) // [2, 4, 6]
 // the webpage need to be added/removed/updated. We dont write concrete dom updating instructions on your own, 
 // instead we just define the end/target state and under which conditions which state should be used.
 
+
+
+//// Do not convolute components, keep them separate
