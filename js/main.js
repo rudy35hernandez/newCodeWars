@@ -4049,5 +4049,9 @@ work out if you make it home safely. 15 bumps or under, return "Woohoo!", over 1
 
 
 function carDead(str){
-  
+
 }
+
+console.log(carDead("___nn___nnnn_n"), "Woohoo!")
+console.log(carDead("nnnnnnnnn___nnnnnnn"), "Car Dead")
+console.log(carDead("__nnnnnnnnnnn___nnnn"), "Woohoo!")
