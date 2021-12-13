@@ -4040,3 +4040,14 @@ work out if you make it home safely. 15 bumps or under, return "Woohoo!", over 1
 
 */
 
+// First thing I want to test for, is if the string contains any n at all. If it doesnt, the algorithm stops
+// there making the time complexity quicker (also takes care of empty strings).
+// Next thing I want to do is create a variable and equal to the string.split for an arr
+// Next thing I want to do is filter the array to only return values that equal "n", then grab the length of the 
+// array and contain it in a variable named total.
+// Lastly, use a ternary to see if total is more than 15, if so "car dead", if not "Woohoo!"
+
+
+function carDead(str){
+  
+}
