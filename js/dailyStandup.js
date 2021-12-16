@@ -8,6 +8,8 @@ For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
 */
 
+const { number } = require("prop-types")
+
 
 function squareSum(numbers){
     return numbers.map(num=> num ** 2).reduce((sum, num)=> sum + num)
@@ -3075,3 +3077,11 @@ For example, start with 87:
 /// We know we need to run some type of loop to keep adding the total whenever the number isnt a palindrome.
 /// Create a variable that will contain the final result of the number that it is a palindrome
 /// Make sure we add conditional to keep loop running if the total isnt a palindrome
+
+function numberPalindrome(num){
+
+}
+
+console.log(numberPalindrome(88), 0)
+console.log(numberPalindrome(1), 0)
+console.log(numberPalindrome(87), 4)
