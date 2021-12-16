@@ -3072,3 +3072,6 @@ For example, start with 87:
 
 */
 
+/// We know we need to run some type of loop to keep adding the total whenever the number isnt a palindrome.
+/// Create a variable that will contain the final result of the number that it is a palindrome
+//
