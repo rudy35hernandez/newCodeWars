@@ -3087,7 +3087,12 @@ function numberPalindrome(num){
   /// setting up my counter
   let total = 0;
   /// setting up my do while loop
-  while(num.toString() !== num.toString().split('').reverse().join(''))
+  while(num.toString() !== num.toString().split('').reverse().join('')){
+  /// we are updating num to equal this every time the loop condition is true 
+    num = num + Number(num.toString().split('').reverse().join(''));
+    total++
+  }
+  return total
 
 }
 
