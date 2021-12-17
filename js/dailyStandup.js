@@ -3079,6 +3079,13 @@ For example, start with 87:
 /// Make sure we add conditional to keep loop running if the total isnt a palindrome
 
 function numberPalindrome(num){
+  /// finish algorithm if the original number is palindrome
+  let numStr = num.toString()
+  if(numStr === numStr.split('').reverse().join('')){
+    return 0
+  }
+  
+  let total = 0;
 
 }
 
