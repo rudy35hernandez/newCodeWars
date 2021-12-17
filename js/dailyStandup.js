@@ -3084,8 +3084,10 @@ function numberPalindrome(num){
   if(numStr === numStr.split('').reverse().join('')){
     return 0
   }
-  
+  /// setting up my counter
   let total = 0;
+  /// setting up my do while loop
+  while(num.toString() !== num.toString().split('').reverse().join(''))
 
 }
 
