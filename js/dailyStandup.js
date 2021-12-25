@@ -3123,6 +3123,11 @@ Examples
 
 */
 
+/// First thing that needs to be done is to map the original array and add up num by it's index + 1
+/// Once we have the sum, we want to map again so we can turn the nums into a string, that way we can target 
+/// last index of the string.
+/// Once we have the last index targeted, we want to return it as a number by using the built in Number method
+
 
 function numPlusIndex(arr){
 
