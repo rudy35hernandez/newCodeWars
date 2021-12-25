@@ -3122,3 +3122,13 @@ Examples
                                        #  9+3 = 12  -->  2
 
 */
+
+
+function numPlusIndex(arr){
+
+
+}
+
+console.log(numPlusIndex([3,2,1,5]), [4,4,4,9])
+console.log(numPlusIndex([9, 2, 6, 8, 3]), [0, 4, 9, 2, 8])
+console.log(numPlusIndex([5, 9, 2, 8]), [6, 1, 5, 2])
