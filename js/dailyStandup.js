@@ -3130,8 +3130,9 @@ Examples
 
 
 function numPlusIndex(arr){
-
-
+  return nums.map((num, index, arr) => num + (index + 1))
+  .map(number => number.toString())
+  .map(num => Number(num[num.length - 1]))
 }
 
 console.log(numPlusIndex([3,2,1,5]), [4,4,4,9])
