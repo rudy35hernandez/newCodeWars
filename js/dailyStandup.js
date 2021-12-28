@@ -3185,13 +3185,13 @@ See "Sample Tests".
 
 */
 
-function vertMirror(strng) {
+function vertMirror(str) {
   // Your code
   return str.split('\n')
   .map(line => line.split('').reverse().join(''))
   .join('\n')
 }
-function horMirror(strng) {
+function horMirror(str) {
   // Your code
   return str.split('\n')
   .reverse()
