@@ -3182,3 +3182,15 @@ the language in "Sample Tests".
 Bash Note:
 The input strings are separated by , instead of \n. The output strings should be separated by \r instead of \n.
 See "Sample Tests".
+
+*/
+
+function vertMirror(strng) {
+  // Your code
+}
+function horMirror(strng) {
+  // Your code
+}
+function oper(fct, s) {
+  // Your code
+}
