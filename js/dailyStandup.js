@@ -3226,3 +3226,12 @@ n = 3, so I expect a 3x3 square back just like below as a string:
 /// Each time I run the loop, I will add that piece of code to my empty str.
 /// Lastly, I will return that variable that was empty at first.
 
+function generateShape(integer){
+  let str = "+"
+  let empty = ""
+  for(let i = 0; i < integer; i++){
+    empty += str.repeat(integer)+"\n"
+  }
+  return empty.slice(0, -1)
+}
+
