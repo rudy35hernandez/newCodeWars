@@ -3218,20 +3218,21 @@ n = 3, so I expect a 3x3 square back just like below as a string:
 
 */
 
-/// First thing im thinking is create an empty string to add all of my lines of "+" signs.
+/// First thing im thinking is create a var that is an empty string to add all of my lines of "+" signs.
 /// Next, I want to create a variable to contain the "+" once. I will use this later.
 /// Next, create a for loop with the integer being the end point i < integer.
 /// In the for loop, I will add "+" times the integer amount. I will use the repeat method
 /// At the end of the repeat method, I will also add "/n" to it to create the space.
 /// Each time I run the loop, I will add that piece of code to my empty str.
 /// Lastly, I will return that variable that was empty at first.
+/// Forgot, I will return this variable with slice(0, -1) to remove the final /n
 
 function generateShape(integer){
   let str = "+"
-  let empty = ""
+  let outcome = ""
   for(let i = 0; i < integer; i++){
     empty += str.repeat(integer)+"\n"
   }
-  return empty.slice(0, -1)
+  return outcome.slice(0, -1)
 }
 
