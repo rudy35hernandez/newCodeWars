@@ -3258,7 +3258,16 @@ If there are less than 2 blue beads return 0.
 /// this would get me the total number of red dots.
 
 function countRedBeads(n){
+  if(n < 2){
+    return 0
+  }
   
+  let total = ""
+  let redDot = "rr"
+  for(let i = 2; i <= n; i++){
+    total += redDot
+  }
+  return total.length
 }
 
 console.log(countRedBeads(3), 4)
