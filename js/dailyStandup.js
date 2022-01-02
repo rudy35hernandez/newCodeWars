@@ -3250,8 +3250,15 @@ If there are less than 2 blue beads return 0.
 
 */
 
-function countRedBeads(n){
+/// What I first want to do is create a conditional that quickly returns 0 if n is less than 2.
+/// Next, I want to create a variable named total that would contain the final value of red dots.
+/// Next, I want to create a variable that contains a string of "rr", this would be the substitute for the red dots.
+/// Now, I want to run a for loop that starts at 2, with each loop, I will add the str variable to total each time
+/// Now that I have all the "rr" iterations I need in the total variable, I can just return the length of total,
+/// this would get me the total number of red dots.
 
+function countRedBeads(n){
+  
 }
 
 console.log(countRedBeads(3), 4)
