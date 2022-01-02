@@ -3273,3 +3273,9 @@ function countRedBeads(n){
 console.log(countRedBeads(3), 4)
 console.log(countRedBeads(1), 0)
 console.log(countRedBeads(2), 2)
+
+////// Much easier solution
+
+// function countRedBeads(n){
+//   return n < 2 ? 0 : (n * 2) - 2
+// }
