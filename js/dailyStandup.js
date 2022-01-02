@@ -3250,3 +3250,10 @@ If there are less than 2 blue beads return 0.
 
 */
 
+function countRedBeads(n){
+
+}
+
+console.log(countRedBeads(3), 4)
+console.log(countRedBeads(1), 0)
+console.log(countRedBeads(2), 2)
