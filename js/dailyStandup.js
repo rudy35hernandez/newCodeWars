@@ -3332,6 +3332,16 @@ This is indexed from [1..n] (not zero indexed!)
 
 */
 
+/// questions and pseudo code ////
+/// Is 'y' a vowel in this case? Lets say no
+/// will the word only contain letters?
+/// Do we need to account for upper case/lower case?
+/// What I am thinking is creating a new empty arr called vowels
+/// Run a for loop with the word length being the loop
+/// If the letter matches any one of the vowels, push the index to the vowels arr.
+/// Since we are not starting from index 0 in our returned arr, we will push i + 1 in the vowels arr.
+/// Lastly return vowels array
+
 function vowelIndices(word){
 
 }
