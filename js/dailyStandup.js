@@ -3343,7 +3343,15 @@ This is indexed from [1..n] (not zero indexed!)
 /// Lastly return vowels array
 
 function vowelIndices(word){
-
+  function vowelIndices(word){
+    let vowels = []
+  for(let i = 0; i < word.length; i++){
+    if(word[i] == "a" || word[i] === "e"|| word[i] === "i" || word[i] === "o" || word[i] === "u"){
+      vowels.push(i+1)
+    }
+  }
+  return vowels
+}
 }
 
 console.log(vowelIndices("amazing"), [1, 3, 5])
