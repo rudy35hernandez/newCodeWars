@@ -3333,9 +3333,9 @@ This is indexed from [1..n] (not zero indexed!)
 */
 
 /// questions and pseudo code ////
-/// Is 'y' a vowel in this case? Lets say no
+/// Is 'y' a vowel in this case? Yes
 /// will the word only contain letters?
-/// Do we need to account for upper case/lower case?
+/// Does letter case matter? Upper case/lower case? No it doesnt 
 /// What I am thinking is creating a new empty arr called vowels
 /// Run a for loop with the word length being the loop
 /// If the letter matches any one of the vowels, push the index to the vowels arr.
@@ -3343,16 +3343,16 @@ This is indexed from [1..n] (not zero indexed!)
 /// Lastly return vowels array
 
 function vowelIndices(word){
-  function vowelIndices(word){
+    let newWord = word.toLowerCase()
     let vowels = []
   for(let i = 0; i < word.length; i++){
-    if(word[i] == "a" || word[i] === "e"|| word[i] === "i" || word[i] === "o" || word[i] === "u"){
+    if(newWord[i] == "a" || newWord[i] === "e"|| newWord[i] === "i" || newWord[i] === "o" || newWord[i] === "u" || newWord[i] === "y"){
       vowels.push(i+1)
     }
   }
   return vowels
 }
-}
+
 
 console.log(vowelIndices("amazing"), [1, 3, 5])
 console.log(vowelIndices("sun"), [2])
