@@ -3304,7 +3304,8 @@ As 321 is _The Maximum number _ could be formed from the digits of the number 21
 /// an integer
 
 function maxNumber(n){
-  //your code here
+  let arrN = n.toString().split('')
+  return Number(arrN.sort((a,b)=> b-a).join(''))
 }
 
 console.log(maxNumber(1322), 3221)
