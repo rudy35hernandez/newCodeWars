@@ -3279,3 +3279,21 @@ console.log(countRedBeads(2), 2)
 // function countRedBeads(n){
 //   return n < 2 ? 0 : (n * 2) - 2
 // }
+
+
+/*
+
+Jan 4, 2021
+
+Notes
+Only Natural numbers passed to the function , numbers Contain digits [0:9] inclusive
+
+Digit Duplications could occur , So also consider it when forming the Largest
+
+Input >> Output Examples:
+maxNumber (213) ==> return (321)
+Explanation:
+As 321 is _The Maximum number _ could be formed from the digits of the number 213
+
+*/
+
