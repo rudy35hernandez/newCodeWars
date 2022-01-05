@@ -3297,3 +3297,10 @@ As 321 is _The Maximum number _ could be formed from the digits of the number 21
 
 */
 
+function maxNumber(n){
+  //your code here
+}
+
+console.log(maxNumber(132), 321)
+console.log(maxNumber(783129), 987321)
+console.log(maxNumber(32164), 64321)
