@@ -3297,10 +3297,16 @@ As 321 is _The Maximum number _ could be formed from the digits of the number 21
 
 */
 
+/// Questions and pseudo code ////
+/// Can there be negative numbers passed?
+/// What I want to do is turn the number into a string, split into an arr, then use the sort method to sort them
+/// from greatest to least, once theyre sorted, join them again and use the Number method to turn the str into 
+/// an integer
+
 function maxNumber(n){
   //your code here
 }
 
-console.log(maxNumber(132), 321)
+console.log(maxNumber(1322), 3221)
 console.log(maxNumber(783129), 987321)
 console.log(maxNumber(32164), 64321)
