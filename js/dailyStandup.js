@@ -3389,3 +3389,10 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 */
 
+function averages(numbers){
+
+}
+
+console.log(averages())
+console.log(averages())
+console.log(averages())
