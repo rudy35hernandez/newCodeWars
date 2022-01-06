@@ -3357,3 +3357,14 @@ function vowelIndices(word){
 console.log(vowelIndices("amazing"), [1, 3, 5])
 console.log(vowelIndices("sun"), [2])
 console.log(vowelIndices("mmm"), [])
+
+
+/* another solution that I had at my fingertips but just couldnt figure out earlier
+
+function vowelIndices(word){
+  let vowels = "aeiouyAEIOUY"
+  let wordArr = word.split('');
+  return wordArr.map((letter, index, arr) => vowels.includes(letter) ? index+1 : "").filter(el => el)
+  }
+
+  */
