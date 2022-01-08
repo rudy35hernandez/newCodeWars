@@ -3417,5 +3417,5 @@ function averages(numbers){
 
 
 console.log(averages([2, 2, 2, 2, 2]), [2, 2, 2, 2])
-console.log(averages())
-console.log(averages())
+console.log(averages([2, -2, 2, -2, 2]), [0, 0, 0, 0])
+console.log(averages([1, 3, 5, 1, -10]), [2, 4, 3, -4.5])
