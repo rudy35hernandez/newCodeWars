@@ -3389,6 +3389,17 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 */
 
+/// Questions and pseudo code ///
+/// Are we only dealing with whole numbers to start? 
+/// For our answers, do we return whole numbers, with decimals, round up or down?
+/// To be clear, each number is replaced by the average of the original number and the following number.
+/// The last number does not have a number following it, so the last number we return in the array is the
+/// last integer and the second to last integer's average
+
+//// First, i want to create a variable called avg that contains an empty arr which will accept our answers
+//// I want to run a for loop for this with the arr.length being the loop
+//// 
+
 function averages(numbers){
 
 }
