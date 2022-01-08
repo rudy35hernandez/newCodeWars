@@ -3396,9 +3396,12 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 /// The last number does not have a number following it, so the last number we return in the array is the
 /// last integer and the second to last integer's average
 
-//// First, i want to create a variable called avg that contains an empty arr which will accept our answers
+//// From the very beginning, I want the function to end with an empty arr if there are less than 2 integers
+//// with our beginning array, or if the arr is null, so we'll add a conditional for that.
+//// Next, i want to create a variable called avg that contains an empty arr which will accept our answers
 //// I want to run a for loop for this with the arr.length being the loop
-//// 
+//// Each loop, I want to push (arr[i] + arr[i+1]) / 2 into avg
+//// In the end, return avg
 
 function averages(numbers){
 
