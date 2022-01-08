@@ -3401,12 +3401,21 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 //// Next, i want to create a variable called avg that contains an empty arr which will accept our answers
 //// I want to run a for loop for this with the arr.length being the loop
 //// Each loop, I want to push (arr[i] + arr[i+1]) / 2 into avg
-//// In the end, return avg
+//// In the end, return avg, but when we retun it, we omit the last integer by using slice, Or we can just
+//// run the loop with i < numbers.length - 1
 
 function averages(numbers){
-
+  if(!numbers || numbers.length < 2){
+    return []
+  }
+  let avg = []
+  for(let i = 0; i < numbers.length; i++){
+    avg.push((numbers[i] + numbers[i+1]) / 2)
+  }
+  return avg.slice(0, -1)
 }
 
-console.log(averages())
+
+console.log(averages([2, 2, 2, 2, 2]), [2, 2, 2, 2])
 console.log(averages())
 console.log(averages())
