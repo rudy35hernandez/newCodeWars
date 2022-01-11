@@ -3434,10 +3434,15 @@ explode("102269"); // => "12222666666999999999"
 
 */
 
+// First thing I want to do create an empty variable that would add each iteration from my for loop.
+// What I am thinking is running a for loop to go through each number.
+// I want to use the repeat method to add each iteration the number of times of its own value
+// We need to make sure that we use the Number built in method since the numbers are in string form
+
 function explode(s) {
 
 }
 
-console.log(explode("142"), "1444422")
-console.log(explode("0372"), "333777777722")
-console.log(explode("912"), "999999999122")
+console.log(explode("142"), "1444422");
+console.log(explode("0372"), "333777777722");
+console.log(explode("912"), "999999999122");
