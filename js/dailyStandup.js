@@ -3419,3 +3419,18 @@ function averages(numbers){
 console.log(averages([2, 2, 2, 2, 2]), [2, 2, 2, 2])
 console.log(averages([2, -2, 2, -2, 2]), [0, 0, 0, 0])
 console.log(averages([1, 3, 5, 1, -10]), [2, 4, 3, -4.5])
+
+
+/*
+
+Jan 10, 2021
+
+Given a string made of digits [0-9], return a string where each digit is repeated a number of times equals to 
+its value.
+
+Examples
+explode("312"); // => "333122"
+explode("102269"); // => "12222666666999999999"
+
+*/
+
