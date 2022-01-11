@@ -3440,7 +3440,11 @@ explode("102269"); // => "12222666666999999999"
 // We need to make sure that we use the Number built in method since the numbers are in string form
 
 function explode(s) {
-
+  let newStr = ""
+  for(let i = 0; i < s.length; i++){
+    newStr += s[i].repeat(Number(s[i]))
+  }
+  return newStr
 }
 
 console.log(explode("142"), "1444422");
