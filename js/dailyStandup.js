@@ -3434,3 +3434,10 @@ explode("102269"); // => "12222666666999999999"
 
 */
 
+function explode(s) {
+
+}
+
+console.log(explode("142"), "1444422")
+console.log(explode("0372"), "333777777722")
+console.log(explode("912"), "999999999122")
