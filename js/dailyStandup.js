@@ -3551,7 +3551,21 @@ because: 4*3 + 3*-1 - 3*2 = 3
 // Lastly, I return total
 
 function scoreTest(str, right, omit, wront){
-
+  let hash = {};
+  for(let val of str){
+      hash[val] = (hash[val] || 0) + 1;
+  }
+    let total = 0
+    for(let key in hash){
+      if(key == "0"){
+        total += right * hash[key]
+      } else if(key == "1"){
+        total += omit * hash[key]
+      } else if(key === "2"){
+        total -= wrong * hash[key]
+      }
+    }
+  return total
 }
 
 console.log(scoreTest([0, 0, 0, 0, 2, 1, 0], 2, 0, 1), 9);
