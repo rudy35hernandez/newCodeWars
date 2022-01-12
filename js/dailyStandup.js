@@ -3470,8 +3470,15 @@ Examples:
 
 */
 
-function makePassword(phrase){
+// The first thing I want to do is create a new arr with only the first letters of each word
+// The trick to use is .split(' ').map(word => word[0])
+// We can then create a new var called password that would accept the for loop iterations
+// We will then create a for loop with if/else conditions to see if they match the letter we need to replace with
+// numbers. The ones that don't match stay the same.
+// We then return the password variable
 
+function makePassword(phrase){
+  
 }
 
 console.log(makePassword("Give me liberty or give me death"), )
