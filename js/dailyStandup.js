@@ -3544,7 +3544,13 @@ because: 4*3 + 3*-1 - 3*2 = 3
 // Can the final answer be a negative number? Or do we cut the score off at 0?
 // Will there only be one array to start?
 
-function scoreTest(score, right, omit, wront){
+// What I am thinking is I want to create a hash map to get the value of each numbers' occurance
+// I then need to create a conditional named total, which will keep track of the total score
+// After creating the hash map, i want to add a conditional that would multiply the occurance by either
+// right, omit or wrong, and it would add on that sum to our tracker (total)
+// Lastly, I return total
+
+function scoreTest(str, right, omit, wront){
 
 }
 
