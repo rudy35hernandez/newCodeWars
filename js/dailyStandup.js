@@ -3469,3 +3469,10 @@ Examples:
 "Keep Calm and Carry On"            --> "KCaC0"
 
 */
+
+function makePassword(phrase){
+
+}
+
+console.log(makePassword("Give me liberty or give me death"), )
+console.log(makePassword("Keep Calm and Carry On"), )
