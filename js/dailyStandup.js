@@ -3423,7 +3423,7 @@ console.log(averages([1, 3, 5, 1, -10]), [2, 4, 3, -4.5])
 
 /*
 
-Jan 10, 2021
+Jan 10, 2022
 
 Given a string made of digits [0-9], return a string where each digit is repeated a number of times equals to 
 its value.
@@ -3445,8 +3445,27 @@ function explode(s) {
     newStr += s[i].repeat(Number(s[i]))
   }
   return newStr
+
 }
 
 console.log(explode("142"), "1444422");
 console.log(explode("0372"), "333777777722");
 console.log(explode("912"), "999999999122");
+
+/*
+
+Jan 11, 2022
+
+One suggestion to build a satisfactory password is to start with a memorable phrase or sentence and make a 
+password by extracting the first letter of each word.
+
+Even better is to replace some of those letters with numbers (e.g., the letter O can be replaced with the number 0)
+
+instead of including i or I put the number 1 in the password;
+instead of including o or O put the number 0 in the password;
+instead of including s or S put the number 5 in the password.
+Examples:
+"Give me liberty or give me death"  --> "Gml0gmd"
+"Keep Calm and Carry On"            --> "KCaC0"
+
+*/
