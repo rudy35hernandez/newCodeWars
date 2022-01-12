@@ -3537,6 +3537,13 @@ because: 4*3 + 3*-1 - 3*2 = 3
 
 */
 
+/// Questions and pseudo code ///
+
+// Can we expect every number in our starting array to be 0, 1, and 2?
+// If there are numbers other than those three, do we have to ignore them?
+// Can the final answer be a negative number? Or do we cut the score off at 0?
+// Will there only be one array to start?
+
 function scoreTest(score, right, omit, wront){
 
 }
