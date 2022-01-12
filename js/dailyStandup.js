@@ -3478,7 +3478,20 @@ Examples:
 // We then return the password variable
 
 function makePassword(phrase){
-  
+  let phraseArr = phrase.split(' ').map(word => word[0])
+  let password = ''
+  for(let i = 0; i < phraseArr.length; i++){
+    if(phraseArr[i] ==="i"|| phraseArr[i] === "I"){
+      password += "1"
+    } else if(phraseArr[i] === "o" || phraseArr[i] === "O"){
+      password += "0"
+    } else if(phraseArr[i] === "s" || phraseArr[i] === "S"){
+      password += "5"
+    } else {
+      password += phraseArr[i]
+    }
+  }
+  return password
 }
 
 console.log(makePassword("Give me liberty or give me death"), )
