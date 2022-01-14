@@ -3608,6 +3608,11 @@ pattern(10): should return the following:
 // Can the input be anything other than an integer?
 // Is there a maximum number we can accept?
 
+/// Pseudo code 
+/// Before I do anything, I want to set forth a conditional that tests if n is 1, if so, itll return "1"
+/// Next, we already have our output variable, so we will run a forloop with i starting at 1
+/// Next, for each iteration, I want to add "1" and * times i - 1 by using repeat method, and then the number i
+/// Once weve looped it all, itll return output
 
 function pattern(n){
 
