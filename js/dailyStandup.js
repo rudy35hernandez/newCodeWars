@@ -3603,6 +3603,12 @@ pattern(10): should return the following:
 
 */
 
+/// questions ///
+// Can the given number be less that 1? If so, what should we return?
+// Can the input be anything other than an integer?
+// Is there a maximum number we can accept?
+
+
 function pattern(n){
 
 }
