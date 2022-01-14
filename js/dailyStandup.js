@@ -3615,7 +3615,7 @@ pattern(10): should return the following:
 /// Once weve looped it all, itll return output
 
 function pattern(n){
-
+ 
 }
 
 console.log(pattern(3), "1\n1*2\n1**3")
