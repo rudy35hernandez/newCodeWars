@@ -3615,7 +3615,15 @@ pattern(10): should return the following:
 /// Once weve looped it all, itll return output
 
 function pattern(n){
- 
+  if(n == 1){
+    return "1"
+  }
+ var output="1";
+  //being coder
+  for(let i = 2; i <= n; i++){
+    output += "\n"+'1' + '*'.repeat(i-1)+i.toString()
+  }
+ return output;
 }
 
 console.log(pattern(3), "1\n1*2\n1**3")
