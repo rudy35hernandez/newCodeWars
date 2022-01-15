@@ -3647,3 +3647,11 @@ remove("Hi Hi! Hi!") === "Hi"
 remove("Hi! !Hi Hi!") === ""
 remove("Hi! Hi!! Hi!") === "Hi!!"
 remove("Hi! !Hi! Hi!") === "!Hi!"
+
+*/
+
+// questions //
+
+// Are we only dealing with string containing letters?
+// Can there be more than word returned?
+// How do we handle numbers?
