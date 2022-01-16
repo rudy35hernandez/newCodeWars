@@ -3662,6 +3662,8 @@ remove("Hi! !Hi! Hi!") === "!Hi!"
 // check every word individually in my for loop
 // In my for loop, I will run a conditional for each word to check if the word contains no ! to add to the arr
 // But if it does contain !, it must contain more than 1 to qualify to be added to the array
+// I return '' if my arr is empty, but if its not, I just join my arr with (' ') to return the string with 
+// the required spaces
 
 function remove(string){
   function remove (string) {
