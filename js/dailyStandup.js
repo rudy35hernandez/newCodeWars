@@ -3664,7 +3664,24 @@ remove("Hi! !Hi! Hi!") === "!Hi!"
 // But if it does contain !, it must contain more than 1 to qualify to be added to the array
 
 function remove(string){
+  function remove (string) {
   
+    let arrStr = string.split(' ')
+    let newStr = []
+    let check = "!"
+   
+    for(let i = 0; i < arrStr.length; i++){
+      if(!arrStr[i].includes(check) || arrStr[i].indexOf(check) !== arrStr[i].lastIndexOf(check)){
+        newStr.push(arrStr[i]) 
+      }
+    }
+    if(!newStr){
+      return ''
+    } else {
+      return newStr.join(' ')
+    }
+   
+  }
 }
 
 console.log(string("Hi!"), "")
