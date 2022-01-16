@@ -3656,10 +3656,17 @@ remove("Hi! !Hi! Hi!") === "!Hi!"
 // Can there be more than word returned?
 // How do we handle numbers?
 
+/// Pseudo code //
+// First thing I want to do is create an empty arr that will accept all of the qualified words
+// Next I want to make my starting string into an array with every word being an element, that way I can
+// check every word individually in my for loop
+// In my for loop, I will run a conditional for each word to check if the word contains no ! to add to the arr
+// But if it does contain !, it must contain more than 1 to qualify to be added to the array
+
 function remove(string){
   
 }
 
 console.log(string("Hi!"), "")
 console.log(string("Hi! Hi!"), "")
-console.log(string("Hi! Hi!! Hi!"), "Hi!!")
+console.log(string("Hi! Hi!! Hi!"), "Hi!!");
