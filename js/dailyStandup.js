@@ -3655,3 +3655,11 @@ remove("Hi! !Hi! Hi!") === "!Hi!"
 // Are we only dealing with string containing letters?
 // Can there be more than word returned?
 // How do we handle numbers?
+
+function remove(string){
+  
+}
+
+console.log(string("Hi!"), "")
+console.log(string("Hi! Hi!"), "")
+console.log(string("Hi! Hi!! Hi!"), "Hi!!")
