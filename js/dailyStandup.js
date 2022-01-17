@@ -3666,7 +3666,6 @@ remove("Hi! !Hi! Hi!") === "!Hi!"
 // the required spaces
 
 function remove(string){
-  function remove (string) {
   
     let arrStr = string.split(' ')
     let newStr = []
@@ -3684,7 +3683,7 @@ function remove(string){
     }
    
   }
-}
+
 
 console.log(string("Hi!"), "")
 console.log(string("Hi! Hi!"), "")
