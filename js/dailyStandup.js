@@ -3751,3 +3751,27 @@ function twoSum(nums, target){
 console.log(twoSum([2,7,11,15], 9), [0, 1])
 console.log(twoSum([3, 3], 6), [0, 1])
 console.log(twoSum([3,2,4], 6), [1, 2])
+
+/// Another solution I thought of was using the multiple pointers solution, where it was start at 0 and the end
+/// First, id have to sort the arr, then use this method.
+
+function twoSum(nums, target){
+  let sorted = nums.slice(0).sort((a,b) => a-b);
+    
+    let start = 0;
+    let end = sorted.length-1;
+    let lastArr;
+    
+    while(start < end){
+        let sum = sorted[start] + sorted[end];
+        if(sum === target){
+          return [nums.indexOf(sorted[start]), nums.lastIndexOf(sorted[end])]
+        } else if(sum > target) {
+            end--
+        } else {
+            start++
+        }
+            
+        }
+        return final
+}
