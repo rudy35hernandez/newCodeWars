@@ -3729,8 +3729,23 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 
 */
 
-function twoSum(nums, target){
+/// Can there be any negative numbers?
+/// Can there be duplicates in the original array?
 
+/// First option would be the brute force solution which is a nested for loop that checks every number
+/// Once I find two elements that equal the target, I will push the indeces in an empty array
+
+
+function twoSum(nums, target){
+  let indeces = []
+    for(let i = 0; i < nums.length; i++){
+        for(let j = i + 1; j < nums.length; j++ ){
+            if(nums[i] + nums[j] === target){
+                indeces.push(i,j)
+            }
+        }
+    }
+    return indeces
 }
 
 console.log(twoSum([2,7,11,15], 9), [0, 1])
