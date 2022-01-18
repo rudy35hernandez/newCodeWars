@@ -3775,3 +3775,21 @@ function twoSum(nums, target){
         }
         return final
 }
+
+/// Even better solution for time complexity
+
+function twoSum(nums, target){
+  twoSum = function(nums, target) {
+    let hash = {};
+        nums.forEach((num, index) => {
+            hash[num] = index
+        })
+        for(let i = 0; i < nums.length; i++){
+            const complement = target - nums[i];
+
+         if (hash[complement] !== undefined && hash[complement] !== i) {
+            return [i, hash[complement]]
+        }
+    }
+}
+}
