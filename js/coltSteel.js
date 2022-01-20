@@ -240,6 +240,14 @@ function countUniqueValues(arr){
 /// Check to see if arr[i] !== arr[j]
 /// If it doesnt we move i up one and make arr[i] equal arr[j]
 
+///      i
+/// ex. [1, 1, 2, 3, 3, 3, 4]  
+///         j
+
+////  the first iteration does not meet the condition, so j skips to the next number which is 2, now it does
+////  meet the condition so i moves up one index and changes it to 2 because arr[i] = arr[j]
+//// i will ultimately reach index 3, so we will return i + 1 since arrays start at 0
+
 function countUniqueValues(arr){
   let i = 0;
 
