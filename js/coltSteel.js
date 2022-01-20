@@ -234,3 +234,20 @@ function countUniqueValues(arr){
 
 
 /// Colt Steeles solution ///
+
+/// set i = 0 to start the first pointer
+/// set j to 1 and run a for loop
+/// Check to see if arr[i] !== arr[j]
+/// If it doesnt we move i up one and make arr[i] equal arr[j]
+
+function countUniqueValues(arr){
+  let i = 0;
+
+  for(let j = 1; j < arr.length; j++){
+    if(arr[i] !== arr[j]){
+      i++
+      arr[i] = arr[j]
+    }
+  }
+  return i + 1
+}
