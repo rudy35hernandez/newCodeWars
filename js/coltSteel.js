@@ -212,3 +212,17 @@ DETAILS: Implement a function called countUniqueValues, which accepts a sorted a
 in the array. There can be negative numbers in the array, but it will always be sorted.
 */
 
+
+/// I found many solutions, and I will type them out, then I will highlight his multiple pointers solution
+
+
+function countUniqueValues(arr){
+  let total = []
+  
+  for(let i = 0; i < arr.length; i++){
+      if(!total.includes(arr[i])){
+          total.push(arr[i])
+      }
+  }
+  return total.length
+}
