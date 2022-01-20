@@ -231,3 +231,6 @@ function countUniqueValues(arr){
   let unique = [...new Set(arr)]
   return unique.length
 }
+
+
+/// Colt Steeles solution ///
