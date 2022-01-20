@@ -226,3 +226,8 @@ function countUniqueValues(arr){
   }
   return total.length
 }
+
+function countUniqueValues(arr){
+  let unique = [...new Set(arr)]
+  return unique.length
+}
