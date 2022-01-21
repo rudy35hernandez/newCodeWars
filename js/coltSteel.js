@@ -342,13 +342,18 @@ function maxSubArrSum2(arr, num){
   if(arr.length < num){
     return null
   }
-//// This is 
+//// This is the first iteration, and we only go as far in the index a 1 number before num (32)
   for(let i = 0; i < num; i++){
     maxSum += arr[i]
+    //// maxSum becomes 43 
   }
+
   tempSum = maxSum;
+  /// tempSum becomes 43
   for(let i = num; i < arr.length; i++){
+    //// We start our loop at index 3 which is (7)
     tempSum = tempSum - arr[i - num] + arr[i];
+    /// 49 = 43 - 1 + 7  /// we get 1 because arr[3 - 3] === index 0 which is 1
     maxSum = Math.max(maxSum, tempSum)
   }
   return maxSum
