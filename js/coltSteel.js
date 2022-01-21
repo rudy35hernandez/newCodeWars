@@ -325,9 +325,34 @@ function maxSubArraySum(arr, num){
 
 ////////////////////////////////////////////////////
 ////// CORRECT SLIDING WINDOW SOLUITON  ///////////
+//////          O(n) solution           ///////////
 ////////////////////////////////////////////////////
 
-function maxSubArr
+/// With this solution, instead of adding all the numbers with each iteration, were only going to subtract
+/// the first index of the num group, then add the next number in num group.
+/// 
+/// Ex.                 ([1, 4, 32, 7, 3, 6], 3)
+/// first iteration-      c  c  c   =  37
+/// second iteration-    -c        + c = 43
+/// All we did was subtract 1, then added 7, instead of adding 4+32+7 all over again
+
+function maxSubArrSum2(arr, num){
+  let maxSum = 0;
+  let tempSum = 0;
+  if(arr.length < num){
+    return null
+  }
+//// This is 
+  for(let i = 0; i < num; i++){
+    maxSum += arr[i]
+  }
+  tempSum = maxSum;
+  for(let i = num; i < arr.length; i++){
+    tempSum = tempSum - arr[i - num] + arr[i];
+    maxSum = Math.max(maxSum, tempSum)
+  }
+  return maxSum
+};
 
 
 
