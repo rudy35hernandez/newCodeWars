@@ -247,6 +247,7 @@ function countUniqueValues(arr){
   return total.length
 }
 
+//////// Easiest solution IMO
 function countUniqueValues(arr){
   let unique = [...new Set(arr)]
   return unique.length
@@ -322,6 +323,11 @@ function maxSubArraySum(arr, num){
 }
 
 
+////////////////////////////////////////////////////
+////// CORRECT SLIDING WINDOW SOLUITON  ///////////
+////////////////////////////////////////////////////
+
+function maxSubArr
 
 
 
