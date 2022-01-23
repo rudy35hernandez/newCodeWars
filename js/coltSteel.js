@@ -345,15 +345,16 @@ function maxSubArrSum2(arr, num){
 //// This is the first iteration, and we only go as far in the index as 1 number before num (32)
   for(let i = 0; i < num; i++){
     maxSum += arr[i]
-    //// maxSum becomes 43 
+    //// maxSum becomes 37
   }
 
   tempSum = maxSum;
-  /// tempSum becomes 43
+  /// tempSum becomes 37
   for(let i = num; i < arr.length; i++){
     //// We start our loop at index 3 which is (7)
     tempSum = tempSum - arr[i - num] + arr[i];
-    /// 49 = 43 - 1 + 7  /// we get 1 because arr[3 - 3] === index 0 which is 1
+                  ///arr[3-3] = arr[0] which is 1
+    /// 43 = 37 - 1 + 7  /// we get 1 because arr[3 - 3] === index 0 which is 1
     maxSum = Math.max(maxSum, tempSum)
   }
   return maxSum
@@ -364,3 +365,22 @@ function maxSubArrSum2(arr, num){
 
 // Find the longest sequence of unique characters ("hellothere") /// (lother) would be the longest 
 
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////// DIVIDE AND CONQUER ALGORITHMS ////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/* 
+
+Given a sorted array of integers, write a function called search, that accepts a value and returns the index
+where the value passed to the function is located. If the value is not found, -1
+
+*/
