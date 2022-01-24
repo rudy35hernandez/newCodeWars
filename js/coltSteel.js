@@ -384,3 +384,16 @@ Given a sorted array of integers, write a function called search, that accepts a
 where the value passed to the function is located. If the value is not found, -1
 
 */
+
+// MY SOLUTION, VERY EASY
+
+function search(arr, val){
+  if(!arr.includes(val)){
+    return -1
+  } else {
+    return arr.indexOf(val)
+  }
+}
+
+
+///////////////// COLT STEELS DIVIDE AND CONQUER SOLUTION //////////////////////////
