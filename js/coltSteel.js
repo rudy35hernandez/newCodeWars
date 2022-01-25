@@ -511,3 +511,25 @@ function search(arr, val){
  }
 
 //// PURE RECURSION SOLVING THE SAME PROBLEM
+
+function findOdd(arr){
+  let newArr = [];
+  if(arr.length === 0){
+    return newArr
+  };
+
+  if(arr[0] % !== 0){
+    newArr.push(arr[0])
+  }
+  newArr = newArr.concat(findOdd(arr.slice(1)));
+  return newArr
+}
+
+///// Challenges
+
+/// find the power of a number. function will have a base and a exponent in parameter
+
+function power(base,exponent){
+  if(exponent === 0) return 1;
+  return base * power(base, exponent-1)
+}
