@@ -432,7 +432,7 @@ function search(arr, val){
 
 
  // Meaning? A function that calls itself. WE NEED A BASE CASE SO IT STOPS. If not, it will continue
- // to run forever. Also, we need a different input each time also
+ // to run forever. Also, we need a different input each time also. 
 
 
  /// Count down function using recursion
@@ -462,6 +462,8 @@ function search(arr, val){
                   return 2 + sumRange(1) /// this meets our base case
                                  return 1
 
+*/
+
  /// for loop way
 
  function sumRange(num){
@@ -471,3 +473,17 @@ function search(arr, val){
    }
    return total
  }
+
+ //// Now, lets write a factorial function using recursion
+
+ function factorial(num){
+   if(num === 1) return 1;
+   return num * factorial(num - 1)
+ }
+
+
+ //// problems that may arise?
+
+ //// No base case set. Forgetting to return or returning the wrong thing. This leads to stack overflow.
+
+ 
