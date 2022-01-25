@@ -486,4 +486,28 @@ function search(arr, val){
 
  //// No base case set. Forgetting to return or returning the wrong thing. This leads to stack overflow.
 
- 
+
+ //////////////////////////// Helper Method Recursion //////////////////////////////////////////////////
+
+ /// These have two functions. The outer function, and inside our recursion function.
+
+ /// FIND ODDS IN ARRAY USING RECURSION
+
+ function findOdds(arr){
+   let result = [];
+
+    function oddsHelper(inputArr){
+      if(inputArr.length === 0){
+        return ;
+      }
+
+      if(inputArr[0] % 2 !== 0){
+        result.push(inputArr[0])
+      }
+       oddsHelper(inputArr.slice(1))
+    }
+    oddsHelper(arr)
+    return result
+ }
+
+//// PURE RECURSION SOLVING THE SAME PROBLEM
