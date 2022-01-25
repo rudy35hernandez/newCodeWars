@@ -447,3 +447,27 @@ function search(arr, val){
    countDown(num) /// or remove line above and just use countDown(num -1)
  }
 
+
+
+ /// Second function. Sum range. This adds up every number up to the number you use in the argument
+
+ function sumRange(num){
+   if(num === 1) return 1;
+   return num + sumRange(num-1)
+ }
+
+ console.log(sumRange(3))
+ /* explained in the call stack way
+    return 3 + sumRange(2)
+                  return 2 + sumRange(1) /// this meets our base case
+                                 return 1
+
+ /// for loop way
+
+ function sumRange(num){
+   let total = 0
+   for(let i = 0; i <= num; i++){
+     total += i
+   }
+   return total
+ }
