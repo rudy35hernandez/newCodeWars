@@ -427,3 +427,23 @@ function search(arr, val){
  ///////////////////////////////        RECURSION      ////////////////////////////////////////////
 
  //////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 
+
+
+ // Meaning? A function that calls itself. WE NEED A BASE CASE SO IT STOPS. If not, it will continue
+ // to run forever. Also, we need a different input each time also
+
+
+ /// Count down function using recursion
+
+ function countDown(num){
+   if(num <= 0){
+     console.log('All done');
+     return  /////// this is important so the function ends, even if we arent returning anything
+   }
+   console.log(num);
+   --num
+   countDown(num) /// or remove line above and just use countDown(num -1)
+ }
+
