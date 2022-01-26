@@ -533,3 +533,13 @@ function power(base,exponent){
   if(exponent === 0) return 1;
   return base * power(base, exponent-1)
 }
+
+/// product of arr (get the total of each number in arr multiplied by the next)
+
+function product(arr){
+  if(arr.length === 0){
+    return 1
+  }
+
+  return arr[0] * product(arr.slice())
+}
