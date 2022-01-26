@@ -541,7 +541,7 @@ function product(arr){
     return 1
   }
 
-  return arr[0] * product(arr.slice())
+  return arr[0] * product(arr.slice(1))
 }
 
 /// do the fibonacci sequence in recursion
@@ -549,4 +549,31 @@ function product(arr){
 function fib(num){
   if(num <= 2) return 1;
   return fib(num - 1) + fib(num + 2)
+}
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////// SEARCHING ALGORITHMS //////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+// Linear Search. find the index of a val in an arr
+
+function linearSearch(arr,val){
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] === val){
+      return i
+    }
+  }
+  return i
 }
