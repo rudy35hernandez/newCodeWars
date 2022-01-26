@@ -403,7 +403,7 @@ function search(arr, val){
   let min = 0;
   let max = arr.length - 1;
 
-  while(min < max){
+  while(min <= max){
     let middle = Math.floor((min + max) / 2)
     let currentElement = arr[middle]
     
@@ -576,4 +576,46 @@ function linearSearch(arr,val){
     }
   }
   return i
+}
+
+
+
+//////// THIS IS COLT STEELE's SOLUTION, maybe use divide and conquer?
+
+function binarySearch(arr, val){
+  let start = 0;
+  let end = arr.length - 1;
+
+  while(min <= max){
+    let middle = Math.floor((min + max) / 2);
+    if(arr[middle] < val){
+      min = middle + 1
+    } else if(arr[middle] > val){
+      max = middle - 1
+    } else {
+      return middle
+    }
+  }
+  return -1
+}
+
+
+// Naive string search. Take a long str and a short str. See how many times the short str appears.
+// Ex. "Hello yellow is my fav color, its mellow", "ello"  || it appears 3 times
+
+function subStrOccurrence(long, short){
+  let total = 0;
+
+  for(let i = 0; i < long.length; i++){
+    for(let j = 0; j < short.length; j++){
+      if(short[j] !== long[i + j]){
+        break;
+      } 
+      if(j === short.length -1){
+        total++
+      }
+    }
+  }
+  
+  return total
 }
