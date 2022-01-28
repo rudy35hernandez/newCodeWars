@@ -583,8 +583,8 @@ function linearSearch(arr,val){
 //////// THIS IS COLT STEELE's SOLUTION, maybe use divide and conquer?
 
 function binarySearch(arr, val){
-  let start = 0;
-  let end = arr.length - 1;
+  let min = 0;
+  let max = arr.length - 1;
 
   while(min <= max){
     let middle = Math.floor((min + max) / 2);
@@ -630,4 +630,25 @@ function subStrOccurrence(long, short){
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+      
+                                      /// BUBBLE SORT ///
 
+// Not used very often but it is still important. IT IS USED WHEN THERES VERY LITTLE ITEMS UNORGANIZED
+
+function bubbleSort(arr){
+  let noSwaps;///
+  for(let i = arr.length; i > 0; i--){
+      noSwaps = true; ////////// This breaks the loop when there is noSwap
+    for(let j = 0; j < i-1; j++){
+      if(arr[j] > arr[j + 1]){
+        /// swap
+        let temp = arr[j]
+        arr[j] = arr[j+1];
+        arr[j+1] = temp;
+        noSwaps = false;
+      } 
+    }
+    if(noSwaps) break;
+  }
+  return arr
+}
