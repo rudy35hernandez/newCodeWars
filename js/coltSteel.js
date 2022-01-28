@@ -633,7 +633,7 @@ function subStrOccurrence(long, short){
       
                                       /// BUBBLE SORT ///
 
-// Not used very often but it is still important. IT IS USED WHEN THERES VERY LITTLE ITEMS UNORGANIZED
+// Not used very often but it is still important. IT IS USED WHEN THERES VERY LITTLE ITEMS NEED TO BE SORTED
 
 function bubbleSort(arr){
   let noSwaps;///
@@ -645,6 +645,7 @@ function bubbleSort(arr){
         let temp = arr[j]
         arr[j] = arr[j+1];
         arr[j+1] = temp;
+        
         noSwaps = false;
       } 
     }
@@ -673,4 +674,56 @@ function selectionSort(arr){
       }
   }
   return arr
+}
+
+
+                                  /// Insertion Sort ///
+
+function insertionSort(arr){
+  for(let i = 1; i < arr.length; i**){
+    let currentVal = arr[i];
+    for(var j = i - 1; j >= 0 && arr[j] > currentValue; j--){
+      arr[j+1] = arr[j]
+    }
+    arr[j+1] = currentVal
+  }
+  return arr
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////       CRAZIER SORT ALGORITHMS    ///////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////  MERGE SORT  ////////////////////////////////////////////////////////
+
+function merge(arr1, arr2){
+  let total = [];
+
+  let i = 0;
+  let j = 0;
+
+  while(i < arr1.length && j < arr2.length){
+    if(arr1[i] < arr2[j]){
+      total.push(arr1[i]);
+      i++
+    } else if(arr2[j] < arr1[i]){
+      total.push(arr2[j]);
+      j++
+    }
+  }
+  while(i < arr1.length){
+    total.push(arr1[i])
+    i++
+  }
+  while(j < arr2.length){
+    total.push(arr2[j])
+    j++
+  }
+  return total
 }
