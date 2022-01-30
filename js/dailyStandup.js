@@ -3808,3 +3808,8 @@ Input sequence contains minimum two elements and every element is an integer.
 
 */
 
+function largestPairSum (numbers) {
+  let sortedNumbers = numbers.sort((a,b) => a-b)
+  return sortedNumbers.slice(sortedNumbers.length - 2).reduce((sum, num) => sum + num,0)
+
+}
