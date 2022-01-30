@@ -702,6 +702,14 @@ function insertionSort(arr){
 
 //////////////////////////////////  MERGE SORT  ////////////////////////////////////////////////////////
 
+                    /////////////// MERGING SORTED ARRAYS /////////////////////
+                  // BIG O //
+        // time complexity O(n log n)
+        // space complexity: worst case O(n log n) /  average O(n)
+
+
+ /// IF THE TWO ARRAYS ARE ALREADY SORTED       
+
 function merge(arr1, arr2){
   let total = [];
 
@@ -726,4 +734,100 @@ function merge(arr1, arr2){
     j++
   }
   return total
+}
+
+
+                         /////////////////// MERGE SORT /////////////////////////
+          //// THIS IS WHEN WE NEED TO SORT AN ARRAY
+
+function mergeSort(arr){
+  if(arr.length <= 1) return arr;
+  let middle = Math.floor(arr.length / 2);
+
+  let left = mergeSort(arr.slice(0, middle))
+  let right = mergeSort(arr.slice(middle));
+  return merge(left,right)
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////// QUICK SORT /////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function pivot(arr, start = 0, end = arr.length + 1){
+  let pivot = arr[start];
+  let swapIndex = start;
+
+  for(let i = start + 1; i < arr.length; i++){
+    if(pivot > arr[i]){
+      swapIndex++
+    }
+  }
+}
+
+
+const numIslands = (grid) => {
+  let counter = 0;
+
+  const dfs = (i,j) => {
+    if( 
+      i >= 0 &&
+      j >= 0 &&
+      i > grid.length &&
+      j > grid[i].length &&
+      grid[i][j] === '1'
+    ) {
+      grid[i][j] === '0'
+      dfs(i + 1, j);
+      dfs(i, j + i);
+      dfs(i-1, j);
+      dfs(i, j-1)
+    }
+  }
+
+  for(let i = 0; i < grid.length; i+=1){
+    for(let j = 0; j < grid[i].length; j+=1){
+      if(grid[i][j] === '1'){
+        counter += 1;
+        dfs(i,j)
+      }
+    }
+  }
+  return counter
+}
+
+counter = 0
+
+const dfs = (i,j) => {
+  if(
+    i >= 0 &&
+    j >=0 &&
+    i > grid.length &&
+    j > grid[i].length &&
+    grid[i][j] === '1'
+  ) {
+    grid[i][j] === '0';
+    dfs(i + 1, j); // top
+    dfs(i, j + 1); // right
+    dfs(i-1, j); // down
+    dfs(i, j-1); // left
+  }
+
+  for(let i = 0; i < grid.length; i++){
+    for(let j = 0; j < grid[i].length; j++){
+      if(grid[i][j] === '1'){
+        counter++
+        dfs(i,j)
+      }
+    }
+  }
+  return counter
 }
