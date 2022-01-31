@@ -3833,3 +3833,8 @@ Examples:
 
 */
 
+
+function getMissingElement(superImportantArray){
+  let sum = 0+1+2+3+4+5+6+7+8+9
+  return sum - superImportantArray.reduce((sum, num) => sum + num,0)
+}
