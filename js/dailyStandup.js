@@ -3865,3 +3865,7 @@ The format of the strings will always be Europe and JavaScript.
 All data will always be valid and uniform as in the example above.
 
 */
+
+function countDevelopers(list) {
+  return list.filter(obj => obj.language == "JavaScript" && obj.continent === "Europe").length
+}
