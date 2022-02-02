@@ -3894,6 +3894,10 @@ result = [6, 3, 7, 5, 4, 7]
 
 */
 
+/// First make conditionals for the special cases that the challenge gives you
+/// Lastly, string the num, split the numbers to an array, map them back to integers, then slice with -d
+
+
 
 
 
