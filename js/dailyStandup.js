@@ -3948,6 +3948,10 @@ appears once!
 
 */
 
+/// first thing I want to do is create a hashmap to get the count for each character
+/// after the hashmap, I want to run a for val in hash loop to push every value into an arr
+/// then I want to run a for loop to see if every value in the array is the same, if it is, return true, else false
+
 
 
 
