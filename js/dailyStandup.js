@@ -3952,7 +3952,28 @@ appears once!
 /// after the hashmap, I want to run a for val in hash loop to push every value into an arr
 /// then I want to run a for loop to see if every value in the array is the same, if it is, return true, else false
 
+function validateWord(s)
+{
+ 
+  let hash = {};
+  
+  for(let char of s.toLowerCase()){
+    hash[char] = (hash[char] || 0) + 1
+  }
+  
+  let totals = []
+  for(let num in hash){
+    totals.push(hash[num])
+  }
+  
+  for(let i = 1; i < totals.length; i++){
+    if(totals[i] !== totals[i-1]){
+      return false
+    }
+  }
+  return true
 
+}
 
 
 
