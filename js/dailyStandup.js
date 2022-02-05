@@ -4046,4 +4046,16 @@ prototype?
 
 ///simple solution. create two empty arrays, one for keys, one for values
 /// run a for in loop on the object and push keys in key array, and values in values array
-/// return an array with both arrays inside
+/// return an array with both arrays inside4
+
+function keysAndValues(data){
+  let keys = [];
+   let values = [];
+   
+   for(let items in data){
+     keys.push(items);
+     values.push(data[items])
+   };
+   
+   return [keys,values]
+ }
