@@ -4043,3 +4043,7 @@ Style Points (JS/CoffeeScript only): This kata only tests for data that uses obj
 prototype?
 
 */
+
+///simple solution. create two empty arrays, one for keys, one for values
+/// run a for in loop on the object and push keys in key array, and values in values array
+/// return an array with both arrays inside
