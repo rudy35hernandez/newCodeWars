@@ -4018,3 +4018,28 @@ Implement the riders method/function, to return how many riders are necessary to
 the other.
 
 NOTE: Each rider travels as far as he can, but never more than 100 miles.
+
+
+
+*/
+
+
+
+
+
+
+
+/*
+
+Feb 5, 2022
+
+Complete the keysAndValues function so that it takes in an object and returns the keys and values as separate 
+arrays.
+
+Example:
+
+keysAndValues({a: 1, b: 2, c: 3}) // should return [['a', 'b', 'c'], [1, 2, 3]]
+Style Points (JS/CoffeeScript only): This kata only tests for data that uses object literal notation (simple objects). For extra style, can you get your method to check for objects that extend their 
+prototype?
+
+*/
