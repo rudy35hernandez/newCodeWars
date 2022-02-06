@@ -4073,3 +4073,7 @@ Example:
 
 */
 
+/// simple challenge. Were just going to run a for loop and if the letter is a, switch for b, if its b, switch for
+/// a, if its anything else, just return that same letter
+
+
