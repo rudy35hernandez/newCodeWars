@@ -4076,4 +4076,17 @@ Example:
 /// simple challenge. Were just going to run a for loop and if the letter is a, switch for b, if its b, switch for
 /// a, if its anything else, just return that same letter
 
-
+function switcheroo(x){
+  let newStr = "";
+    
+    for(let i = 0; i < x.length; i++){
+      if(x[i] === "a"){
+        newStr += "b"
+      } else if(x[i] === "b"){
+        newStr += "a"
+      } else {
+        newStr += x[i]
+      }
+    }
+    return newStr
+  }
