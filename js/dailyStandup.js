@@ -4162,7 +4162,12 @@ height, width and length will always be >0
 
 */
 
+/// I honestly could not figure out how the formula was made so I just tried different calculations with the 
+/// test cases and figured out a solution by trial and error.
+
 function ribbonLength(height, width, length){
 
 }
 
+console.log(ribbonLength(17,32,11), 162);
+console.log(ribbonLength(13,13,13), 124);
