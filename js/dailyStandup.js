@@ -4162,3 +4162,7 @@ height, width and length will always be >0
 
 */
 
+function ribbonLength(height, width, length){
+
+}
+
