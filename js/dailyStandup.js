@@ -4166,7 +4166,8 @@ height, width and length will always be >0
 /// test cases and figured out a solution by trial and error.
 
 function ribbonLength(height, width, length){
-
+  let total = (height * 2) + (width * 2) + (length * 4) + 20;
+  return total
 }
 
 console.log(ribbonLength(17,32,11), 162);
