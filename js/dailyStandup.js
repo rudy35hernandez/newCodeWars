@@ -4118,3 +4118,23 @@ Examples(num, nth --> output)
 
 */
 
+var findDigit = function(num, nth){
+  let num1 = Math.abs(num)
+  let numStr = num1.toString().split('').reverse()
+
+  if(nth > numStr.length){
+    return 0;
+  }
+
+  if(nth <= 0){
+    return -1
+  }
+
+
+  for(let i = 0; i < numStr.length; i++){
+     if(i === nth-1){
+       return Number(numStr[i])
+     }
+    }
+  }
+
