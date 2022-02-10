@@ -4186,3 +4186,10 @@ For any given binary number,formatted as a string, return the Ones' Complement o
 
 */
 
+function switch1And0(n){
+
+}
+
+console.log(switch1And0('11010'), '00101')
+console.log(switch1And0('00011'), '11100')
+console.log(switch1And0('0011100'), '1100011')
