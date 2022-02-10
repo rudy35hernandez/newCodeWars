@@ -4187,7 +4187,15 @@ For any given binary number,formatted as a string, return the Ones' Complement o
 */
 
 function switch1And0(n){
-
+  let answer = '';
+  for(let i < 0; i < n.length; i++){
+    if(n[i] === '1'){
+      answer += '0'
+    } else {
+      answer += '1'
+    }
+  }
+  return answer
 }
 
 console.log(switch1And0('11010'), '00101')
