@@ -4171,3 +4171,18 @@ function ribbonLength(height, width, length){
 
 console.log(ribbonLength(17,32,11), 162);
 console.log(ribbonLength(13,13,13), 124);
+
+
+/*
+
+feb 9, 2022
+
+The Ones' Complement of a binary number is the number obtained by swapping all the 0s for 1s and all the 1s 
+for 0s. For example:
+
+onesComplement(1001) = 0110
+onesComplement(1001) = 0110
+For any given binary number,formatted as a string, return the Ones' Complement of that number.
+
+*/
+
