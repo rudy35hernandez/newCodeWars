@@ -4225,7 +4225,15 @@ Examples can be found in the test fixture.
 /// To test for it, I want to use the % to check if it equals to 0.
 
 function leapYear(n){
-
+  if(year % 400 === 0){
+    return true
+  } else if(year % 100 === 0){
+    return false;
+  } else if(year % 4 === 0){
+    return true
+  } else {
+    return false
+  }
 }
 
 console.log(leapYear(2000), true)
