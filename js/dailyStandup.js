@@ -4220,8 +4220,14 @@ Examples can be found in the test fixture.
 
 */
 
+/// Im thinking about using four test cases with if else statements. First starting with a test case for
+/// 400, then one for 100, then one for 4, then everthing else. 
+/// To test for it, I want to use the % to check if it equals to 0.
+
 function leapYear(n){
 
 }
 
 console.log(leapYear(2000), true)
+console.log(leapYear(1234), false)
+console.log(leapYear(1984), true)
