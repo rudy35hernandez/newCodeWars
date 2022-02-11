@@ -4220,3 +4220,8 @@ Examples can be found in the test fixture.
 
 */
 
+function leapYear(n){
+
+}
+
+console.log(leapYear(2000), true)
