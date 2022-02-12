@@ -4257,3 +4257,10 @@ Example (Input --> Output)
 
 */
 
+function boilTime(eggs){
+
+}
+
+console.log(boilTime(8), 5)
+console.log(boilTime(0), 0)
+console.log(boilTime(22), 15)
