@@ -4263,7 +4263,11 @@ Example (Input --> Output)
 /// for example, Math.floor(20 / 8) would equal 2, then I would multiply
 
 function boilTime(eggs){
+  if(!eggs){
+    return 0
+  }
 
+  return Math.ceil(eggs / 8) * 5
 }
 
 console.log(boilTime(8), 5)
