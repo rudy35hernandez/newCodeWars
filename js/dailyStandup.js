@@ -4257,6 +4257,11 @@ Example (Input --> Output)
 
 */
 
+/// First thing I want to get out of the way is eggs equaling 0, returns 0
+/// Next, if a value % 8 === 0, I want to divide eggs by 8 and multiply by 5
+/// Lastly, I can use Math.floor to round down when a number isnt divisible by 8, 
+/// for example, Math.floor(20 / 8) would equal 2, then I would multiply
+
 function boilTime(eggs){
 
 }
