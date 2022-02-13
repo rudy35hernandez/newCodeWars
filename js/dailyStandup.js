@@ -4291,3 +4291,11 @@ Examples:
 8675309 => [8,6,7,5,3,0,9]
 
 */
+
+function arrayNumber(num){
+  
+}
+
+console.log(arrayNumber(235), [2,3,5])
+console.log(arrayNumber(8437), [8,4,3,7])
+console.log(arrayNumber(13), [1,3])
