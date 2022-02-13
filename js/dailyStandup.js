@@ -4296,6 +4296,8 @@ Examples:
 /// Then I want to split(''), then use map to change every string number into an actual integer using Number
 
 function arrayNumber(num){  
+  return num.toString().split('').map(num => Number(num))
+
 }
 
 console.log(arrayNumber(235), [2,3,5])
