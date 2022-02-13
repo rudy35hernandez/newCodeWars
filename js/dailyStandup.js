@@ -4292,8 +4292,10 @@ Examples:
 
 */
 
-function arrayNumber(num){
-  
+/// This is very easy using brute force. First, I want to turn the number into a string using toString()
+/// Then I want to split(''), then use map to change every string number into an actual integer using Number
+
+function arrayNumber(num){  
 }
 
 console.log(arrayNumber(235), [2,3,5])
