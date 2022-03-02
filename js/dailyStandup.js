@@ -4363,3 +4363,14 @@ Note: the digits in the resulting string should be sorted.
 /// after I have this set up, I can run a filter method on the array for all integers, and use !includes to 
 /// see which integers in allDigits are missing in the ...args
 
+function unusedDigits(...arg){
+  const allDigits = ["0", "1","2","3","4","5","6","7","8","9"]
+  let nums = arg.map(num => num.toString()).join('')
+  
+  let missing = []
+  
+  let ordered = nums.split('').sort((a,b)=>a-b)
+  
+  return allDigits.filter(num => !ordered.includes(num)).join('')
+  
+}
