@@ -4355,3 +4355,11 @@ Example:
 Note: the digits in the resulting string should be sorted.
 
 */
+
+/// first i want to add ...arg to the parameters in order to combine the nums into an array
+/// next I want to create an array of all integers 0-9
+/// next i want to turn the numbers in parameter into a string, split them, sort them, then join them again
+
+/// after I have this set up, I can run a filter method on the array for all integers, and use !includes to 
+/// see which integers in allDigits are missing in the ...args
+
