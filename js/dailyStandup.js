@@ -4367,10 +4367,29 @@ function unusedDigits(...arg){
   const allDigits = ["0", "1","2","3","4","5","6","7","8","9"]
   let nums = arg.map(num => num.toString()).join('')
   
-  let missing = []
   
   let ordered = nums.split('').sort((a,b)=>a-b)
   
   return allDigits.filter(num => !ordered.includes(num)).join('')
   
 }
+
+
+/*
+
+Mar 2, 2022
+
+Complete the function that takes an array of words.
+
+You must concatenate the nth letter from each word to construct a new word which should be returned as a 
+string, where n is the position of the word in the list.
+
+For example:
+
+["yoda", "best", "has"]  -->  "yes"
+  ^        ^        ^
+  n=0     n=1     n=2
+Note: Test cases contain valid input only - i.e. a string array or an empty array; and each word will have 
+enough letters.
+
+*/
