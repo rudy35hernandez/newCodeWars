@@ -4403,4 +4403,14 @@ enough letters.
 //// At last we will return the new word
 
 
-function
+function nthChar(words){
+  let newWord = ''
+ if(words.length === 0){
+   return ""
+ } else {
+   for(let i = 0; i < words.length; i++){
+     newWord+= words[i][i]
+   }
+ }
+  return newWord
+}
