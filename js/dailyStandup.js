@@ -4393,3 +4393,14 @@ Note: Test cases contain valid input only - i.e. a string array or an empty arra
 enough letters.
 
 */
+
+/// create an empty str called newWord
+//// first thing is to check the length of arr of words, if it is empty, return ''
+//// next, if the length is greater than 1, I want to run a for loop for the arr of words
+//// each iteration, I want to add a letter to the newWord variable. Each letter will be the i (word it is on)
+//// and i (letter of the word. ) So words[i][i]. First iteration will take letter 0 from words[0], next would
+//// be letter 1 of word[1] and so forth. 
+//// At last we will return the new word
+
+
+function
