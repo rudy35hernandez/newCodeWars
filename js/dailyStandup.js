@@ -4474,3 +4474,22 @@ Note: If the number is a multiple of both 3 and 5, only count it once.
 /// Next I will run three conditionals, one to see if the number is divisible by 3 and 5, then one to see
 /// if it is divisible by 3, then the last one to see if its divisible by 5. If it is, I will add it to total
 /// Lastly, I will return total
+
+function solution(number){
+  let total = 0
+  
+  if(number < 0){
+    return 0
+  }
+  
+  for(let i = 0; i < number; i++){
+    if(i % 3 === 0 || i % 5 === 0 ){
+      total += i
+    } else if(i % 3 === 0){
+      total += i
+    } else if (i % 5 === 0){
+      total += i
+    }
+  }
+  return total
+}
