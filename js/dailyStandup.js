@@ -4463,3 +4463,14 @@ Additionally, if the number is negative, return 0 (for languages that do have th
 Note: If the number is a multiple of both 3 and 5, only count it once.
 
 */
+
+/// this is very similar to the fizz buzz algorithm. Only this time, instead of printing the number,
+/// we want to add that number to a variable that will sum all of the numbers.
+
+/// I want to create a variable called total and give it value of 0.
+/// Just to get the negative numbers out of the way, I will run a conditional to see if number is less than 1,
+/// if so, I will just return 0
+/// Next i will run a for loop with the number variable which will use the number added in the argument.
+/// Next I will run three conditionals, one to see if the number is divisible by 3 and 5, then one to see
+/// if it is divisible by 3, then the last one to see if its divisible by 5. If it is, I will add it to total
+/// Lastly, I will return total
