@@ -4518,6 +4518,13 @@ Since , { 14 } is the even number here , So it came first , then the odds in des
 
 /*
 
+/// The first thing I want to do is separate evens and odds while sorting them, I will hold them in two diff
+/// arrays.
+/// Next, I want to use the new Set method to remove duplicates.
+/// Lastly, I will concat both arrays with evens being first
+
+
+
 
 
 
