@@ -4525,7 +4525,10 @@ Since , { 14 } is the even number here , So it came first , then the odds in des
 
 
 function sortEvenAndOdds(arr){
-
+  let even = [... new Set(arr.filter(num => num % 2 === 0).sort((a,b)=> a-b))]
+  let odds = [... new Set(arr.filter(num => num % 2 !== 0).sort((a,b) => b-a))]
+  
+  return even.concat(odds)
 }
 
 console.log(sortEvenAndOdds([7,3,14,17]), [14,17,7,3])
