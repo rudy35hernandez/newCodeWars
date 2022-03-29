@@ -4516,7 +4516,7 @@ Since , { 14 } is the even number here , So it came first , then the odds in des
 
 
 
-/*
+*/
 
 /// The first thing I want to do is separate evens and odds while sorting them, I will hold them in two diff
 /// arrays.
@@ -4524,10 +4524,15 @@ Since , { 14 } is the even number here , So it came first , then the odds in des
 /// Lastly, I will concat both arrays with evens being first
 
 
+function sortEvenAndOdds(arr){
 
+}
 
+console.log(sortEvenAndOdds([7,3,14,17]), [14,17,7,3])
+console.log(sortEvenAndOdds([82,91,72,76,76,100,85]), [72,76,82,100,91,85])
+console.log(sortEvenAndOdds([-17,-45,-15,-33,-85,-56,-86,-30]), [-86,-56,-30,-15,-17,-33,-45,-85])
 
-
+/*
 Apr 9, 2022
 
 Consider the word "abode". We can see that the letter a is in position 1 and b is in position 2. In the alphabet, 
