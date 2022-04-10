@@ -4505,3 +4505,12 @@ Input will consist of alphabet characters, both uppercase and lowercase. No spac
 Good luck!
 
 */
+
+// We are working with a nested array so make sure you target each individual array.
+// First thing I want to do is create a variable called alphabet that has all the letters in the alphabet in order.
+// Next thing I want to to do is use map to target all array and use toLowerCase for all.
+// Next I want to split each array by each character that way I can target each character in each array.
+// Next is where I create my nested map, I will use a map method with filter inside of it, returning only the
+// letters who's index matches their index in the alphabet variable. 
+// Lastly, I will add the .length method at the end to return the length of each sub array
+
