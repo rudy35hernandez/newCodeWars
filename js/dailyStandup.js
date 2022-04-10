@@ -4514,3 +4514,10 @@ Good luck!
 // letters who's index matches their index in the alphabet variable. 
 // Lastly, I will add the .length method at the end to return the length of each sub array
 
+function indexMatches(arr){
+  const alphabet = "abcdefghijklmnopqrstuvwxyz"
+  return arr.map(word => word.toLowerCase().split('').filter((letter, i, arr)=> i == alphabet.indexOf(letter)).length)
+
+}
+
+console.log(indexMatches(["abode","ABc","xyzD"]))
