@@ -4618,4 +4618,18 @@ Good luck!
 
 */
 
-
+function getTheVowels(word) {
+  let vowels = ["a", "e", "i", "o", "u"]
+  
+  let wordArr = word.split('')
+  
+  let count = 0
+  
+  for(let i = 0; i < wordArr.length; i++){
+    if(wordArr[i] === vowels[0]){
+      count++
+      vowels.push(vowels.shift())
+    }
+  }
+  return count
+}
