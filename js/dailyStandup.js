@@ -4695,9 +4695,7 @@ by 3, print out “Fizz”; when it’s divisible by 5, print out “Buzz”; wh
 */
 
 function fizzBuzz22(num){
-  for(let i = 0; i < num; i++){
-    return num % 3 === 0 && num % 5 === 0 ? "Fizz Buzz" || num % 3 === 0 ? "Fizz"  || num % 5 === 0 ? "Buzz" : num
-  }
+ 
 
 }
 
