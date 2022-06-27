@@ -4694,9 +4694,10 @@ by 3, print out “Fizz”; when it’s divisible by 5, print out “Buzz”; wh
 
 */
 
+// Run a loop 
+
 function fizzBuzz22(num){
  
-
 }
 
 console.log(fizzBuzz22(22))
