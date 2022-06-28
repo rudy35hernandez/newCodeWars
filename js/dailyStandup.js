@@ -4694,10 +4694,22 @@ by 3, print out “Fizz”; when it’s divisible by 5, print out “Buzz”; wh
 
 */
 
-// Run a loop 
+// Run a for loop, add conditionals for all nums to see if they meet qualifications. make sure to run the 
+// 3 && 5 conditional first to not mess up the console logg
 
 function fizzBuzz22(num){
- 
+    for(let i = 0; i <= num; i++){
+      if(i % 3 === 0 && i % 5 === 0){
+        console.log("fizzbuzz")
+      } else if(i % 3 === 0){
+        console.log("fizz")
+      } else if(i % 5 === 0){
+        console.log("buzz")
+      } else {
+        console.log(i)
+      }
+    }
 }
 
 console.log(fizzBuzz22(22))
+console.log(fizzBuzz(45))
