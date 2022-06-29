@@ -4713,3 +4713,16 @@ function fizzBuzz22(num){
 
 console.log(fizzBuzz22(22))
 console.log(fizzBuzz(45))
+
+
+/* New Challenge 
+
+Write a function that when given a URL as a string, parses out just the domain name and returns it as a string. For example:
+
+domainName("http://github.com/carbonfive/raygun") == "github" 
+domainName("http://www.zombie-bites.com") == "zombie-bites"
+domainName("https://www.cnet.com") == "cnet
+
+*/
+
+
