@@ -4717,7 +4717,8 @@ console.log(fizzBuzz(45))
 
 /* New Challenge 
 
-Write a function that when given a URL as a string, parses out just the domain name and returns it as a string. For example:
+Write a function that when given a URL as a string, parses out just the domain name and returns it as a 
+string. For example:
 
 domainName("http://github.com/carbonfive/raygun") == "github" 
 domainName("http://www.zombie-bites.com") == "zombie-bites"
@@ -4725,4 +4726,14 @@ domainName("https://www.cnet.com") == "cnet
 
 */
 
+/// For this algo, we want to use replace multiple times for the url in order to remove https://, http://,
+/// and www.
+
+function printDomain(url){
+ 
+
+}
+
+console.log(printDomain("https://www.sup.com"))
+console.log(printDomain("www.github.com/rudy35hernandez"))
 
