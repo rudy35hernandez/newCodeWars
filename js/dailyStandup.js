@@ -4730,7 +4730,8 @@ domainName("https://www.cnet.com") == "cnet
 /// and www.
 
 function printDomain(url){
- 
+  url = url.replace("https://", "")
+  url = url.replace("http:")
 
 }
 
