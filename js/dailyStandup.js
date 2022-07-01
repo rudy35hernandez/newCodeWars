@@ -4755,3 +4755,9 @@ assert.strictEqual(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']), 41);
 */
 
 // Added them all up using reduce method. Also  use the Number built in method to turn strings into numbers
+
+function addthemup(arr){
+  return arr.reduce((acc, num) => acc + Number(num), 0)
+}
+
+console.log(addthemup([1, 4, "5", 22, "1"]))
