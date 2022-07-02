@@ -4761,3 +4761,4 @@ function addthemup(arr){
 }
 
 console.log(addthemup([1, 4, "5", 22, "1"]))
+console.log(addthemup)([4, 5, "11", "3"])
