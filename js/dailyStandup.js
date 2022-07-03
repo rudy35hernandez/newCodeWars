@@ -4787,3 +4787,6 @@ getAverage([1,1,1,1,1,1,1,2]),1)
 function avgScore(arr){
   return Math.floor(arr.reduce((acc, num) => acc + num, 0) / arr.length)
 }
+
+console.log(avgScore([1, 1, 1, 1, 1, 2]), 1)
+console.log(avgScore([1,2,3,4,5,]),3)
