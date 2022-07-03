@@ -4780,3 +4780,6 @@ getAverage([1,2,3,4,5,]),3);
 getAverage([1,1,1,1,1,1,1,2]),1)
 
 */
+
+/// I want to use the reduce method to add up all the scores, then divide it by the arr.length. To round it down
+/// I'll wrap the entire method with the Math.floor method
