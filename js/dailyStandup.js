@@ -4783,3 +4783,7 @@ getAverage([1,1,1,1,1,1,1,2]),1)
 
 /// I want to use the reduce method to add up all the scores, then divide it by the arr.length. To round it down
 /// I'll wrap the entire method with the Math.floor method
+
+function avgScore(arr){
+  return Math.floor(arr.reduce((acc, num) => acc + num, 0) / arr.length)
+}
