@@ -4813,3 +4813,16 @@ repeats([5, 10, 19, 13, 10, 13]),24)
 /// Once I have it sorted, I will create an empty array to push non duplicates to array. I will run a for loop
 /// with a conditionaly checking if the previous element or if the following element DO NOT MATCH. If they dont,
 /// I will push the element to the new arr. Once the loop is finished, I will run a reduce method on the new arr.
+
+function repeats(arr){
+  let sorted = arr.sort((a,b) => a-b)
+    
+  let newArr = []
+  
+  for(let i = 0; i < sorted.length; i++){
+    if(sorted[i] !== sorted[i - 1] && sorted[i] !== sorted[i+1]){
+      newArr.push(sorted[i])
+     }
+    }
+  return newArr.reduce((acc, num) => acc+num,0)
+};
