@@ -4841,3 +4841,7 @@ For example:
 ([6, -25, 3, 7, 5, 5, 7, -3, 23], 1) => [6]
 
 */
+
+/// First thing Id want to do is reverse the array, then Id run a for loop and push the amount of even numbers
+/// that is required to complete the algorithm. Would I would also do is set up a counter equaled to the num 
+/// parameter, once it goes down to 0, it will escape the for loop
