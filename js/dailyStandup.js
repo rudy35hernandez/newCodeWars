@@ -4845,3 +4845,14 @@ For example:
 /// First thing Id want to do is reverse the array, then Id run a for loop and push the amount of even numbers
 /// that is required to complete the algorithm. Would I would also do is set up a counter equaled to the num 
 /// parameter, once it goes down to 0, it will escape the for loop
+
+function lastThreeEven(arr, num){
+  const reversedArr = arr.reverse()
+  const newArr = []
+  for(let i = 0; i <= reversedArr.length; i++){
+    if(reversedArr[i] % 2 === 0){
+      newArr.push(reversedArr[i])
+    }
+  }
+    return newArr.slice(0, num).reverse()
+}
