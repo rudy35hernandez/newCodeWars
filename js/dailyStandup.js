@@ -4906,3 +4906,5 @@ nthSmallest({177,225,243,-169,-12,-5,2,92} ,5) ==> return (92)
 
 */
 
+//// Im thinking of using the sort method, from smallest to biggest, then using the num parameter and use it as
+//// the [index] to return that index in the array
