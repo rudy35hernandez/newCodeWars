@@ -4858,10 +4858,9 @@ function lastThreeEven(arr, num){
 }
 
 
-/******* New Challenge
- * 
- * 
- * Return the number of unique arrays that can be formed by picking exactly one element from each subarray.
+/* New Challenge
+ 
+Return the number of unique arrays that can be formed by picking exactly one element from each subarray.
 
 For example: solve([[1,2],[4],[5,6]]) = 4, because it results in only 4 possibilites. 
 They are [1,4,5],[1,4,6],[2,4,5],[2,4,6].
@@ -4886,3 +4885,24 @@ function uniqueArrayPoss(arr){
   const nonDuplicates = arr.map(nums => [...new Set(nums)])
   return nonDuplicates.map(arr => arr.length).reduce((acc, nums) => acc * nums,1)
 }
+
+
+/* New Challenge 
+
+
+Given an array of integers , Find the Nth smallest element in this array of integers.
+
+Notes
+Array/list size is at least 3 .
+
+Array/list's numbers could be a mixture of positives , negatives and zeros .
+
+Repetition in array/list's numbers could occur , so don't Remove Duplications .
+
+nthSmallest({3,1,2} ,2) ==> return (2) 
+nthSmallest({15,20,7,10,4,3} ,3) ==> return (7) 
+nthSmallest({15,20,7,10,4,3} ,3) ==> return (7) 
+nthSmallest({177,225,243,-169,-12,-5,2,92} ,5) ==> return (92) 
+
+*/
+
