@@ -4527,13 +4527,14 @@ Since , { 14 } is the even number here , So it came first , then the odds in des
 function sortEvenAndOdds(arr){
   let even = [... new Set(arr.filter(num => num % 2 === 0).sort((a,b)=> a-b))]
   let odds = [... new Set(arr.filter(num => num % 2 !== 0).sort((a,b) => b-a))]
-  
+
   return even.concat(odds)
 }
 
 console.log(sortEvenAndOdds([7,3,14,17]), [14,17,7,3])
 console.log(sortEvenAndOdds([82,91,72,76,76,100,85]), [72,76,82,100,91,85])
 console.log(sortEvenAndOdds([-17,-45,-15,-33,-85,-56,-86,-30]), [-86,-56,-30,-15,-17,-33,-45,-85])
+
 
 /*
 Apr 9, 2022
@@ -4569,3 +4570,18 @@ function indexMatches(arr){
 }
 
 console.log(indexMatches(["abode","ABc","xyzD"]))
+
+
+/*
+
+july 7, 2022
+
+Complete the function that takes a non-negative integer n as input, and returns a list of all the powers of 2 with 
+the exponent ranging from 0 to n ( inclusive ).
+
+Examples
+n = 0  ==> [1]        # [2^0]
+n = 1  ==> [1, 2]     # [2^0, 2^1]
+n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
+
+*/
