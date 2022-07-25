@@ -5084,3 +5084,41 @@ When bool is truthy, func1 should be called, otherwise call the func2.
 function ifFunction(bool, func1, func2){
   return bool ? func1() : func2()
 }
+
+
+/*
+
+Challenge, level 6 KYU 
+
+You are organizing an olympiad and would like to create an algorithm to determine the podium. Simple, isn't it!?
+An olympiad is a tournament with few rounds. Each round brings more or less points to the players. Good luck!
+
+Input
+A score object, containing the scores of all players for each round. For exemple:
+
+{
+  'Emy': [8, 12, 1],    // Emy scored 8 points in the first round, 12 points in the second and 1 point in the third.
+  'Paul': [2, 6, -9],   // Paul scored 2 points in the first round, 6 points in the second and -9 points in the third.
+  'Sandra': [3, 9, 7],  // Sandra scored 3 points in the first round, 9 points in the second and 7 points in the third.
+  'Sue': [10, 2, 0],    // ...
+  'Yseult': [8, 9, 3]
+}
+Your task
+Return the podium in this form:
+
+{
+  'gold': {
+    'score': 21,
+    'players': ['Emy']
+  },
+  'silver': {
+    'score': 20,
+    'players': ['Yseult']
+  },
+  'bronze': {
+    'score': 19,
+    'players': ['Sandra']
+  }
+}
+
+*/
