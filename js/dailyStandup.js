@@ -4674,3 +4674,8 @@ Code wars -> C, w -> C W -> CW
 Note: There will be at least two words in the given string!
 
 */
+
+// First thing I want to do is split the string by word, and then I want to map the array and return the first
+// char of each word and also use the upperCase method. Once mapped, I will join the letters back up to create
+// the acronym.
+
