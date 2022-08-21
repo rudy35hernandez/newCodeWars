@@ -4679,3 +4679,6 @@ Note: There will be at least two words in the given string!
 // char of each word and also use the upperCase method. Once mapped, I will join the letters back up to create
 // the acronym.
 
+function toAcronym(inp){
+  return inp.split(' ').map(word => word[0].toUpperCase()).join('')
+}
