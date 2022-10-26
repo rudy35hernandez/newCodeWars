@@ -4682,3 +4682,23 @@ Note: There will be at least two words in the given string!
 function toAcronym(inp){
   return inp.split(' ').map(word => word[0].toUpperCase()).join('')
 }
+
+
+/* 
+
+June 26, 2022
+
+Given a number as an input, print out every integer from 1 to that number. However, when the integer is divisible 
+by 3, print out “Fizz”; when it’s divisible by 5, print out “Buzz”; when it’s divisible by both 3 and 5, print out 
+“Fizz Buzz”.
+
+*/
+
+function fizzBuzz22(num){
+  for(let i = 0; i < num; i++){
+    return num % 3 === 0 && num % 5 === 0 ? "Fizz Buzz" || num % 3 === 0 ? "Fizz"  || num % 5 === 0 ? "Buzz" : num
+  }
+
+}
+
+console.log(fizzBuzz22(22))
