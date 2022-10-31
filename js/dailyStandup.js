@@ -4880,6 +4880,9 @@ solve([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]),72)
 /// do this is to map the array of arrays, and use the [...new set(arr)] method to return arrays with non duplicates.
 /// Then I want to run another map method to return the length of each array. Once I get the length of each array,
 /// I will use the reduce method, multiply them all with each other to return the number of unique array 
-/// possibilities.
+/// possibilities. Make sure to use the ,1 in the reduce method. Using the 0 will result in the return being 0.
 
-
+function uniqueArrayPoss(arr){
+  const nonDuplicates = arr.map(nums => [...new Set(nums)])
+  return nonDuplicates.map(arr => arr.length).reduce((acc, nums) => acc * nums,1)
+}
