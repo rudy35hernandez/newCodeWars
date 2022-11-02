@@ -4949,3 +4949,8 @@ For example:
 You may assume the input only contain English alphabet and spaces.
 
 */
+
+/// I am thinking that the we need to use the split method to turn string into array. Next, we can run
+/// a map method to target every character and change the case from lower to upper and vice versa.
+/// Once that is completed, we can then join the string and split it once again but this time by word, not
+/// letter. We can then use the reverse method to switch words around.
