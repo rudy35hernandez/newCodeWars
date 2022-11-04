@@ -4936,6 +4936,12 @@ Examples
 /// Could not figure out how to solve using a hash map so I will try using the indexOf === lastIndexOf method 
 /// instead
 
+function duplicateOrNot(str){
+  return str.split("")
+         .map(letter => letter.toLowerCase())
+         .map(letter => word.indexOf(letter) !== word.lastIndexOf(letter) ? ")" : "(")
+         .join()
+}
 
 
 
