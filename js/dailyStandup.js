@@ -4940,7 +4940,7 @@ function duplicateOrNot(str){
   return str.split("")
          .map(letter => letter.toLowerCase())
          .map(letter => word.indexOf(letter) !== word.lastIndexOf(letter) ? ")" : "(")
-         .join()
+         .join("")
 }
 
 
