@@ -4933,6 +4933,8 @@ Examples
 /// time a letter appears. After creating the hash map, I would then use a for loop to check which key has a value
 /// greater than 1 and return the ), if it appears once, I would return (.
 
+/// Could not figure out how to solve using a hash map so I will try using the indexOf === lastIndexOf method 
+/// instead
 
 
 
