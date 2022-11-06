@@ -4991,3 +4991,7 @@ last('take me to semynak'), ['take', 'me', 'semynak', 'to']
 
 */ 
 
+//// After trying indexOf, word[a.length - 1], nothing seemed to work. I even split, reversed, joined, split by 
+//// word again, sorted, joined, all to find out that it would not keep things in order if they had the same 
+//// last character. After some research, the solution was to use a.charCodeAt(a.length -1) and compare it to 
+//// b. We still use the sort method, but charCodeAt was the solution.
