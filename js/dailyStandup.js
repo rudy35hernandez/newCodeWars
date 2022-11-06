@@ -4995,3 +4995,11 @@ last('take me to semynak'), ['take', 'me', 'semynak', 'to']
 //// word again, sorted, joined, all to find out that it would not keep things in order if they had the same 
 //// last character. After some research, the solution was to use a.charCodeAt(a.length -1) and compare it to 
 //// b. We still use the sort method, but charCodeAt was the solution.
+
+
+function sortByLastLetter(x){
+  return x.split(" ").sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
+}
+
+console.log(('man i need a taxi up to ubud'), ['a', 'need', 'ubud', 'i', 'taxi', 'man', 'to', 'up']);
+console.log(('what time are we climbing up the volcano'), ['time', 'are', 'we', 'the', 'climbing', 'volcano', 'up', 'what'])
