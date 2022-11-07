@@ -5025,6 +5025,10 @@ findDeletedNumber([1,2,3,4,5,6,7,8,9], [5,7,6,9,4,8,1,2,3]), 0, 'No deletion')
 
 */
 
+/// Just using simple logic, easiest way to solve this is to use the reduce method on both the first array and
+/// the mixed array, then subtract the from the first array with the mixed array. This will get us the number
+/// missing, and if there's none missing, it returns 0 like we want
+
 function findMissingNumber(arr){
   
 }
