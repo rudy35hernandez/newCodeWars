@@ -5029,6 +5029,6 @@ findDeletedNumber([1,2,3,4,5,6,7,8,9], [5,7,6,9,4,8,1,2,3]), 0, 'No deletion')
 /// the mixed array, then subtract the from the first array with the mixed array. This will get us the number
 /// missing, and if there's none missing, it returns 0 like we want
 
-function findMissingNumber(arr){
-  
+function findMissingNumber(arr, mixedArr){
+  return arr.reduce((acc, num) => acc + num,0) - mixedArr.reduce((acc, num) => acc + num,0)
 }
