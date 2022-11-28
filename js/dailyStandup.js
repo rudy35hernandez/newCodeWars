@@ -5052,3 +5052,7 @@ arrayDiff([3,4], [3]), [4], "a was [3,4], b was [3]"
 arrayDiff([1,8,2], []), [1,8,2], "a was [1,8,2], b was []"
 
 */
+
+/// What i want to use for this algo is the includes method. What I can do, is run a filter method on the 
+/// original array, and then use the !includes method on the second array to return the items that do not appear
+/// in the second array
