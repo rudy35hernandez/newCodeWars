@@ -5074,3 +5074,8 @@ When bool is truthy, func1 should be called, otherwise call the func2.
 
 
 */
+
+/// pseudo code
+/// Id first create a function declaration with the three arguments. 
+/// The function should be short and sweet. Id return a ternary that checks for bool being true or false, if
+/// true, it will return func1, if false, it returns func2
