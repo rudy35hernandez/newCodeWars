@@ -5137,3 +5137,10 @@ Should return: 160 (the only even number)
 
 */
 
+function findOutliers(int){
+  const even = int.filter(num => num % 2 === 0)
+  const odds = int.filter(num => num % 0 !== 0)
+
+  return even.length === 1 ? even[0] : odds[0]
+}
+
