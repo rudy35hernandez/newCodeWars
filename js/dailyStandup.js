@@ -5167,25 +5167,27 @@ Define these methods:
 
 class Block {
   constructor(data) {
-    this.data = data
+    this.width = data[0];
+    this.length = data[1];
+    this.height = data[2];
   }
   getWidth(){
-    return this.data[0]
+    return this.width
   }
 
   getLength(){
-    return this.data[1]
+    return this.averageLength
   }
 
   getHeight(){
-    return this.data[2]
+    return this.height
   }
 
   getVolume(){
-    return this.data.reduce((currVal, num) => currVal * num, 1)
+    return this.width * this.length * this.height
   }
 
   getSurfaceArea(){
-    return 2 * ((this.data[2] * this.data[0]) + (this.data[2] * this.data[1]) + (this.data[1] * this.data[0]))
+    return 2 * ((this.width * this.length) + (this.width * this.height) + (this.height * this.length))
   }
 }
