@@ -5165,3 +5165,8 @@ Define these methods:
 
 */
 
+class Block {
+  constructor(data) {
+    this.data = data
+  }
+}
