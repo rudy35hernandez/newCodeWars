@@ -5202,3 +5202,7 @@ The returned format must be correct in order to complete this challenge.
 
 Don't forget the space after the closing parentheses!
 */
+
+/// Id like to create three different variables containing the area code, prefix, and last 4 digits. I will do this
+/// by implementing the filter method and filtering by the index of the numbers. Once that's done, I can create a 
+/// string literal to form the phone number using the variables
