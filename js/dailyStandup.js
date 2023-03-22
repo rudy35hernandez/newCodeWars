@@ -5206,3 +5206,16 @@ Don't forget the space after the closing parentheses!
 /// Id like to create three different variables containing the area code, prefix, and last 4 digits. I will do this
 /// by implementing the filter method and filtering by the index of the numbers. Once that's done, I can create a 
 /// string literal to form the phone number using the variables
+
+function createPhoneNumber(numbers){
+  const areaCode = numbers.filter((num, i, arr) => i < 3).join('')
+  
+  const prefix = numbers.filter((num, i, arr) => i > 2 && i < 6).join('')
+  
+  const lastFour = numbers.filter((num, i, arr) => i > 5).join('')
+  
+//   console.log(areaCode.join('').toString())
+  
+  return `(${areaCode}) ${prefix}-${lastFour}`
+  
+}
