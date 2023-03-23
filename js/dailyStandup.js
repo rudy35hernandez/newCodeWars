@@ -5242,3 +5242,19 @@ Examples
 /// the includes(i) method for every word. If it includes i (since its low to high), I will push that word into
 /// a new and empty array. Once done, I will use the join method to turn the new array into a string
 
+function order(words){
+  
+  let arrWords = words.split(' ').sort((a, b) => b-a)
+//   console.log(arrWords)
+  let arrangedWords = []
+  
+  for(let i = 0; i < arrWords.length+1; i++){
+    for(let j = 0; j < arrWords.length; j++){
+      if(arrWords[j].includes(i)){
+        arrangedWords.push(arrWords[j])
+      }
+    }
+  }
+  return arrangedWords.join(' ')
+//   console.log(arrangedWords)
+}
