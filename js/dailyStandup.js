@@ -5276,4 +5276,12 @@ Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 1
 
 */
 
-/// 
+/// My first thought is to create a variable that contains all the alphabet with the first index spot (0) being 
+/// blank. This would make a = index 1 and b = index 2 and so forth.
+/// After that, i need to drop all letters to lower case, split into array like this split("") so each character 
+/// and empty space becomes an element
+/// Once I do that, I can, I can run a map method to return each character element as the position number by using
+/// the alphabet variable to compare the element to the alphabet and its position in the variable
+/// We then run a filter method to get rid of all numbers less than 1.
+/// Once we get the returned numbers for all, we join it back up with join(" ") and change back to a string with 
+/// toString()
