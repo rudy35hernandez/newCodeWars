@@ -5236,3 +5236,9 @@ Examples
 ""  -->  ""
 
 */
+
+/// The easiest way to solve the problem is by using a nested for loops to run through every word with the 
+/// nested loop. First I would split the sentence into an array, run a for loop, then a nested loop to test
+/// the includes(i) method for every word. If it includes i (since its low to high), I will push that word into
+/// a new and empty array. Once done, I will use the join method to turn the new array into a string
+
