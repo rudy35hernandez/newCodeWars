@@ -5285,3 +5285,12 @@ Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 1
 /// We then run a filter method to get rid of all numbers less than 1.
 /// Once we get the returned numbers for all, we join it back up with join(" ") and change back to a string with 
 /// toString()
+
+function alphabetPosition(text) {
+  const alphabet = " abcdefghijklmnopqrstuvwxyz"
+  
+  let arrPos = text.toLowerCase().split("").map(letter => alphabet.indexOf(letter)).filter(num => num > 0)
+  
+  return arrPos.join(" ").toString()
+  
+}
