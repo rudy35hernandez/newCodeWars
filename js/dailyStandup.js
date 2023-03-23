@@ -5244,7 +5244,7 @@ Examples
 
 function order(words){
   
-  let arrWords = words.split(' ').sort((a, b) => b-a)
+  let arrWords = words.split(' ')
 //   console.log(arrWords)
   let arrangedWords = []
   
