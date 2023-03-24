@@ -5316,3 +5316,18 @@ For example (Input --> Output):
 /// In the while loop, I will add the reduce method to multiply numbers with each other, and then add + 1 to total
 /// each time it is ran.
 /// Lastly, I will return "total" at the end, giving me the amount of times it was multiplied
+
+function persistence2(num){
+  const numStr = num.toString()
+  const total = 0
+
+  if(numStr <= 1){
+    return 0
+  }
+
+  while(numStr.length > 1){
+    numStr = numStr.split("").reduce((acc, num), acc * num, 1).toString()
+    total++
+  }
+  return total
+}
