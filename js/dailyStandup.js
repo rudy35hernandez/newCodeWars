@@ -5307,3 +5307,12 @@ For example (Input --> Output):
 4 --> 0 (because 4 is already a one-digit number)
 
 */
+
+/// For something like this, we need to create a variable called "total" with the value of 0 that keeps count for 
+/// each multiplication that takes place, that way we can return that count at the end. 
+/// First thing we need to do is turn the num into a string to be able to split the numbers in order to multiply
+/// them.
+/// Next thing to use is a while loop to keep running until the num is down to length of 1.
+/// In the while loop, I will add the reduce method to multiply numbers with each other, and then add + 1 to total
+/// each time it is ran.
+/// Lastly, I will return "total" at the end, giving me the amount of times it was multiplied
