@@ -5351,3 +5351,9 @@ spinWords( "This is another test" )=> returns "This is rehtona test"
 /// Then I will run a map method to test for all words with a length shorter than 5, if it's shorter than 5, I will
 /// return the word as is. If it's greater than 4, I will reverse that word by splitting it, reversing it, then
 /// joining it again. Lastly, I join that array again with join(" ").
+
+function spinWords(string){
+  return string.split(" ")
+          .map(word => word.length < 5 ? word : word.split("").reverse().join(""))
+          .join(" ")
+}
