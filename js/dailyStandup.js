@@ -5374,3 +5374,10 @@ Examples
 "The_Stealth-Warrior" gets converted to "TheStealthWarrior"
 
 */
+
+/// This may be a long winded answer but I need to create an abc variable that contains all letters lower and upper
+/// Next I need to split the string by character, run a map method, return characters in abc, return a blank space
+/// for those not in the abc.
+/// Next I need to join the letters again, then split by word, map each word, if its after index one, I need to
+/// split that word by each character, and index 0 will get a toUpperCase() and the rest stay the same.
+/// Lastly I will join the letters back up, join the words, split them by word (" ") then join("")
