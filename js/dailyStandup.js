@@ -5444,6 +5444,8 @@ function isValidWalk(walk) {
 
   */
 
-  function moveZerosA(){
-    
+  function moveZerosA(arr){
+
   }
+
+  console.log(moveZerosA(arr))
