@@ -5444,6 +5444,10 @@ function isValidWalk(walk) {
 
   */
 
+  /// The easiest way to solve this I think is to run two filter methods, one to filter all values in arr that are
+  /// not 0, and a second filter with all values that are 0. Lastly I would just concat the arrays with the second
+  /// arr being the 0's
+
   function moveZerosA(arr){
 
   }
