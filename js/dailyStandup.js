@@ -5449,7 +5449,9 @@ function isValidWalk(walk) {
   /// arr being the 0's
 
   function moveZerosA(arr){
-
+    const nonZeros = arr.filter(num => num !== 0)
+    const allZeros = arr.filter(num => num === 0)
+    return [...nonZeros, ...allZeros]
   }
 
-  console.log(moveZerosA(arr))
+  console.log(moveZerosA([1,2,0,1,0,1,0,3,0,1]), [1, 2, 1, 1, 3, 1, 0, 0, 0, 0])
