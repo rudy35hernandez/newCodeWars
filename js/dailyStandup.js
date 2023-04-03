@@ -5489,6 +5489,10 @@ function isPangram(string){
   }
 }
 
+/// easier solution but probably takes more memory
+
 function isPanagram2(str){
-  
+  const alph = "abcdefghijklmnopqrstuvwxyz"
+  const lowerStr = str.toLowerCase()
+  return alph.split("").every(letter => lowerStr.includes(letter))
 }
