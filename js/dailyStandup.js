@@ -5508,3 +5508,9 @@ uniqueInOrder('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
 uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 
 */
+
+/// First thing I want to do is create an empty arr to push my selected items.
+/// Next, I want to run a for loop, in this loop I will push in any item that does not have the same value as
+/// as the previous one. 
+
+function 
