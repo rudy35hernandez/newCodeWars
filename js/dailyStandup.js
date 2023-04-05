@@ -5468,7 +5468,16 @@ function isValidWalk(walk) {
 
 
 function isPangram(string){
-  //...
+  const alph = "abcdefghijklmnopqrstuvwxyz"
+  const lowerStr = string.toLowerCase()
+  if(alph.length > lowerStr.length){
+    return false
+  } else {
+    const frequency = {}
+    for(let val of lowerStr){
+      frequency[val] = (frequency[val] || 0) + 1
+    }
+  }
 }
 
 console.log(isPangram("The quick brown fox jumps over the lazy dog"), true)
