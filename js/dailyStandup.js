@@ -5513,4 +5513,16 @@ uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 /// Next, I want to run a for loop, in this loop I will push in any item that does not have the same value as
 /// as the previous one. 
 
-function 
+function uniqueInOrder23(iterable){
+  //your code here - remember iterable can be a string or an array
+  
+  
+  
+  const newArr = [] 
+  for(let i = 0; i < iterable.length; i++){
+    if(iterable[i - 1] !== iterable[i]){
+      newArr.push(iterable[i])
+    }
+  }
+  return newArr
+}
