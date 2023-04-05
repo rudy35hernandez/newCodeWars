@@ -5477,6 +5477,15 @@ function isPangram(string){
     for(let val of lowerStr){
       frequency[val] = (frequency[val] || 0) + 1
     }
+    for(let i = 0; i < alph.length; i++){
+      let letter = alph[i]
+      if(!frequency[letter]){
+        return false
+      } else {
+        frequency[letter] -= 1
+      }
+    }
+    return true
   }
 }
 
