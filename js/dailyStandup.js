@@ -5569,3 +5569,10 @@ Good luck and try to be as creative as possible!
 /// add up the numbers together. I will use the built in Number method for the accumulator and the number in the
 /// reduce method. In my second part of the condition, if number is bigger than 10, I will run the main function
 /// with the reduce function I created as the parameter. 
+
+function digitalRoot(num){
+  // Below adds the num together, ex 123 = 6
+  const numArr = num.toString().split("").reduce((acc, num) => Number(acc) + Number(num))
+
+  
+}
