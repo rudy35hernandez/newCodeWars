@@ -5563,3 +5563,9 @@ Good luck and try to be as creative as possible!
 
 */
 
+/// To solve this problem, I want to first start with a condition, if the number is less than 10 (2 digits), I will
+/// return the number.
+/// Next, I want to create a function that will turn the num to a string, split it, then use a reduce method to 
+/// add up the numbers together. I will use the built in Number method for the accumulator and the number in the
+/// reduce method. In my second part of the condition, if number is bigger than 10, I will run the main function
+/// with the reduce function I created as the parameter. 
