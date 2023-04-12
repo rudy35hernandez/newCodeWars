@@ -5573,6 +5573,10 @@ Good luck and try to be as creative as possible!
 function digitalRoot(num){
   // Below adds the num together, ex 123 = 6
   const numArr = num.toString().split("").reduce((acc, num) => Number(acc) + Number(num))
-
+  if(num < 10){
+    return num
+  } else {
+    return digitalRoot(numArr)
+  }
   
 }
