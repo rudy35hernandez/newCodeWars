@@ -5611,3 +5611,8 @@ If you enjoyed this kata more advanced and generalized version of it can be foun
 
 */
 
+/// I think we should create conditionals that will cover cases where n is 0, 1, and 2. 
+/// If n is either of the three, we just create a conditional that will return the array with only those indexes.
+/// Next I can create a for loop that runs n amount of times - 3 (first three are added already). In the loop,
+/// I will add signature[i] + signature[i+1] + signature[i+2] and push it to our signature array. Then I will return
+/// the array.
