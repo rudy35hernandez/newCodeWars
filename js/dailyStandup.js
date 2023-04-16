@@ -5616,3 +5616,19 @@ If you enjoyed this kata more advanced and generalized version of it can be foun
 /// Next I can create a for loop that runs n amount of times - 3 (first three are added already). In the loop,
 /// I will add signature[i] + signature[i+1] + signature[i+2] and push it to our signature array. Then I will return
 /// the array.
+
+
+function tribonacci(signature,n){
+  if(n === 0){
+    return []
+  } else if(n === 1){
+    return [signature[0]]
+  } else if(n === 2){
+    return signature.slice(0, 1)
+  }
+  for(let i = 0; i < n - 3; i++){
+    let nextNum = signature[i] + signature[i + 1] + signature[i + 2]
+    signature.push(nextNum)
+  }
+  return signature
+}
