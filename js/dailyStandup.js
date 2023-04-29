@@ -5660,3 +5660,8 @@ will be passed into the function.
 function narcissistic(value) {
   // Code me to return true or false
 }
+
+console.log(narcissistic(  7, true))
+console.log(narcissistic(153, true))
+console.log(narcissistic(122, false))
+console.log(narcissistic(487, false))
