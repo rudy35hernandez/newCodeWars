@@ -5686,3 +5686,9 @@ Sum of integer combinations
 Sum of array singles
 
 */
+
+// The first thing I want to do is run a map function and use the [...new Set(arr)] method to create new arrays
+// so that elements only appear once.
+// Next, I want to run another map method to get the lengths of each array. By doing this, I can multiply each
+// arrays length to get the total number of unique combinations. To do that, I will use the Reduce method to sum
+// up the combinations
