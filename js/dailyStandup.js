@@ -5692,3 +5692,11 @@ Sum of array singles
 // Next, I want to run another map method to get the lengths of each array. By doing this, I can multiply each
 // arrays length to get the total number of unique combinations. To do that, I will use the Reduce method to sum
 // up the combinations
+
+function totalCombo(arr){
+  const uniqueArrays = arr.map(set => [...new Set(set)])
+  return uniqueArrays.map(set => set.length).reduce((num, acc) => num * acc, 1)
+}
+
+console.log(totalCombo([[1,2],[4],[5,6]]),4)
+console.log(totalCombo([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]),72)
