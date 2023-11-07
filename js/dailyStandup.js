@@ -5700,3 +5700,19 @@ function totalCombo(arr){
 
 console.log(totalCombo([[1,2],[4],[5,6]]),4)
 console.log(totalCombo([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]),72)
+
+
+/*
+
+The goal of this exercise is to convert a string to a new string where each character in the new 
+string is "(" if that character appears only once in the original string, or ")" if that character 
+appears more than once in the original string. Ignore capitalization when determining if a character 
+is a duplicate.
+
+Examples
+"din"      =>  "((("
+"recede"   =>  "()()()"
+"Success"  =>  ")())())"
+"(( @"     =>  "))(("
+
+*/
