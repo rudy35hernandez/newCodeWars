@@ -5716,3 +5716,10 @@ Examples
 "(( @"     =>  "))(("
 
 */
+
+function duplicateParenthesis(word){
+  return word.split("")
+          .map(letter => letter.toLowerCase())
+          .map((letter, index, arr) => arr.indexOf(letter) === arr.lastIndexOf(letter) ? "(" : ")").join("")
+}
+
