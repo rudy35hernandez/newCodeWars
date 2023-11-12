@@ -5723,3 +5723,6 @@ function duplicateParenthesis(word){
           .map((letter, index, arr) => arr.indexOf(letter) === arr.lastIndexOf(letter) ? "(" : ")").join("")
 }
 
+console.log(duplicateParenthesis(("din"),"((("));
+console.log(duplicateParenthesis("recede"),"()()()");
+console.log(duplicateParenthesis("Success"),")())())","should ignore case");
